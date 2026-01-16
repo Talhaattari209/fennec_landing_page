@@ -1,0 +1,364 @@
+/* Mockup */
+
+width: 528px;
+height: 720px;
+
+filter: drop-shadow(0px -6.38px 27.9738px rgba(0, 0, 0, 0.1)) drop-shadow(0px 40.2431px 61.3462px rgba(0, 0, 0, 0.15)) drop-shadow(0px 18.1585px 18.1585px rgba(0, 0, 0, 0.25));
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Phone */
+
+position: absolute;
+width: 324.51px;
+height: 668.13px;
+left: calc(50% - 324.51px/2 - 0.12px);
+top: calc(50% - 668.13px/2 + 0.05px);
+
+
+
+/* Body */
+
+position: absolute;
+left: 19.85%;
+right: 19.84%;
+top: 3.61%;
+bottom: 3.6%;
+
+
+
+/* Screen Background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 316.73px;
+height: 666.96px;
+left: calc(50% - 316.73px/2 + 0.03px);
+top: calc(50% - 666.96px/2 + 0.05px);
+
+background: #1A1A1A;
+border: 3.44946px solid #373634;
+box-shadow: inset 0px 0px 0.265343px 3.98014px #242223;
+border-radius: 47.7618px;
+
+
+/* Stroke Body Outside */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 318.46px;
+height: 668.13px;
+left: calc(50% - 318.46px/2 + 0.03px);
+top: calc(50% - 668.13px/2 + 0.05px);
+
+background: rgba(0, 0, 0, 1e-05);
+border: 0.530686px solid #292824;
+box-shadow: inset 0px 0px 0.265343px 1.32671px #474641;
+border-radius: 45.639px;
+
+
+/* Stroke Body */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 316.73px;
+height: 666.96px;
+left: calc(50% - 316.73px/2 + 0.03px);
+top: calc(50% - 666.96px/2 + 0.05px);
+
+background: rgba(0, 0, 0, 1e-05);
+box-shadow: inset 0px 0px 0.265343px 1.32671px #AFB0AB;
+border-radius: 45.639px;
+
+
+/* Screen */
+
+position: absolute;
+width: 295.07px;
+height: 643.66px;
+left: calc(50% - 295.07px/2 - 0.15px);
+top: calc(50% - 643.66px/2 + 0.2px);
+
+
+
+/* Screen Mask */
+
+position: absolute;
+width: 295.07px;
+height: 643.66px;
+left: calc(50% - 295.07px/2 - 0.15px);
+top: calc(50% - 643.66px/2 + 0.2px);
+
+/* Neutrals/White */
+background: #FFFFFF;
+border-radius: 33.1702px;
+
+
+/* Screen (Replace here) */
+
+position: absolute;
+width: 295.07px;
+height: 641.25px;
+left: calc(50% - 295.07px/2 - 0.15px);
+top: calc(50% - 641.25px/2 - 2.79px);
+
+background: #888888;
+border-radius: 39.5366px;
+
+
+/* Screenshot will be added after final design */
+
+position: absolute;
+visibility: hidden;
+width: 240px;
+height: 44px;
+left: calc(50% - 240px/2 + 0.02px);
+top: calc(50% - 44px/2 + 0.39px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Antennas */
+
+position: absolute;
+left: 19.85%;
+right: 19.84%;
+top: 3.61%;
+bottom: 3.6%;
+
+
+
+/* Bottom */
+
+position: absolute;
+width: 4.12px;
+height: 4.42px;
+left: calc(50% - 4.12px/2 - 92.88px);
+top: calc(50% - 4.42px/2 + 331.9px);
+
+background: rgba(55, 54, 52, 0.95);
+
+
+/* Left-Bottom */
+
+position: absolute;
+width: 4.51px;
+height: 3.79px;
+left: calc(50% - 4.51px/2 - 156.94px);
+top: calc(50% - 3.79px/2 + 265.16px);
+
+background: rgba(55, 54, 52, 0.95);
+
+
+/* Left-Top */
+
+position: absolute;
+width: 4.78px;
+height: 5.41px;
+left: calc(50% - 4.78px/2 - 156.8px);
+top: calc(50% - 5.41px/2 - 263.99px);
+
+background: rgba(55, 54, 52, 0.9);
+
+
+/* Right-Bottom */
+
+position: absolute;
+width: 4.71px;
+height: 3.83px;
+left: calc(50% - 4.71px/2 + 156.82px);
+top: calc(50% - 3.83px/2 + 265.06px);
+
+background: rgba(55, 54, 52, 0.95);
+
+
+/* Right */
+
+position: absolute;
+width: 4.78px;
+height: 5.14px;
+left: calc(50% - 4.78px/2 + 156.83px);
+top: calc(50% - 5.14px/2 - 263.85px);
+
+background: rgba(55, 54, 52, 0.9);
+
+
+/* Top */
+
+position: absolute;
+width: 5.04px;
+height: 4.6px;
+left: calc(50% - 5.04px/2 + 93.28px);
+top: calc(50% - 4.6px/2 - 331.72px);
+
+background: rgba(55, 54, 52, 0.9);
+
+
+/* Buttons */
+
+position: absolute;
+left: 19.25%;
+right: 19.29%;
+top: 21.55%;
+bottom: 55.51%;
+
+
+
+/* - Button */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 3.18px;
+height: 52.19px;
+left: calc(50% - 3.18px/2 - 160.78px);
+top: calc(50% - 52.19px/2 - 65.73px);
+
+background: #666560;
+box-shadow: inset 0px -0.796029px 0px #BEBDB8, inset 0px 0.796029px 0px #BEBDB8, inset 0px 2.12274px 0.530686px #282722, inset 0px -2.12274px 0.530686px #282722, inset 1.32671px 0px 1.06137px rgba(152, 151, 146, 0.6), inset 1.06137px 0px 0px #92918C;
+border-radius: 1.06137px;
+
+
+/* + Button */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 3.18px;
+height: 52.73px;
+left: calc(50% - 3.18px/2 - 160.78px);
+top: calc(50% - 52.73px/2 - 129.27px);
+
+background: #666560;
+box-shadow: inset 0px -0.796029px 0px #BEBDB8, inset 0px 0.796029px 0px #BEBDB8, inset 0px 2.12274px 0.530686px #282722, inset 0px -2.12274px 0.530686px #282722, inset 1.32671px 0px 1.06137px rgba(152, 151, 146, 0.6), inset 1.06137px 0px 0px #92918C;
+border-radius: 1.06137px;
+
+
+/* Silence Button */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 3.18px;
+height: 28.39px;
+left: calc(50% - 3.18px/2 - 160.78px);
+top: calc(50% - 28.39px/2 - 190.65px);
+
+background: #666560;
+box-shadow: inset 0px -0.796029px 0px #BEBDB8, inset 0px 0.796029px 0px #BEBDB8, inset 0px 2.12274px 0.530686px #282722, inset 0px -2.12274px 0.530686px #282722, inset 1.32671px 0px 1.06137px rgba(152, 151, 146, 0.6), inset 1.06137px 0px 0px #92918C;
+border-radius: 1.06137px;
+
+
+/* Power Button */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 3.18px;
+height: 80.04px;
+left: calc(50% - 3.18px/2 + 160.55px);
+top: calc(50% - 80.04px/2 - 98.04px);
+
+background: #666560;
+box-shadow: inset 0px -0.796029px 0px #BEBDB8, inset 0px 0.796029px 0px #BEBDB8, inset 0px 2.12274px 0.530686px #282722, inset 0px -2.12274px 0.530686px #282722, inset -1.32671px 0px 1.06137px rgba(152, 151, 146, 0.6), inset -1.06137px 0px 0px #92918C;
+border-radius: 1.06137px;
+
+
+/* Front Camera */
+
+position: absolute;
+left: 42.36%;
+right: 42.58%;
+top: 6.76%;
+bottom: 90.19%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 79.5px;
+height: 21.91px;
+left: calc(50% - 79.5px/2 - 0.58px);
+top: calc(50% - 21.91px/2 - 300.36px);
+
+background: #0A0A0A;
+border-radius: 10.3966px;
+
+
+/* Lens 1 */
+
+position: absolute;
+width: 22.1px;
+height: 21.91px;
+left: calc(50% - 22.1px/2 + 28.12px);
+top: calc(50% - 21.91px/2 - 300.36px);
+
+background: #0A0A0A;
+
+
+/* Lens */
+
+position: absolute;
+width: 11.86px;
+height: 11.98px;
+left: calc(50% - 11.86px/2 + 28.13px);
+top: calc(50% - 11.98px/2 - 300.2px);
+
+background: conic-gradient(from 180deg at 50% 50%, #000000 0deg, rgba(0, 0, 0, 0) 60deg, rgba(0, 0, 0, 0) 318.75deg, #000000 360deg), conic-gradient(from 180deg at 50% 50%, rgba(0, 0, 0, 0) -65.63deg, rgba(0, 0, 0, 0) 148.13deg, #000000 183.75deg, rgba(0, 0, 0, 0) 294.38deg, rgba(0, 0, 0, 0) 508.13deg), radial-gradient(50% 50% at 50% 50%, #000000 21.35%, #081A32 27.08%, #1F3A58 39.58%, #375F90 51.56%, #274871 71.35%, #0D1528 91.67%);
+opacity: 0.7;
+border: 0.391833px solid #080F21;
+
+
+/* Line */
+
+position: absolute;
+width: 11.98px;
+height: 0px;
+left: calc(50% - 11.98px/2 + 33.63px);
+top: calc(50% - 0px/2 - 306.18px);
+
+opacity: 0.7;
+border: 0.979582px solid #000000;
+transform: rotate(90deg);
+
+
+/* Notch */
+
+position: absolute;
+left: 45.57%;
+right: 45.68%;
+top: 4.43%;
+bottom: 94.94%;
+
+
+
+/* Top Speaker */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 46.22px;
+height: 4.54px;
+left: calc(50% - 46.22px/2 - 0.28px);
+top: calc(50% - 4.54px/2 - 325.82px);
+
+background: #141414;
+border: 0.276671px solid #0E0E0E;
+box-shadow: inset -0.830012px 0px 0px #2A2A2A, inset 0.830012px 0px 0px #2A2A2A, inset 0px 0px 1.38335px 0.276671px #000000;
+border-radius: 8.30012px;

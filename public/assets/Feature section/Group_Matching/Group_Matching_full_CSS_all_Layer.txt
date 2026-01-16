@@ -1,0 +1,149 @@
+/* Mockup Wrapper */
+
+width: 528px;
+height: 720px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Mockup 2 */
+
+position: absolute;
+width: 272px;
+height: 576px;
+left: 256px;
+top: 80px;
+
+background: url(image.png);
+opacity: 0;
+
+
+/* Mockup 1 */
+
+position: absolute;
+width: 272px;
+height: 576px;
+left: 0px;
+top: 64px;
+
+background: url(image.png);
+opacity: 0;
+
+
+/* Mockup */
+
+position: absolute;
+width: 528px;
+height: 720px;
+left: 0px;
+top: 0px;
+
+background: url(image.png);
+
+
+/* image 4 */
+
+position: absolute;
+width: 215px;
+height: 280px;
+right: 11.79px;
+bottom: 68.84px;
+
+background: url(image);
+filter: drop-shadow(0px 0px 24px #5F00DB);
+transform: rotate(5deg);
+
+
+/* image 5 */
+
+position: absolute;
+width: 224px;
+height: 70px;
+left: -2.62px;
+top: 75.37px;
+
+background: url(image);
+filter: drop-shadow(0px 0px 24px #5F00DB);
+transform: rotate(-5deg);
+
+
+/* Message Bubble */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 12px;
+isolation: isolate;
+
+position: absolute;
+width: 376px;
+max-width: 376px;
+height: 80px;
+left: 0px;
+top: 320px;
+
+background: rgba(22, 0, 63, 0.5);
+opacity: 0;
+/* BG Blur - 24 */
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12px;
+
+
+/* Poking because overthinking a message seemed harder 😂 */
+
+width: 344px;
+height: 48px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* “ */
+
+position: absolute;
+width: 29px;
+height: 24px;
+left: -8px;
+top: -8px;
+
+background: #5F00DB;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* image 6 */
+
+position: absolute;
+width: 294px;
+height: 342px;
+left: 234px;
+top: 269px;
+
+background: url(image.png);
+opacity: 0;
+filter: drop-shadow(0px 0px 36px #5F00DB);

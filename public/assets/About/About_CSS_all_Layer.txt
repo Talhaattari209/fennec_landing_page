@@ -1,0 +1,529 @@
+/* Section: About */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 120px 152px;
+gap: 120px;
+
+width: 1920px;
+height: 2474px;
+
+background: linear-gradient(180deg, #111111 10%, rgba(95, 0, 219, 0.25) 50%, #111111 90%);
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 80px;
+
+width: 1616px;
+max-width: 1616px;
+height: 611px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 768px;
+height: 611px;
+
+background: url(image.png);
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Col */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 768px;
+height: 611px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* About Us */
+
+width: 768px;
+height: 38px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We’re redefining how people connect — together. */
+
+width: 768px;
+height: 210px;
+
+/* Desktop/Heading/D2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 110%;
+/* or 70px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Most social apps focus on individuals. But in the real world, friendships, adventures, and unforgettable memories often start with a group. */
+
+width: 768px;
+height: 58px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fennec makes it effortless for groups to find their people, match with the right vibes, and create experiences that actually feel real. */
+
+width: 768px;
+height: 58px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Whether you’re new in town, building your circle, or simply looking to meet like-minded friends, we’re here to make connecting easier, safer, and more fun. */
+
+width: 768px;
+height: 87px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 80px;
+
+width: 1616px;
+max-width: 1616px;
+height: 706px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Col */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 40px;
+
+width: 768px;
+height: 706px;
+
+background: #5F00DB;
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Our Mission */
+
+width: 688px;
+height: 38px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* To create a seamless way for people to form and discover groups that truly align with their interests, identities, and shared goals. */
+
+width: 688px;
+height: 265px;
+
+/* Desktop/Heading/D4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We believe friendship shouldn’t feel like work. Fennec removes the pressure, awkwardness, and randomness from meeting new people — and instead make it a natural extension of your everyday social life. */
+
+width: 688px;
+height: 116px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We’re here to build a space where groups discover groups, where vibes match effortlessly, and where connections evolve into real-life stories. */
+
+width: 688px;
+height: 87px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 768px;
+height: 706px;
+
+background: url(image.png);
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 80px;
+
+width: 1616px;
+max-width: 1616px;
+height: 677px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 768px;
+height: 677px;
+
+background: url(image.png);
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Col */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 40px;
+
+width: 768px;
+height: 677px;
+
+background: #16003F;
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Our Vision */
+
+width: 688px;
+height: 38px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* To be the leading platform where meaningful group connections spark new friendships, communities, and experiences around the world. */
+
+width: 688px;
+height: 265px;
+
+/* Desktop/Heading/D4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We envision a future where nobody feels isolated in a new city, where social circles expand seamlessly, and where meeting new people happens with confidence, trust, and genuine compatibility. */
+
+width: 688px;
+height: 87px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Our vision is to become the global platform that powers real-world group connections — for friendships, events, adventures, creativity, and everything in between. */
+
+width: 688px;
+height: 87px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;

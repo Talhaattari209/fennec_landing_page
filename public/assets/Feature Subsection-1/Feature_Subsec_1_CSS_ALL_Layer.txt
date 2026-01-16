@@ -1,0 +1,268 @@
+/* Section: Problem Statement */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 120px 152px;
+
+width: 1920px;
+height: 1175px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+isolation: isolate;
+
+width: 1616px;
+max-width: 1616px;
+height: 935px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 430px;
+height: 64px;
+left: 798px;
+top: 3px;
+
+background: #5F00DB;
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 318px;
+height: 64px;
+left: 590px;
+top: 73px;
+
+background: #5F00DB;
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Vector 2 */
+
+position: absolute;
+display: none;
+width: 337px;
+height: 3px;
+left: 583px;
+top: 110px;
+
+border: 78px solid #5F00DB;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Vector 1 */
+
+position: absolute;
+display: none;
+width: 434px;
+height: 13px;
+left: 791px;
+top: 30px;
+
+border: 78px solid #5F00DB;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+
+
+/* Traditional dating apps are too individual. Social networks are too broad. */
+
+width: 1616px;
+height: 140px;
+
+/* Desktop/Heading/D2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 110%;
+/* or 70px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+z-index: 4;
+
+
+/* There’s no space for small groups who want to meet new people—whether for friendships, hangouts, trips, or shared hobbies. */
+
+width: 1616px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 1616px;
+height: 686px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Image */
+
+width: 1616px;
+height: 686px;
+
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* image 7 */
+
+position: absolute;
+width: 1614.12px;
+height: 686px;
+left: calc(50% - 1614.12px/2 + 0px);
+top: calc(50% - 686px/2);
+
+background: url(image.png);
+border-radius: 40px;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 80px;
+gap: 40px;
+
+position: absolute;
+width: 1616px;
+height: 686px;
+left: calc(50% - 1616px/2);
+top: calc(50% - 686px/2);
+
+background: rgba(22, 0, 63, 0.5);
+border-radius: 40px;
+
+
+/* Fennec makes expanding your circle natural, effortless, and fun—together. */
+
+width: 1258px;
+height: 158px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 72px;
+line-height: 110%;
+/* or 79px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Vector */
+
+width: 158px;
+height: 158px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;

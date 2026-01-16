@@ -1,0 +1,869 @@
+/* Section: Features */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 120px 152px;
+
+width: 1920px;
+height: 1040px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 80px;
+
+width: 1616px;
+max-width: 1616px;
+height: 800px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Features Content */
+
+width: 1616px;
+height: 800px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Phone */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 40px;
+gap: 40px;
+
+position: absolute;
+width: 1616px;
+height: 800px;
+left: 0px;
+top: 0px;
+
+background: url(8.jpg), #16003F;
+border-radius: 40px;
+
+
+/* Mockup Wrapper */
+
+width: 528px;
+height: 720px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Mockup 2 */
+
+position: absolute;
+width: 272px;
+height: 576px;
+left: 256px;
+top: 80px;
+
+background: url(image.png);
+opacity: 0;
+
+
+/* Mockup 1 */
+
+position: absolute;
+width: 272px;
+height: 576px;
+left: 0px;
+top: 64px;
+
+background: url(image.png);
+opacity: 0;
+
+
+/* Mockup */
+
+position: absolute;
+width: 528px;
+height: 720px;
+left: 0px;
+top: 0px;
+
+background: url(image.png);
+
+
+/* image 4 */
+
+position: absolute;
+width: 215px;
+height: 280px;
+right: 11.79px;
+bottom: 68.84px;
+
+background: url(image.png);
+filter: drop-shadow(0px 0px 24px #5F00DB);
+transform: rotate(5deg);
+
+
+/* image 5 */
+
+position: absolute;
+width: 224px;
+height: 70px;
+left: -2.62px;
+top: 75.37px;
+
+background: url(image.png);
+filter: drop-shadow(0px 0px 24px #5F00DB);
+transform: rotate(-5deg);
+
+
+/* Message Bubble */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 12px;
+isolation: isolate;
+
+position: absolute;
+width: 376px;
+max-width: 376px;
+height: 80px;
+left: 0px;
+top: 320px;
+
+background: rgba(22, 0, 63, 0.5);
+opacity: 0;
+/* BG Blur - 24 */
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12px;
+
+
+/* Poking because overthinking a message seemed harder 😂 */
+
+width: 344px;
+height: 48px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* “ */
+
+position: absolute;
+width: 29px;
+height: 24px;
+left: -8px;
+top: -8px;
+
+background: #5F00DB;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* image 6 */
+
+position: absolute;
+width: 294px;
+height: 342px;
+left: 234px;
+top: 269px;
+
+background: url(image.png);
+opacity: 0;
+filter: drop-shadow(0px 0px 36px #5F00DB);
+
+
+/* Features */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 24px;
+
+position: absolute;
+width: 528px;
+height: 800px;
+left: 0px;
+top: calc(50% - 800px/2);
+
+
+
+/* Feature */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+width: 448px;
+height: 276px;
+
+background: #5F00DB;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group Matching That Actually Feels Natural */
+
+width: 400px;
+height: 76px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Meeting new people doesn’t have to be awkward. Our group-first approach creates an easy, comfortable way to connect with others who share your energy. */
+
+width: 400px;
+height: 128px;
+
+/* Desktop/Body Large */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Feature */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+width: 448px;
+height: 124px;
+
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group Matching That Actually Feels Natural */
+
+width: 400px;
+height: 76px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Meeting new people doesn’t have to be awkward. Our group-first approach creates an easy, comfortable way to connect with others who share your energy. */
+
+display: none;
+width: 480px;
+height: 96px;
+
+/* Desktop/Body Large */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Feature */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+width: 448px;
+height: 124px;
+
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group Matching That Actually Feels Natural */
+
+width: 400px;
+height: 76px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Meeting new people doesn’t have to be awkward. Our group-first approach creates an easy, comfortable way to connect with others who share your energy. */
+
+display: none;
+width: 480px;
+height: 96px;
+
+/* Desktop/Body Large */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Feature */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+width: 448px;
+height: 124px;
+
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group Matching That Actually Feels Natural */
+
+width: 400px;
+height: 76px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Meeting new people doesn’t have to be awkward. Our group-first approach creates an easy, comfortable way to connect with others who share your energy. */
+
+display: none;
+width: 480px;
+height: 96px;
+
+/* Desktop/Body Large */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Features */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 60px;
+gap: 80px;
+
+position: absolute;
+width: 528px;
+height: 384px;
+right: 0px;
+top: calc(50% - 384px/2);
+
+
+
+/* Set 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 408px;
+height: 264px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* check-circle */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.31%;
+bottom: 8.36%;
+
+border: 2px solid #3ADC60;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 8.33%;
+top: 16.67%;
+bottom: 41.62%;
+
+border: 2px solid #3ADC60;
+
+
+/* Match as a group for effortless chemistry */
+
+width: 368px;
+height: 72px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* or 36px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* check-circle */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.31%;
+bottom: 8.36%;
+
+border: 2px solid #3ADC60;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 8.33%;
+top: 16.67%;
+bottom: 41.62%;
+
+border: 2px solid #3ADC60;
+
+
+/* Smart recommendations based on interests and vibe */
+
+width: 368px;
+height: 72px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* or 36px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* check-circle */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.31%;
+bottom: 8.36%;
+
+border: 2px solid #3ADC60;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 8.33%;
+top: 16.67%;
+bottom: 41.62%;
+
+border: 2px solid #3ADC60;
+
+
+/* Safer, more relaxed conversations from the start */
+
+width: 368px;
+height: 72px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* or 36px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Set 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+display: none;
+width: 408px;
+height: 264px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Set 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+display: none;
+width: 408px;
+height: 264px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Set 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+display: none;
+width: 408px;
+height: 228px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;

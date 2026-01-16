@@ -1,0 +1,516 @@
+/* Menu */
+
+position: relative;
+width: 440px;
+height: 956px;
+
+background: #16003F;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 80px;
+
+position: absolute;
+width: 440px;
+height: 956px;
+left: 0px;
+top: 0px;
+
+
+
+/* Nav Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 440px;
+height: 416px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Nav Link */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 32px;
+isolation: isolate;
+
+width: 288px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nav Link */
+
+width: 224px;
+height: 64px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 64px;
+/* identical to box height, or 178% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+height: 4px;
+left: 100px;
+right: 100px;
+bottom: 16px;
+
+background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #FFFFFF 40%, #FFFFFF 60%, rgba(17, 17, 17, 0) 100%);
+opacity: 0;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Nav Link */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 32px;
+isolation: isolate;
+
+width: 212px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nav Link */
+
+width: 148px;
+height: 64px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 64px;
+/* identical to box height, or 178% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+height: 4px;
+left: 100px;
+right: 100px;
+bottom: 16px;
+
+background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #FFFFFF 40%, #FFFFFF 60%, rgba(17, 17, 17, 0) 100%);
+opacity: 0;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Nav Link */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 32px;
+isolation: isolate;
+
+width: 166px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Nav Link */
+
+width: 102px;
+height: 64px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 64px;
+/* identical to box height, or 178% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+height: 4px;
+left: 66px;
+right: 66px;
+bottom: 16px;
+
+background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #FFFFFF 40%, #FFFFFF 60%, rgba(17, 17, 17, 0) 100%);
+opacity: 0;
+border-radius: 4px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Button - Desktop */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 12px;
+
+width: 196px;
+height: 56px;
+
+background: #5F00DB;
+box-shadow: 0px 4px 12px rgba(95, 0, 219, 0.25);
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* arrow-left */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button */
+
+width: 112px;
+height: 24px;
+
+/* Desktop/Button */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* download */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 9.38%;
+right: 9.38%;
+top: 9.38%;
+bottom: 9.38%;
+
+background: #FFFFFF;
+
+
+/* Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 16px;
+gap: 24px;
+
+position: absolute;
+width: 408px;
+height: 68px;
+left: calc(50% - 408px/2);
+top: 16px;
+
+background: rgba(95, 0, 219, 0.25);
+/* BG Blur - 24 */
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 64px;
+
+
+/* Nav Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+display: none;
+width: 333px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button - Desktop */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 12px;
+
+margin: 0 auto;
+display: none;
+width: 196px;
+height: 56px;
+
+background: #5F00DB;
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+margin: 0 auto;
+width: 165px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 36px;
+height: 36px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fennec */
+
+width: 113px;
+height: 34px;
+
+font-family: 'Michroma';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Icon Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 16px;
+
+margin: 0 auto;
+width: 36px;
+height: 36px;
+
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* menu */
+
+width: 36px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 2px;
+height: 0px;
+left: calc(50% - 2px/2);
+top: calc(50% - 0px/2);
+
+opacity: 0;
+border: 2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 24px;
+height: 0px;
+left: calc(50% - 24px/2 + 4px);
+top: calc(50% - 0px/2 - 8px);
+
+border: 2px solid #FFFFFF;
+transform: rotate(45deg);
+
+
+/* Vector */
+
+position: absolute;
+width: 24px;
+height: 0px;
+left: calc(50% - 24px/2 + 4px);
+top: calc(50% - 0px/2 - 7.97px);
+
+border: 2px solid #FFFFFF;
+transform: rotate(-45deg);

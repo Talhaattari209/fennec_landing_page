@@ -1,0 +1,123 @@
+/* Col */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 40px;
+
+width: 768px;
+height: 677px;
+
+background: #16003F;
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Our Vision */
+
+width: 688px;
+height: 38px;
+
+/* Desktop/Heading/H2 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* To be the leading platform where meaningful group connections spark new friendships, communities, and experiences around the world. */
+
+width: 688px;
+height: 265px;
+
+/* Desktop/Heading/D4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We envision a future where nobody feels isolated in a new city, where social circles expand seamlessly, and where meeting new people happens with confidence, trust, and genuine compatibility. */
+
+width: 688px;
+height: 87px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Our vision is to become the global platform that powers real-world group connections — for friendships, events, adventures, creativity, and everything in between. */
+
+width: 688px;
+height: 87px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;

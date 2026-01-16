@@ -2,7 +2,8 @@ import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import About from "@/components/About";
-import { Download, Footer } from "@/components/DownloadFooter";
+import { Download } from "@/components/DownloadFooter";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

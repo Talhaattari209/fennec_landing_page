@@ -1,146 +1,235 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { AppStoreButton, GooglePlayButton } from "@/components/ui/StoreButtons";
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
-// Slider colors - different colored divs as placeholders (extracted from images)
-const SLIDER_COLORS = [
-    { bg: "bg-gradient-to-br from-blue-600 to-blue-800", name: "Blue" },
-    { bg: "bg-gradient-to-br from-purple-600 to-purple-800", name: "Purple" },
-    { bg: "bg-gradient-to-br from-orange-500 to-red-600", name: "Orange" },
-    { bg: "bg-gradient-to-br from-green-600 to-green-800", name: "Green" },
+const SLIDES = [
+    "/assets/hero/Slide=1.png",
+    "/assets/hero/Slide=2.png",
+    "/assets/hero/Slide=3.png",
 ];
+
+const ICONS = {
+    eyes: {
+        desktop: "/assets/hero/Mobile/Image_eye.png",
+        mobile: "/assets/hero/Mobile/Image_eye.png",
+    },
+    handshake: {
+        desktop: "/assets/hero/Mobile/Image_handshake.png",
+        mobile: "/assets/hero/Mobile/Image_handshake.png",
+    },
+    tick: {
+        desktop: "/assets/hero/Mobile/Image_tick.png",
+        mobile: "/assets/hero/Mobile/Image_tick.png",
+    },
+    human: {
+        desktop: "/assets/hero/Mobile/Image_people.png",
+        mobile: "/assets/hero/Mobile/Image_people.png",
+    },
+};
 
 export default function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [direction, setDirection] = useState(1);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+    }, []);
 
     // Auto-slide functionality
     useEffect(() => {
         const interval = setInterval(() => {
-            setDirection(1);
-            setCurrentIndex((prev) => (prev + 1) % SLIDER_COLORS.length);
-        }, 5000); // Change slide every 5 seconds
-
+            setCurrentIndex((prev) => (prev + 1) % SLIDES.length);
+        }, 5000);
         return () => clearInterval(interval);
     }, []);
 
-    // Get the 3 slides to display (current, previous, next)
-    const getVisibleSlides = () => {
-        const prevIndex = (currentIndex - 1 + SLIDER_COLORS.length) % SLIDER_COLORS.length;
-        const nextIndex = (currentIndex + 1) % SLIDER_COLORS.length;
-        return [
-            { color: SLIDER_COLORS[prevIndex], index: prevIndex, position: "left" },
-            { color: SLIDER_COLORS[currentIndex], index: currentIndex, position: "center" },
-            { color: SLIDER_COLORS[nextIndex], index: nextIndex, position: "right" },
-        ];
-    };
+    const getPrevIndex = () => (currentIndex - 1 + SLIDES.length) % SLIDES.length;
+    const getNextIndex = () => (currentIndex + 1) % SLIDES.length;
 
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-16 overflow-hidden bg-[#1a1a1a]">
-            {/* Vertical centered content layout */}
-            <div className="container mx-auto px-4 md:px-8 flex flex-col items-center text-center relative z-10 mb-16">
-                {/* Heading at center */}
-                <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-white max-w-4xl">
-                    Everything you need. <br />
-                    <span className="text-orange-500">All in one place.</span>
-                </h1>
+        <section className="relative w-full h-[956px] md:h-[1194px] flex flex-col items-center overflow-hidden bg-[#111111] select-none">
+            {/* Background Image Layer */}
+            <div
+                className="absolute inset-x-[-2.08%] inset-y-[-3.7%] z-0"
+                style={{
+                    background: `linear-gradient(180deg, rgba(17, 17, 17, 0.5) 0%, #111111 70%), url('/assets/hero/BG.png')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }}
+            />
 
-                {/* Paragraph at center */}
-                <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
-                    Experience the future of digital management with Fenec. Simple, fast, and secure.
+            {/* Scaling 3D Icons */}
+
+            {/* Icon 3: Eyes (Top Left) */}
+            <motion.div
+                className="absolute z-10 w-[120px] h-[120px] flex items-center justify-center cursor-pointer transition-all duration-300"
+                style={{
+                    left: isMobile ? 'calc(50% - 60px - 130px)' : '152px',
+                    top: isMobile ? '120px' : '240px'
+                }}
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            >
+                <div className="absolute w-[100px] h-[100px] opacity-50 blur-[25px]">
+                    <Image src={isMobile ? ICONS.eyes.mobile : ICONS.eyes.desktop} alt="" fill className="object-contain" />
+                </div>
+                <div className="absolute w-[100px] h-[100px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+                    <Image src={isMobile ? ICONS.eyes.mobile : ICONS.eyes.desktop} alt="Eyes Icon" fill className="object-contain" />
+                </div>
+            </motion.div>
+
+            {/* Icon 4: Handshake (Bottom Left on Mobile, Middle Left on Desktop) */}
+            <motion.div
+                className="absolute z-10 w-[120px] h-[120px] flex items-center justify-center cursor-pointer transition-all duration-300"
+                style={{
+                    left: isMobile ? 'calc(50% - 60px - 130px)' : '472px',
+                    top: isMobile ? '590px' : '536px'
+                }}
+                animate={{ scale: [1, 1.08, 1] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            >
+                <div className="absolute w-[100px] h-[100px] opacity-50 blur-[25px]">
+                    <Image src={isMobile ? ICONS.handshake.mobile : ICONS.handshake.desktop} alt="" fill className="object-contain" />
+                </div>
+                <div className="absolute w-[100px] h-[100px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+                    <Image src={isMobile ? ICONS.handshake.mobile : ICONS.handshake.desktop} alt="Handshake Icon" fill className="object-contain" />
+                </div>
+            </motion.div>
+
+            {/* Icon 1: Tick (Top Right) */}
+            <motion.div
+                className="absolute z-10 w-[120px] h-[120px] flex items-center justify-center cursor-pointer transition-all duration-300"
+                style={{
+                    right: isMobile ? 'calc(50% - 60px - 130px)' : '272px',
+                    top: isMobile ? '120px' : '240px'
+                }}
+                animate={{ scale: [1, 1.06, 1] }}
+                transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            >
+                <div className="absolute w-[100px] h-[100px] opacity-50 blur-[25px]">
+                    <Image src={isMobile ? ICONS.tick.mobile : ICONS.tick.desktop} alt="" fill className="object-contain" />
+                </div>
+                <div className="absolute w-[100px] h-[100px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+                    <Image src={isMobile ? ICONS.tick.mobile : ICONS.tick.desktop} alt="Tick Icon" fill className="object-contain" />
+                </div>
+            </motion.div>
+
+            {/* Icon 2: Human (Bottom Right on Mobile, Middle Right on Desktop) */}
+            <motion.div
+                className="absolute z-10 w-[120px] h-[120px] flex items-center justify-center cursor-pointer transition-all duration-300"
+                style={{
+                    right: isMobile ? 'calc(50% - 60px - 130px)' : '352px',
+                    top: isMobile ? '590px' : '536px'
+                }}
+                animate={{ scale: [1, 1.07, 1] }}
+                transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+            >
+                <div className="absolute w-[100px] h-[100px] opacity-50 blur-[25px]">
+                    <Image src={isMobile ? ICONS.human.mobile : ICONS.human.desktop} alt="" fill className="object-contain" />
+                </div>
+                <div className="absolute w-[100px] h-[100px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+                    <Image src={isMobile ? ICONS.human.mobile : ICONS.human.desktop} alt="Human Icon" fill className="object-contain" />
+                </div>
+            </motion.div>
+
+            {/* Content Layer */}
+            <div
+                className="absolute z-20 flex flex-col items-center w-full px-4"
+                style={{
+                    top: isMobile ? '120px' : '240px',
+                    gap: isMobile ? '24px' : '40px'
+                }}
+            >
+                {/* Heading */}
+                <div className="flex flex-col items-center gap-[12px] md:gap-[24px] w-full text-center max-w-[360px] md:max-w-none">
+                    <h1
+                        className="text-white font-bold text-[60px] md:text-[100px] leading-[110%] tracking-[-0.04em]"
+                        style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" }}
+                    >
+                        Meet New People,<br />
+                        Together.
+                    </h1>
+                </div>
+
+                {/* Text */}
+                <p
+                    className="text-white font-normal text-[18px] md:text-[24px] leading-[22px] md:leading-[32px] text-center w-full max-w-[360px] md:max-w-none"
+                    style={{ fontFamily: "'SF Pro Text', sans-serif" }}
+                >
+                    Groups connect with groups. Real conversations. Real chemistry.
                 </p>
 
-                {/* CTA buttons at center */}
-                <div className="flex flex-col sm:flex-row gap-4">
-                    <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8 h-12 text-lg">
-                        Get Started
-                    </Button>
-                    <Button variant="outline" size="lg" className="bg-white/10 hover:bg-white/20 text-white border-white/20 rounded-full px-8 h-12 text-lg backdrop-blur-sm">
-                        Learn More <ArrowRight className="ml-2 w-5 h-5" />
-                    </Button>
+                {/* Links / Download Buttons */}
+                <div className="flex flex-row justify-center items-start gap-[16px] md:gap-[24px] w-full mt-2 md:mt-0">
+                    <AppStoreButton />
+                    <GooglePlayButton />
                 </div>
             </div>
 
-            {/* Horizontal Slider - Slider left/right margin is 4-5px and vertical size is 32px */}
-            <div className="relative w-full">
-                {/* Vertical spacing: 32px (py-8 = 32px) while keeping zero side padding */}
-                <div className="py-8 relative">
-                    {/* Desktop: 3-slide slider with blurred sides */}
-                    <div className="hidden md:flex items-center justify-center h-[260px] relative mb-12 overflow-hidden">
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={currentIndex}
-                                initial={{ opacity: 0, x: direction > 0 ? 80 : -80 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: direction > 0 ? -80 : 80 }}
-                                transition={{ duration: 0.6, ease: "easeInOut" }}
-                                className="flex items-center justify-center gap-4"
-                            >
-                                {getVisibleSlides().map((item, idx) => (
-                                    <motion.div
-                                        key={`${item.index}-${idx}`}
-                                        initial={{ opacity: 0.5, scale: 0.85 }}
-                                        animate={{
-                                            opacity: item.position === "center" ? 1 : 0.5,
-                                            scale: item.position === "center" ? 1.1 : 0.9,
-                                            x: item.position === "left" ? -20 : item.position === "right" ? 20 : 0,
-                                        }}
-                                        transition={{ duration: 0.5, ease: "easeInOut" }}
-                                        className={`relative ${
-                                            item.position === "center"
-                                                ? "w-[460px] h-[220px] z-20"
-                                                : "w-[360px] h-[200px] z-10"
-                                        } rounded-3xl overflow-hidden shadow-2xl`}
-                                    >
-                                        {/* Colored div placeholder instead of image */}
-                                        <div
-                                            className={`w-full h-full ${item.color.bg} flex items-center justify-center ${
-                                                item.position === "center" ? "" : "blur-sm"
-                                            } transition-all duration-500`}
-                                        >
-                                            <span className="text-white/20 text-2xl font-bold">
-                                                {item.color.name}
-                                            </span>
-                                        </div>
-                                        {item.position === "center" && (
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-                                        )}
-                                    </motion.div>
-                                ))}
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
+            {/* Carousel Layer */}
+            <div
+                className="absolute z-20 flex flex-row justify-center items-center gap-[6px] md:gap-[16px] w-full h-[180px] md:h-[480px]"
+                style={{ top: isMobile ? '736px' : '714px' }}
+            >
+                <AnimatePresence mode="popLayout">
+                    {/* Left Image (Previous) */}
+                    <motion.div
+                        key={`prev-${currentIndex}`}
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 0.5, x: 0, filter: isMobile ? 'blur(1.5px)' : 'blur(4px)' }}
+                        exit={{ opacity: 0, x: -50 }}
+                        transition={{ duration: 0.8 }}
+                        className="relative w-[225px] h-[135px] md:w-[600px] md:h-[360px] rounded-[9px] md:rounded-[24px] overflow-hidden flex-shrink-0"
+                    >
+                        <Image
+                            src={SLIDES[getPrevIndex()]}
+                            alt="Previous slide"
+                            fill
+                            className="object-cover"
+                        />
+                    </motion.div>
 
-                    {/* Mobile: Single slide focus */}
-                    <div className="md:hidden relative h-[350px] w-full max-w-md mx-auto mb-12 overflow-hidden">
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={currentIndex}
-                                initial={{ opacity: 0, x: direction > 0 ? 100 : -100 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: direction > 0 ? -100 : 100 }}
-                                transition={{ duration: 0.3 }}
-                                className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl"
-                            >
-                                {/* Colored div placeholder */}
-                                <div className={`w-full h-full ${SLIDER_COLORS[currentIndex].bg} flex items-center justify-center`}>
-                                    <span className="text-white/20 text-xl font-bold">
-                                        {SLIDER_COLORS[currentIndex].name}
-                                    </span>
-                                </div>
-                            </motion.div>
-                        </AnimatePresence>
+                    {/* Center Image (Current) */}
+                    <motion.div
+                        key={`curr-${currentIndex}`}
+                        initial={{ scale: 0.9, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
+                        exit={{ scale: 0.9, opacity: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="relative w-[300px] h-[180px] md:w-[800px] md:h-[480px] rounded-[9px] md:rounded-[24px] overflow-hidden z-30 shadow-2xl flex-shrink-0"
+                    >
+                        <Image
+                            src={SLIDES[currentIndex]}
+                            alt="Current slide"
+                            fill
+                            className="object-cover"
+                        />
+                    </motion.div>
 
-                        {/* Mobile navigation arrows */}
-                        {/* Manual controls removed for auto-only slider */}
-                    </div>
-
-                    {/* Dots indicator - positioned below slider */}
-                    {/* Indicators removed for minimalist automatic slider */}
-                </div>
+                    {/* Right Image (Next) */}
+                    <motion.div
+                        key={`next-${currentIndex}`}
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 0.5, x: 0, filter: isMobile ? 'blur(1.5px)' : 'blur(4px)' }}
+                        exit={{ opacity: 0, x: 50 }}
+                        transition={{ duration: 0.8 }}
+                        className="relative w-[225px] h-[135px] md:w-[600px] md:h-[360px] rounded-[9px] md:rounded-[24px] overflow-hidden flex-shrink-0"
+                    >
+                        <Image
+                            src={SLIDES[getNextIndex()]}
+                            alt="Next slide"
+                            fill
+                            className="object-cover"
+                        />
+                    </motion.div>
+                </AnimatePresence>
             </div>
         </section>
     );

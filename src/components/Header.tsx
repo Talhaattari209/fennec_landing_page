@@ -2,14 +2,16 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-    { label: "How it Works", href: "#how-it-works" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "How It Works", href: "#how-it-works", width: "144px", mobileWidth: "288px" },
+    { label: "Features", href: "#features", width: "106px", mobileWidth: "212px" },
+    { label: "About", href: "#about", width: "83px", mobileWidth: "166px" },
 ];
 
 export default function Header() {
@@ -24,95 +26,176 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Prevent scrolling when mobile menu is open
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+    }, [isMobileMenuOpen]);
+
     return (
-        <header
-            className={cn(
-                "fixed top-4 md:top-2 left-50 right-50 z-50 transition-all duration-300",
-                "mx-4 rounded-full",
-                isScrolled
-                    ? "bg-[#9e83cf]/95 backdrop-blur-md shadow-sm py-4"
-                    : "bg-transparent py-6"
-            )}
-        >
-            <div className={cn(
-                "container mx-auto px-4 md:px-8 flex items-center transition-all duration-300",
-                "relative"
-            )}>
-                {/* Navigation Links - Left */}
-                <nav className="hidden md:flex items-center gap-8 flex-1">
-                    {NAV_LINKS.map((link) => (
-                        <Link
-                            key={link.label}
-                            href={link.href}
+        <>
+            <header className="fixed top-4 md:top-8 left-0 right-0 z-50 flex justify-center px-4 md:px-6">
+                <nav className={cn(
+                    "w-full transition-all duration-300 relative flex items-center justify-between",
+                    // Desktop Styles
+                    "md:max-w-[1616px] md:h-[88px] md:px-4 md:bg-[#5F00DB]/25 md:backdrop-blur-[12px] md:border md:border-white/10 md:rounded-[64px]",
+                    // Mobile Styles
+                    "h-[68px] px-[16px] bg-[#5F00DB]/25 backdrop-blur-[12px] rounded-[64px] border border-white/5 max-w-[408px]",
+                    isScrolled && "md:bg-[#5F00DB]/40"
+                )}>
+                    {/* Logo - Center on Desktop, Left on Mobile */}
+                    <Link
+                        href="/"
+                        className="flex items-center gap-[12px] h-[48px] order-1 md:absolute md:left-1/2 md:-translate-x-1/2"
+                    >
+                        <div className="relative w-[48px] h-[48px]">
+                            <Image
+                                src="/assets/Header_Section/Vector_logo.png"
+                                alt="Fennec Logo"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                        <span className="font-michroma text-[24px] leading-[34px] text-white">
+                            Fennec
+                        </span>
+                    </Link>
+
+                    {/* Nav Links - Desktop Only */}
+                    <div className="hidden md:flex items-center h-full order-1">
+                        <div className="flex items-center">
+                            {NAV_LINKS.map((link) => (
+                                <Link
+                                    key={link.label}
+                                    href={link.href}
+                                    className="group relative flex flex-col items-center justify-center h-[48px] px-4 transition-colors"
+                                    style={{ width: link.width }}
+                                >
+                                    <span className="text-[18px] leading-[32px] text-white font-['SF_Pro_Text',sans-serif] flex items-center">
+                                        {link.label}
+                                    </span>
+                                    {/* Hover Indicator (Rectangle 3) */}
+                                    <div className="absolute bottom-[8px] left-[33px] right-[33px] h-[2px] bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[2px]" />
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Desktop Download Button / Mobile Menu Toggle */}
+                    <div className="flex items-center order-2">
+                        {/* Desktop Button */}
+                        <Button
                             className={cn(
-                                "font-medium transition-colors",
-                                isScrolled 
-                                    ? "text-gray-300 hover:text-white" 
-                                    : "text-white/80 hover:text-white"
+                                "hidden md:flex w-[196px] h-[56px] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[52px] px-[24px] items-center justify-center gap-[12px] transition-all",
+                                "shadow-[0px_4px_12px_rgba(95,0,219,0.25)]"
                             )}
                         >
-                            {link.label}
-                        </Link>
-                    ))}
-                </nav>
+                            <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[16px] leading-[24px]">
+                                Download App
+                            </span>
+                            <Download className="w-[24px] h-[24px]" />
+                        </Button>
 
-                {/* Logo - Center */}
-                <Link href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2">
-                    <span className={cn(
-                        "text-2xl font-bold transition-colors",
-                        isScrolled 
-                            ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-600"
-                            : "text-white"
-                    )}>
-                        Fenec
-                    </span>
-                </Link>
-
-                {/* Download Button - Right */}
-                <div className="hidden md:flex items-center justify-end flex-1">
-                    <Button 
-                        className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-6"
-                        onClick={() => {
-                            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
-                    >
-                        Download App
-                    </Button>
-                </div>
-
-                {/* Mobile Toggle */}
-                <button
-                    className="md:hidden p-2 text-white"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                >
-                    {isMobileMenuOpen ? <X /> : <Menu />}
-                </button>
-            </div>
-
-            {/* Mobile Menu */}
-            {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 right-0 bg-[#1a1a1a] border-t border-gray-800 p-4 shadow-lg flex flex-col gap-4">
-                    {NAV_LINKS.map((link) => (
-                        <Link
-                            key={link.label}
-                            href={link.href}
-                            className="text-white/80 hover:text-white font-medium py-2"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                        {/* Mobile Menu Icon Button */}
+                        <button
+                            className="md:hidden w-[36px] h-[36px] flex items-center justify-center text-white rounded-full transition-colors"
+                            onClick={() => setIsMobileMenuOpen(true)}
                         >
-                            {link.label}
-                        </Link>
-                    ))}
-                    <Button 
-                        className="bg-orange-500 hover:bg-orange-600 text-white w-full"
-                        onClick={() => {
-                            setIsMobileMenuOpen(false);
-                            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
+                            <Menu className="w-[36px] h-[36px]" />
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+            {/* Mobile Menu Overlay */}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="fixed inset-0 z-[60] bg-[#16003F] flex flex-col items-center"
                     >
-                        Download App
-                    </Button>
-                </div>
-            )}
-        </header>
+                        {/* Menu Header Area */}
+                        <div className="w-full flex justify-center px-4 mt-4">
+                            <div className="w-full max-w-[408px] h-[68px] flex items-center justify-between px-[16px] bg-[#5F00DB]/25 backdrop-blur-[12px] rounded-[64px] border border-white/5">
+                                <div className="flex items-center gap-[12px] h-[48px]">
+                                    <div className="relative w-[48px] h-[48px]">
+                                        <Image
+                                            src="/assets/Header_Section/Vector_logo.png"
+                                            alt="Fennec Logo"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                    <span className="font-michroma text-[24px] leading-[34px] text-white">
+                                        Fennec
+                                    </span>
+                                </div>
+                                <button
+                                    className="w-[36px] h-[36px] flex items-center justify-center text-white"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    <X className="w-[36px] h-[36px]" />
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Menu Content */}
+                        <div className="flex-1 flex flex-col items-center justify-center gap-[80px] w-full">
+                            {/* Nav Links */}
+                            <nav className="flex flex-col items-center gap-[24px] w-full">
+                                {NAV_LINKS.map((link) => (
+                                    <motion.div
+                                        key={link.label}
+                                        initial={{ opacity: 0, scale: 0.9 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        transition={{ delay: 0.1 }}
+                                        className="w-full flex justify-center"
+                                    >
+                                        <Link
+                                            href={link.href}
+                                            className="group relative flex flex-col items-center justify-center h-[96px] transition-all hover:scale-105"
+                                            style={{ width: link.mobileWidth }}
+                                            onClick={() => setIsMobileMenuOpen(false)}
+                                        >
+                                            <span className="text-[36px] leading-[64px] text-white font-['SF_Pro_Text',sans-serif] whitespace-nowrap">
+                                                {link.label}
+                                            </span>
+                                            {/* Rectangle 3 line 94+ */}
+                                            <div className="absolute bottom-[16px] left-[15%] right-[15%] h-[4px] bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-active:opacity-100 transition-opacity rounded-[4px]" />
+                                        </Link>
+                                    </motion.div>
+                                ))}
+                            </nav>
+
+                            {/* Download Button */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3 }}
+                            >
+                                <Button
+                                    className={cn(
+                                        "w-[196px] h-[56px] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[52px] px-[24px] flex items-center justify-center gap-[12px] transition-all",
+                                        "shadow-[0px_4px_12px_rgba(95,0,219,0.25)]"
+                                    )}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[16px] leading-[24px]">
+                                        Download App
+                                    </span>
+                                    <Download className="w-[24px] h-[24px]" />
+                                </Button>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </>
     );
 }
