@@ -58,9 +58,9 @@ export default function Features() {
     const activeFeature = FEATURES.find(f => f.id === activeId) || FEATURES[0];
 
     return (
-        <section id="features" className="w-full bg-[#11011e] py-[120px] flex flex-col items-center">
-            {/* Main Features Container - 1616px wide */}
-            <div className="w-full max-w-[1616px] h-[800px] relative rounded-[40px] overflow-hidden">
+        <section id="features" className="w-full bg-[#11011e] py-[80px] flex flex-col items-center">
+            {/* Main Features Container - 1083px wide */}
+            <div className="w-full max-w-[1083px] h-[536px] relative rounded-[27px] overflow-hidden">
                 {/* Background Gradient & Pattern */}
                 <div
                     className="absolute inset-0 bg-[#16003F]"
@@ -73,10 +73,10 @@ export default function Features() {
                 </div>
 
                 {/* Content Layout: 3 Columns */}
-                <div className="relative z-10 w-full h-full flex items-center px-10 md:px-[40px]">
+                <div className="relative z-10 w-full h-full flex items-center px-7 md:px-[27px]">
 
-                    {/* 1. Left Column: Stacked Cards (528px area, 448px cards) */}
-                    <div className="w-[528px] flex flex-col gap-6 items-start">
+                    {/* 1. Left Column: Stacked Cards (354px area, 300px cards) */}
+                    <div className="w-[354px] flex flex-col gap-4 items-start">
                         {FEATURES.map((feature) => {
                             const isActive = activeId === feature.id;
                             return (
@@ -84,14 +84,14 @@ export default function Features() {
                                     key={feature.id}
                                     onClick={() => setActiveId(feature.id)}
                                     className={cn(
-                                        "w-[448px] text-left transition-all duration-500 rounded-[24px] p-6 flex flex-col justify-start gap-6 overflow-hidden",
+                                        "w-[300px] text-left transition-all duration-500 rounded-[16px] p-4 flex flex-col justify-start gap-4 overflow-hidden",
                                         isActive
-                                            ? "bg-[#5F00DB] h-[276px]"
-                                            : "h-[124px] bg-white/5 hover:bg-white/10"
+                                            ? "bg-[#5F00DB] h-[185px]"
+                                            : "h-[83px] bg-white/5 hover:bg-white/10"
                                     )}
                                 >
                                     <h3 className={cn(
-                                        "text-[32px] font-bold leading-[120%] tracking-[-0.04em] transition-colors duration-300",
+                                        "text-[21px] font-bold leading-[120%] tracking-[-0.04em] transition-colors duration-300",
                                         "text-white"
                                     )}>
                                         {feature.title}
@@ -104,7 +104,7 @@ export default function Features() {
                                                 animate={{ height: "auto", opacity: 1 }}
                                                 exit={{ height: 0, opacity: 0 }}
                                                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                                                className="text-white text-[18px] leading-[32px] font-normal"
+                                                className="text-white text-[12px] leading-[21px] font-normal"
                                             >
                                                 {feature.description}
                                             </motion.p>
@@ -115,9 +115,9 @@ export default function Features() {
                         })}
                     </div>
 
-                    {/* 2. Middle Column: Phone Mockup (528px width, 720px height) */}
+                    {/* 2. Middle Column: Phone Mockup (354px width, 482px height) */}
                     <div className="flex-1 flex justify-center items-center h-full">
-                        <div className="relative w-[528px] h-[720px]">
+                        <div className="relative w-[354px] h-[482px]">
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={activeId}
@@ -139,8 +139,8 @@ export default function Features() {
                         </div>
                     </div>
 
-                    {/* 3. Right Column: Points (528px area) */}
-                    <div className="w-[528px] flex flex-col gap-[24px] pl-[60px]">
+                    {/* 3. Right Column: Points (354px area) */}
+                    <div className="w-[354px] flex flex-col gap-[16px] pl-[40px]">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={activeId}
@@ -151,11 +151,11 @@ export default function Features() {
                                 className="flex flex-col gap-[24px]"
                             >
                                 {activeFeature.points.map((point, index) => (
-                                    <div key={index} className="flex items-center gap-4 h-[72px]">
-                                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#3ADC60]/10 border border-[#3ADC60]/20">
-                                            <Check className="w-6 h-6 text-[#3ADC60]" />
+                                    <div key={index} className="flex items-center gap-[11px] h-[48px]">
+                                        <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#3ADC60]/10 border border-[#3ADC60]/20">
+                                            <Check className="w-4 h-4 text-[#3ADC60]" />
                                         </div>
-                                        <p className="text-white text-[24px] font-normal leading-[150%] flex-1">
+                                        <p className="text-white text-[16px] font-normal leading-[150%] flex-1">
                                             {point}
                                         </p>
                                     </div>
@@ -168,24 +168,24 @@ export default function Features() {
             </div>
 
             {/* Subsection 1: Problem Statement (formerly Subsection 2) */}
-            <div className="w-full flex flex-col items-center py-[120px] px-[20px] md:px-[152px]">
-                <div className="w-full max-w-[1616px] flex flex-col items-start gap-[40px]">
+            <div className="w-full flex flex-col items-center py-[80px] px-[13px] md:px-[102px]">
+                <div className="w-full max-w-[1083px] flex flex-col items-start gap-[27px]">
 
                     {/* Heading Section */}
                     <div className="w-full relative flex flex-col items-start">
-                        <h2 className="text-white text-4xl md:text-[64px] font-bold leading-[110%] tracking-[-0.04em] text-left">
-                            Traditional dating apps are <br className="md:hidden" /><span className="inline-block bg-[#5F00DB] px-5 py-1 rounded-[16px] my-1 md:my-0">too individual.</span> <br />
-                            Social networks are <br className="md:hidden" /><span className="inline-block bg-[#5F00DB] px-5 py-1 rounded-[16px] my-1 md:my-0">too broad.</span>
+                        <h2 className="text-white text-2xl md:text-[43px] font-bold leading-[110%] tracking-[-0.04em] text-left">
+                            Traditional dating apps are <br className="md:hidden" /><span className="inline-block bg-[#5F00DB] px-3.5 py-0.5 rounded-[11px] my-1 md:my-0">too individual.</span> <br />
+                            Social networks are <br className="md:hidden" /><span className="inline-block bg-[#5F00DB] px-3.5 py-0.5 rounded-[11px] my-1 md:my-0">too broad.</span>
                         </h2>
                     </div>
 
                     {/* Description */}
-                    <p className="text-[#CCCCCC] text-lg md:text-[24px] font-normal leading-[120%] tracking-[-0.04em] text-left max-w-[1616px]">
+                    <p className="text-[#CCCCCC] text-xs md:text-[16px] font-normal leading-[120%] tracking-[-0.04em] text-left max-w-[1083px]">
                         There's no space for small groups who want to meet new people—whether for friendships, hangouts, trips, or shared hobbies.
                     </p>
 
                     {/* Lower Image Card */}
-                    <div className="relative w-full h-[400px] md:h-[686px] rounded-[40px] overflow-hidden mt-[40px] group shadow-2xl">
+                    <div className="relative w-full h-[268px] md:h-[460px] rounded-[27px] overflow-hidden mt-[27px] group shadow-2xl">
                         <Image
                             src="/assets/Feature Subsection-1/lottie_file.png"
                             alt="Group Connection"
@@ -193,13 +193,13 @@ export default function Features() {
                             className="object-cover transition-transform duration-1000 group-hover:scale-105"
                         />
                         {/* Overlay with Content */}
-                        <div className="absolute inset-0 bg-[#16003F]/50 p-8 md:p-[80px] flex flex-col md:flex-row items-center md:items-end justify-between gap-10 md:gap-[40px]">
-                            <h3 className="text-white text-3xl md:text-[72px] font-normal leading-[110%] tracking-[-0.04em] flex-1 text-center md:text-left">
+                        <div className="absolute inset-0 bg-[#16003F]/50 p-5 md:p-[54px] flex flex-col md:flex-row items-center md:items-end justify-between gap-7 md:gap-[27px]">
+                            <h3 className="text-white text-2xl md:text-[48px] font-normal leading-[110%] tracking-[-0.04em] flex-1 text-center md:text-left">
                                 Fennec makes expanding your circle natural, effortless, and fun—together.
                             </h3>
 
                             {/* Logo / Pattern */}
-                            <div className="w-24 h-24 md:w-[158px] md:h-[158px] relative flex-shrink-0">
+                            <div className="w-16 h-16 md:w-[106px] md:h-[106px] relative flex-shrink-0">
                                 <Image
                                     src="/assets/Feature Subsection-1/Vector_logo.png"
                                     alt="Fennec Pattern"
@@ -213,40 +213,40 @@ export default function Features() {
             </div>
 
             {/* Subsection 3: Statistics Grid */}
-            <div className="mt-[120px] grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1550px] mx-auto w-full">
-                <div className="bg-[#2D1B69] rounded-[60px] p-20 flex flex-col justify-center items-center text-center min-h-[700px] border border-white/5 relative overflow-hidden group">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/10 blur-[120px] rounded-full" />
+            <div className="mt-[80px] grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-[1038px] mx-auto w-full">
+                <div className="bg-[#2D1B69] rounded-[40px] p-[54px] flex flex-col justify-center items-center text-center min-h-[469px] border border-white/5 relative overflow-hidden group">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[402px] h-[402px] bg-purple-500/10 blur-[80px] rounded-full" />
                     <motion.h2
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-[140px] md:text-[220px] font-black text-white leading-none tracking-tight group-hover:scale-105 transition-transform duration-700"
+                        className="text-[94px] md:text-[147px] font-black text-white leading-none tracking-tight group-hover:scale-105 transition-transform duration-700"
                     >
                         94%
                     </motion.h2>
-                    <p className="text-white/90 text-3xl md:text-5xl font-bold mt-12 max-w-xl leading-tight">
+                    <p className="text-white/90 text-2xl md:text-3xl font-bold mt-8 max-w-xl leading-tight">
                         People Feel More Comfortable Meeting New People via Group Matching
                     </p>
                 </div>
 
-                <div className="flex flex-col gap-8">
-                    <div className="bg-[#5F00DB] rounded-[60px] p-16 flex flex-col justify-center items-center text-center flex-1 border border-white/5 shadow-2xl hover:scale-[1.02] transition-transform duration-500">
-                        <h2 className="text-8xl md:text-[140px] font-black text-white leading-none">78%</h2>
-                        <p className="text-white/90 text-2xl md:text-3xl font-bold mt-8">
+                <div className="flex flex-col gap-5">
+                    <div className="bg-[#5F00DB] rounded-[40px] p-[43px] flex flex-col justify-center items-center text-center flex-1 border border-white/5 shadow-2xl hover:scale-[1.02] transition-transform duration-500">
+                        <h2 className="text-6xl md:text-[94px] font-black text-white leading-none">78%</h2>
+                        <p className="text-white/90 text-xl md:text-2xl font-bold mt-5">
                             of Users Report Better First Interactions in Groups
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="bg-[#1a0035] rounded-[60px] p-12 flex flex-col justify-center items-center text-center border border-white/5 shadow-xl hover:scale-[1.02] transition-transform duration-500">
-                            <h2 className="text-6xl md:text-8xl font-black text-white">1.2M+</h2>
-                            <p className="text-white/70 text-xl font-bold mt-6 uppercase tracking-wider">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div className="bg-[#1a0035] rounded-[40px] p-[32px] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl hover:scale-[1.02] transition-transform duration-500">
+                            <h2 className="text-4xl md:text-6xl font-black text-white">1.2M+</h2>
+                            <p className="text-white/70 text-sm font-bold mt-4 uppercase tracking-wider">
                                 Conversations Started
                             </p>
                         </div>
-                        <div className="bg-[#1a0035] rounded-[60px] p-12 flex flex-col justify-center items-center text-center border border-white/5 shadow-xl hover:scale-[1.02] transition-transform duration-500">
-                            <h2 className="text-6xl md:text-8xl font-black text-white">350K+</h2>
-                            <p className="text-white/70 text-xl font-bold mt-6 uppercase tracking-wider">
+                        <div className="bg-[#1a0035] rounded-[40px] p-[32px] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl hover:scale-[1.02] transition-transform duration-500">
+                            <h2 className="text-4xl md:text-6xl font-black text-white">350K+</h2>
+                            <p className="text-white/70 text-sm font-bold mt-4 uppercase tracking-wider">
                                 Groups Connected
                             </p>
                         </div>
@@ -313,41 +313,41 @@ function TestimonialsSlider() {
     const prev = () => setIndex((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
 
     return (
-        <section className="w-full h-[774px] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[120px] px-[152px]">
-            {/* Outer Container - 1616px */}
-            <div className="w-full max-w-[1616px] h-[534px] flex flex-col items-center gap-[40px] relative isolation-isolate">
+        <section className="w-full h-[519px] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[80px] px-[102px]">
+            {/* Outer Container - 1083px */}
+            <div className="w-full max-w-[1083px] h-[358px] flex flex-col items-center gap-[27px] relative isolation-isolate">
 
                 {/* Huge Quotation Mark Decor */}
                 <div
-                    className="absolute right-[-20px] top-[-20px] w-[188px] h-[136px] flex items-center justify-center select-none pointer-events-none z-0"
+                    className="absolute right-[-13px] top-[-13px] w-[126px] h-[91px] flex items-center justify-center select-none pointer-events-none z-0"
                     style={{ opacity: 0.2 }}
                 >
-                    <span className="text-[200px] text-white font-serif leading-none">”</span>
+                    <span className="text-[134px] text-white font-serif leading-none">”</span>
                 </div>
 
                 {/* Slides Container */}
-                <div className="w-full h-[374px] flex flex-col items-start overflow-hidden relative z-10">
+                <div className="w-full h-[251px] flex flex-col items-start overflow-hidden relative z-10">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0, x: 33 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -50 }}
+                            exit={{ opacity: 0, x: -33 }}
                             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                            className="w-full h-full flex flex-col items-start gap-[40px]"
+                            className="w-full h-full flex flex-col items-start gap-[27px]"
                         >
                             {/* Avatars Row */}
-                            <div className="flex flex-row items-start gap-[16px] w-[432px] h-[96px]">
+                            <div className="flex flex-row items-start gap-[11px] w-[289px] h-[64px]">
                                 {TESTIMONIALS[index].avatars.map((src, i) => (
                                     <div
                                         key={i}
-                                        className="w-[96px] h-[96px] rounded-full overflow-hidden flex-shrink-0 bg-[#5F00DB]"
+                                        className="w-[64px] h-[64px] rounded-full overflow-hidden flex-shrink-0 bg-[#5F00DB]"
                                     >
                                         <Image
                                             src={src}
                                             alt="User"
-                                            width={96}
-                                            height={96}
+                                            width={64}
+                                            height={64}
                                             className="object-cover w-full h-full"
                                         />
                                     </div>
@@ -356,10 +356,10 @@ function TestimonialsSlider() {
 
                             {/* Testimonial Text */}
                             <h2
-                                className="w-full h-[158px] flex items-center text-white font-normal"
+                                className="w-full h-[106px] flex items-center text-white font-normal"
                                 style={{
                                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
-                                    fontSize: '72px',
+                                    fontSize: '48px',
                                     lineHeight: '110%',
                                     letterSpacing: '-0.04em'
                                 }}
@@ -369,10 +369,10 @@ function TestimonialsSlider() {
 
                             {/* Author Name */}
                             <p
-                                className="w-full h-[40px] flex items-center text-white font-normal"
+                                className="w-full h-[27px] flex items-center text-white font-normal"
                                 style={{
                                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
-                                    fontSize: '36px',
+                                    fontSize: '24px',
                                     lineHeight: '110%',
                                     letterSpacing: '-0.04em'
                                 }}
@@ -385,19 +385,19 @@ function TestimonialsSlider() {
 
                 {/* Navigator / Controls */}
                 <div
-                    className="absolute right-0 bottom-0 flex flex-row items-center gap-[24px] w-[120px] h-[48px]"
+                    className="absolute right-0 bottom-0 flex flex-row items-center gap-[16px] w-[80px] h-[32px]"
                 >
                     <button
                         onClick={prev}
-                        className="w-[48px] h-[48px] flex items-center justify-center bg-[#5F00DB] rounded-[52px] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)]"
+                        className="w-[32px] h-[32px] flex items-center justify-center bg-[#5F00DB] rounded-[35px] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_3px_rgba(95,0,219,0.25),0px_3px_8px_rgba(95,0,219,0.25)]"
                     >
-                        <ChevronLeft className="w-6 h-6 text-white" />
+                        <ChevronLeft className="w-4 h-4 text-white" />
                     </button>
                     <button
                         onClick={next}
-                        className="w-[48px] h-[48px] flex items-center justify-center bg-[#5F00DB] rounded-[52px] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)]"
+                        className="w-[32px] h-[32px] flex items-center justify-center bg-[#5F00DB] rounded-[35px] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_3px_rgba(95,0,219,0.25),0px_3px_8px_rgba(95,0,219,0.25)]"
                     >
-                        <ChevronRight className="w-6 h-6 text-white" />
+                        <ChevronRight className="w-4 h-4 text-white" />
                     </button>
                 </div>
             </div>

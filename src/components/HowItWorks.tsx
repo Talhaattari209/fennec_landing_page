@@ -22,8 +22,8 @@ const CARDS = [
         image: "/assets/How to work Section/StickyWrapper_4.png",
         left: "0px",
         rotate: -5,
-        textHeight: "214px",
-        textOffset: "16.21px",
+        textHeight: "143px",
+        textOffset: "10.86px",
         isStatic: true
     },
     {
@@ -31,33 +31,33 @@ const CARDS = [
         title: "Match With Other Groups",
         description: "Swipe through groups that share your vibe, interests, and intentions.",
         image: "/assets/How to work Section/StickyWrapper_3.png",
-        left: "406px",
+        left: "272px",
         rotate: 5,
-        textHeight: "252px",
+        textHeight: "169px",
         textOffset: "0px",
-        triggerTop: 600
+        triggerTop: 402
     },
     {
         id: 3,
         title: "Start the Conversation",
         description: "Chat, send photos, poke someone you like, or jump on voice/video calls when you're ready.",
         image: "/assets/How to work Section/StickyWrapper_2.png",
-        left: "812px",
+        left: "544px",
         rotate: -5,
-        textHeight: "246px",
-        textOffset: "13.42px",
-        triggerTop: 1200
+        textHeight: "165px",
+        textOffset: "8.99px",
+        triggerTop: 804
     },
     {
         id: 4,
         title: "Meet IRL",
         description: "Take your connections from screen to real life—with the comfort of people you trust.",
         image: "/assets/How to work Section/StickyWrapper_1.png",
-        right: "-2px",
+        right: "-1px",
         rotate: 5,
-        textHeight: "246px",
+        textHeight: "165px",
         textOffset: "0px",
-        triggerTop: 1800
+        triggerTop: 1206
     },
 ];
 
@@ -72,23 +72,23 @@ export default function HowItWorks() {
         <section
             id="how-it-works"
             ref={sectionRef}
-            className="relative w-full bg-[#111111] h-[3103px]" // Total height from CSS
+            className="relative w-full bg-[#111111] h-[2079px]" // Total height from CSS
         >
             {/* Sticky Viewport */}
             <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden">
 
-                {/* Main 1616px Container */}
-                <div className="relative w-full max-w-[1616px] h-full flex items-center justify-center">
+                {/* Main 1083px Container */}
+                <div className="relative w-full max-w-[1083px] h-full flex items-center justify-center">
 
                     {/* Background Heading: Effortless Group Matching Starts Here */}
-                    <div className="absolute top-[150px] w-full text-center pointer-events-none z-0">
-                        <h2 className="text-[140px] font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap">
+                    <div className="absolute top-[120px] w-full text-center pointer-events-none z-0">
+                        <h2 className="text-[80px] font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap">
                             Effortless Group <br /> Matching Starts Here
                         </h2>
                     </div>
 
                     {/* Cards Row Container */}
-                    <div className="relative w-full h-[400px] mt-[450px]">
+                    <div className="relative w-full h-[268px] mt-[320px]">
                         {CARDS.map((card, index) => (
                             <CardItem
                                 key={card.id}
@@ -149,14 +149,14 @@ function CardItem({ card, index, scrollYProgress }: { card: any; index: number; 
                 top: 0,
                 y: finalY,
                 opacity: displayOpacity,
-                width: "400px",
-                height: "400px",
+                width: "268px",
+                height: "268px",
             }}
             className="z-10"
         >
-            {/* Card Wrapper (400x400) */}
+            {/* Card Wrapper (268x268) */}
             <motion.div
-                className="relative w-[400px] h-[400px] bg-[#5F00DB] border-[5px] border-[#111111] rounded-[24px] overflow-hidden group shadow-2xl"
+                className="relative w-[268px] h-[268px] bg-[#5F00DB] border-[3px] border-[#111111] rounded-[16px] overflow-hidden group shadow-2xl"
                 style={{
                     rotate: `${card.rotate}deg`,
                 }}
@@ -164,18 +164,18 @@ function CardItem({ card, index, scrollYProgress }: { card: any; index: number; 
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
                 {/* Image Layer */}
-                <div className="absolute inset-x-[-73.72px] top-[-6.45px] bottom-[6.45px] z-0">
+                <div className="absolute inset-x-[-49.39px] top-[-4.32px] bottom-[4.32px] z-0">
                     <Image
                         src={card.image}
                         alt={card.title}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
-                        sizes="400px"
+                        sizes="268px"
                     />
                 </div>
 
                 {/* Logo background asset (based on user hint) */}
-                <div className="absolute top-[40px] right-[40px] w-[50px] h-[50px] z-1 opacity-40 pointer-events-none group-hover:scale-110 transition-transform duration-500">
+                <div className="absolute top-[27px] right-[27px] w-[33px] h-[33px] z-1 opacity-40 pointer-events-none group-hover:scale-110 transition-transform duration-500">
                     <Image
                         src="/assets/Header_Section/Vector_logo.png"
                         alt=""
@@ -186,24 +186,24 @@ function CardItem({ card, index, scrollYProgress }: { card: any; index: number; 
 
                 {/* Text Layer (Bottom UI) */}
                 <div
-                    className="absolute bottom-0 left-0 right-0 p-[24px] pb-[32px] z-10 flex flex-col justify-end transition-all duration-500 transform translate-y-4 group-hover:translate-y-0"
+                    className="absolute bottom-0 left-0 right-0 p-[16px] pb-[21px] z-10 flex flex-col justify-end transition-all duration-500 transform translate-y-3 group-hover:translate-y-0"
                     style={{
                         height: card.textHeight,
                         background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 63, 0.75) 100%)",
-                        backdropFilter: "blur(4px)",
-                        WebkitBackdropFilter: "blur(4px)"
+                        backdropFilter: "blur(3px)",
+                        WebkitBackdropFilter: "blur(3px)"
                     }}
                 >
                     <div
-                        className="flex flex-col gap-[16px]"
+                        className="flex flex-col gap-[11px]"
                         style={{
                             paddingLeft: card.textOffset !== "0px" ? card.textOffset : "0px"
                         }}
                     >
-                        <h3 className="text-[32px] font-bold leading-[120%] tracking-[-0.04em] text-white">
+                        <h3 className="text-[21px] font-bold leading-[120%] tracking-[-0.04em] text-white">
                             {card.title}
                         </h3>
-                        <p className="text-[18px] font-normal leading-relaxed text-white/95">
+                        <p className="text-[12px] font-normal leading-relaxed text-white/95">
                             {card.description}
                         </p>
                     </div>
