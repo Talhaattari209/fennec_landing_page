@@ -58,26 +58,25 @@ export default function Features() {
     const activeFeature = FEATURES.find(f => f.id === activeId) || FEATURES[0];
 
     return (
-        <section id="features" className="w-full bg-[#111111] py-[5.5vw] flex flex-col items-center">
-            {/* Main Features Container - 1083px wide */}
-            <div className="w-full max-w-[75.2vw] h-[37.2vw] relative rounded-[1.8vw] overflow-hidden">
+        <section id="features" className="w-full bg-[#111111] py-[40px] md:py-[5.5vw] flex flex-col items-center">
+            {/* Desktop Features Container - 1083px wide (Hidden on Mobile) */}
+            <div className="hidden lg:flex w-full max-w-[75.2vw] h-[37.2vw] relative rounded-[1.8vw] overflow-hidden">
                 {/* Background Gradient & Pattern */}
                 <div
                     className="absolute inset-0 bg-[#111111]"
                     style={{
-                        background: 'linear-gradient(135deg, rgba(22, 0, 63, 0.9) 0%, rgba(8, 0, 24, 0.9) 100%), url("/assets/Hero_Background.PNG")',
+                        background: 'linear-gradient(135deg, rgba(22, 0, 63, 0.9) 0%, rgba(8, 0, 24, 0.9) 100%), url("/assets/Feature section/mobile_version/Phone_BGG.jpg")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }}
                 >
-                    {/* Subtle grid or noise could go here */}
                     <div className="absolute inset-0 opacity-20 pointer-events-none bg-[url('/assets/noise.png')] mix-blend-overlay"></div>
                 </div>
 
                 {/* Content Layout: 3 Columns */}
                 <div className="relative z-10 w-full h-full flex items-center px-[2vw] md:px-[1.87vw]">
 
-                    {/* 1. Left Column: Stacked Cards (354px area, 300px cards) */}
+                    {/* 1. Left Column: Stacked Cards */}
                     <div className="w-[24.5vw] flex flex-col gap-[1.1vw] items-start">
                         {FEATURES.map((feature) => {
                             const isActive = activeId === feature.id;
@@ -117,7 +116,7 @@ export default function Features() {
                         })}
                     </div>
 
-                    {/* 2. Middle Column: Phone Mockup (354px width, 482px height) */}
+                    {/* 2. Middle Column: Phone Mockup */}
                     <div className="flex-1 flex justify-center items-center h-full">
                         <div className="relative w-[24.5vw] h-[33.4vw]">
                             <AnimatePresence mode="wait">
@@ -141,7 +140,7 @@ export default function Features() {
                         </div>
                     </div>
 
-                    {/* 3. Right Column: Points (354px area) */}
+                    {/* 3. Right Column: Points */}
                     <div className="w-[24.5vw] flex flex-col gap-[1.1vw] pl-[2.7vw]">
                         <AnimatePresence mode="wait">
                             <motion.div
@@ -154,7 +153,6 @@ export default function Features() {
                             >
                                 {activeFeature.points.map((point, index) => (
                                     <div key={index} className="flex items-center gap-[0.76vw] h-[3.33vw]">
-
                                         <div className="relative w-[1.33vw] h-[1.33vw]">
                                             <Image
                                                 src="/check-circle.svg"
@@ -163,7 +161,6 @@ export default function Features() {
                                                 className="object-contain"
                                             />
                                         </div>
-
                                         <p className="text-white text-[1.11vw] font-normal leading-[150%] flex-1">
                                             {point}
                                         </p>
@@ -176,25 +173,119 @@ export default function Features() {
                 </div>
             </div>
 
+            {/* Mobile Features Container (Visible on Mobile) */}
+            <div className="flex lg:hidden flex-col w-full px-[20px] gap-6">
+                {FEATURES.map((feature) => {
+                    const isActive = activeId === feature.id;
+                    return (
+                        <div key={feature.id} className="flex flex-col gap-4">
+                            {/* Dynamic Part: Image (Only shown for active feature) */}
+                            <AnimatePresence>
+                                {isActive && (
+                                    <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: "auto" }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                                        className="overflow-hidden"
+                                    >
+                                        <div
+                                            className="relative w-full aspect-square rounded-[32px] overflow-hidden"
+                                            style={{
+                                                background: 'linear-gradient(135deg, rgba(22, 0, 63, 0.9) 0%, rgba(8, 0, 24, 0.9) 100%), url("/assets/Hero_Background.PNG")',
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center'
+                                            }}
+                                        >
+                                            <Image
+                                                src={feature.image}
+                                                alt={feature.title}
+                                                fill
+                                                className="object-contain p-8"
+                                            />
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+
+                            {/* Feature Card */}
+                            <button
+                                onClick={() => setActiveId(feature.id)}
+                                className={cn(
+                                    "w-full text-left transition-all duration-500 rounded-[24px] p-6 flex flex-col gap-4",
+                                    isActive ? "bg-[#5F00DB]" : "bg-[#0a001a] border border-white/5"
+                                )}
+                            >
+                                <h3 className="text-[24px] font-bold leading-tight text-white">
+                                    {feature.title}
+                                </h3>
+
+                                {isActive && (
+                                    <motion.p
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: "auto" }}
+                                        className="text-white/90 text-[16px] leading-relaxed"
+                                    >
+                                        {feature.description}
+                                    </motion.p>
+                                )}
+                            </button>
+
+                            {/* Points Part (Only shown for active feature) */}
+                            <AnimatePresence>
+                                {isActive && (
+                                    <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: "auto" }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        className="flex flex-col gap-4 pl-2"
+                                    >
+                                        {feature.points.map((point, idx) => (
+                                            <div key={idx} className="flex items-center gap-3">
+                                                <div className="relative w-5 h-5 flex-shrink-0">
+                                                    <Image
+                                                        src="/check-circle.svg"
+                                                        alt=""
+                                                        fill
+                                                        className="object-contain"
+                                                    />
+                                                </div>
+                                                <p className="text-white text-[16px]">{point}</p>
+                                            </div>
+                                        ))}
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
+                    );
+                })}
+            </div>
+
+
             {/* Subsection 1: Problem Statement (formerly Subsection 2) */}
-            <div className="w-full flex flex-col items-center py-[5.5vw] px-[3.5vw] md:px-[7.08vw]">
-                <div className="w-full max-w-[75.2vw] flex flex-col items-start gap-[1.87vw]">
+            <div className="w-full flex flex-col items-center py-[5.5vw] px-0">
+                <div className="w-full max-w-[90.24vw] flex flex-col items-start gap-[1.87vw]">
 
                     {/* Heading Section */}
                     <div className="w-full relative flex flex-col items-start">
-                        <h2 className="text-white text-[6.4vw] md:text-[3vw] font-bold leading-[110%] tracking-[-0.04em] text-left">
-                            Traditional dating apps are <br className="md:hidden" /><span className="inline-block bg-[#5F00DB] px-[0.97vw] py-[0.14vw] rounded-[0.76vw] my-[0.27vw] md:my-0">too individual.</span> <br />
-                            Social networks are <br className="md:hidden" /><span className="inline-block bg-[#5F00DB] px-[0.97vw] py-[0.14vw] rounded-[0.76vw] my-[0.27vw] md:my-0">too broad.</span>
+                        <h2 className="text-white text-[8.5vw] md:text-[3vw] font-bold leading-[110%] tracking-[-0.04em] text-left">
+                            Traditional dating <br className="md:hidden" />
+                            apps are <br className="md:hidden" />
+                            <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] md:px-[0.97vw] md:py-[0.14vw] rounded-[1.5vw] md:rounded-[0.76vw] my-[1vw] md:my-0">too individual.</span> <br />
+                            Social networks <br className="md:hidden" />
+                            <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] md:px-[0.97vw] md:py-[0.14vw] rounded-[1.5vw] md:rounded-[0.76vw] my-[1vw] md:my-0 mt-[1vw]">are too broad.</span>
                         </h2>
                     </div>
 
                     {/* Description */}
-                    <p className="text-[#CCCCCC] text-[3.2vw] md:text-[1.11vw] font-normal leading-[120%] tracking-[-0.04em] text-left max-w-[75.2vw]">
-                        There&apos;s no space for small groups who want to meet new people—whether for friendships, hangouts, trips, or shared hobbies.
+                    <p className="text-[#CCCCCC] text-[4.2vw] md:text-[1.11vw] font-normal leading-[140%] tracking-[-0.02em] text-left max-w-[90.24vw]">
+                        There&apos;s no space for small groups who want to <br className="md:hidden" />
+                        meet new people—whether for friendships, <br className="md:hidden" />
+                        hangouts, trips, or shared hobbies.
                     </p>
 
                     {/* Lower Image Card */}
-                    <div className="relative w-full h-[71.5vw] md:h-[31.9vw] rounded-[1.8vw] overflow-hidden mt-[1.87vw] group shadow-2xl">
+                    <div className="relative w-full h-[100vw] md:h-[31.9vw] rounded-[4.5vw] md:rounded-[1.8vw] overflow-hidden mt-[4vw] md:mt-[1.87vw] group shadow-2xl">
                         <Image
                             src="/assets/Feature Subsection-1/lottie_file.png"
                             alt="Group Connection"
@@ -202,13 +293,10 @@ export default function Features() {
                             className="object-cover transition-transform duration-1000 group-hover:scale-105"
                         />
                         {/* Overlay with Content */}
-                        <div className="absolute inset-0 bg-black/50 p-[5.3vw] md:p-[3.75vw] flex flex-col md:flex-row items-center md:items-end justify-between gap-[1.87vw] md:gap-[1.87vw]">
-                            <h3 className="text-white text-[6.4vw] md:text-[3.33vw] font-normal leading-[110%] tracking-[-0.04em] flex-1 text-center md:text-left">
-                                Fennec makes expanding your circle natural, effortless, and fun—together.
-                            </h3>
+                        <div className="absolute inset-0 bg-black/50 p-[8vw] md:p-[3.75vw] flex flex-col md:flex-row items-start md:items-end justify-between gap-[1.87vw]">
 
-                            {/* Logo / Pattern */}
-                            <div className="w-[17vw] h-[17vw] md:w-[7.36vw] md:h-[7.36vw] relative flex-shrink-0">
+                            {/* Logo / Pattern - Top Left on Mobile, Bottom Right on Desktop */}
+                            <div className="w-[18vw] h-[18vw] md:w-[7.36vw] md:h-[7.36vw] relative flex-shrink-0 md:order-2">
                                 <Image
                                     src="/assets/Feature Subsection-1/Vector_logo.png"
                                     alt="Fennec Pattern"
@@ -216,6 +304,10 @@ export default function Features() {
                                     className="object-contain"
                                 />
                             </div>
+
+                            <h3 className="text-white text-[7.5vw] md:text-[3.33vw] font-normal leading-[110%] tracking-[-0.04em] flex-1 text-left md:order-1">
+                                Fennec makes expanding your circle natural, effortless, and fun—together.
+                            </h3>
                         </div>
                     </div>
                 </div>

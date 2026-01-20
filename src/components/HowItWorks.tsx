@@ -8,9 +8,10 @@ import Image from "next/image";
  * Pixel-Perfect "How It Works" Section
  * 
  * Logic:
- * 1. Desktop: Cards slide up to align horizontally in a row.
- * 2. Mobile: Cards stack on each other vertically at the horizontal center (no horizontal offset).
- * 3. 1st Card remains static as the base.
+ * 1. Parent Container: 500vh ensures smooth scrolling for 4 cards.
+ * 2. Sticky Viewport: Keeps everything locked in view while cards animate.
+ * 3. Desktop: Cards fly in to form a horizontal row (join the 1st card).
+ * 4. Mobile: Cards fly in and stack directly on top of each other (cover the previous card).
  */
 
 const CARDS_DESKTOP = [
@@ -34,7 +35,7 @@ const CARDS_DESKTOP = [
         rotate: 5,
         textHeight: "11.74vw",
         textOffset: "0vw",
-        triggerTop: '21.14vw'
+        scrollRange: [0.1, 0.4]
     },
     {
         id: 3,
@@ -45,7 +46,7 @@ const CARDS_DESKTOP = [
         rotate: -5,
         textHeight: "11.46vw",
         textOffset: "0.624vw",
-        triggerTop: '42.28vw'
+        scrollRange: [0.4, 0.7]
     },
     {
         id: 4,
@@ -56,7 +57,7 @@ const CARDS_DESKTOP = [
         rotate: 5,
         textHeight: "11.46vw",
         textOffset: "0vw",
-        triggerTop: '63.43vw'
+        scrollRange: [0.7, 1.0]
     },
 ];
 
@@ -70,7 +71,7 @@ const CARDS_MOBILE = [
         textHeight: "173px",
         textOffset: "10.62px",
         isStatic: true,
-        triggerTop: 0
+        scrollRange: [0, 0.1]
     },
     {
         id: 2,
@@ -80,7 +81,7 @@ const CARDS_MOBILE = [
         rotate: 3,
         textHeight: "173px",
         textOffset: "0px",
-        triggerTop: 600
+        scrollRange: [0.1, 0.4]
     },
     {
         id: 3,
@@ -90,7 +91,7 @@ const CARDS_MOBILE = [
         rotate: -3,
         textHeight: "173px",
         textOffset: "10.62px",
-        triggerTop: 1200
+        scrollRange: [0.4, 0.7]
     },
     {
         id: 4,
@@ -100,7 +101,7 @@ const CARDS_MOBILE = [
         rotate: 3,
         textHeight: "173px",
         textOffset: "0px",
-        triggerTop: 1800
+        scrollRange: [0.7, 1.0]
     }
 ];
 
@@ -128,16 +129,16 @@ export default function HowItWorks() {
         <section
             id="how-it-works"
             ref={sectionRef}
-            className={`relative w-full bg-[#111111] ${isMobile ? 'h-[3023px]' : 'h-[144vw]'}`}
+            className="relative w-full bg-[#111111] h-[500vh]" // Sticky stacking needs vertical room
         >
-            {/* Sticky Viewport */}
+            {/* Sticky Viewport Layer */}
             <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden">
 
-                {/* Main Container */}
+                {/* Visual Bounds Container */}
                 <div className={`relative w-full h-full flex items-center justify-center ${isMobile ? 'max-w-[408px]' : 'max-w-[75.2vw]'}`}>
 
-                    {/* Background Heading */}
-                    <div className={`absolute w-full text-center pointer-events-none z-0 ${isMobile ? 'top-[120px]' : 'top-[8.3vw]'}`}>
+                    {/* Fixed Background Heading */}
+                    <div className={`absolute w-full text-center pointer-events-none z-0 ${isMobile ? 'top-[12vh]' : 'top-[8.3vw]'}`}>
                         <h2 className={`${isMobile ? 'text-[60px]' : 'text-[5.5vw]'} font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap`}>
                             {isMobile ? (
                                 <>Effortless Group <br /> Matching</>
@@ -147,10 +148,10 @@ export default function HowItWorks() {
                         </h2>
                     </div>
 
-                    {/* Cards Row Container */}
-                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[100px]' : 'h-[18.6vw] mt-[22.2vw]'}`}>
+                    {/* Cards Render Area */}
+                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[15vh]' : 'h-[18.6vw] mt-[22.2vw]'}`}>
                         {cards.map((card, index) => (
-                            <CardItem
+                            <StickyCard
                                 key={card.id}
                                 card={card}
                                 index={index}
@@ -165,50 +166,47 @@ export default function HowItWorks() {
     );
 }
 
-function CardItem({ card, index, scrollYProgress, isMobile }: { card: any; index: number; scrollYProgress: any, isMobile: boolean }) {
-    // Animation Logic:
-    // Card 1 is static (y=0).
-    // Cards 2, 3, 4 start at their respective 'triggerTop' heights and move to 0.
+function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; index: number; scrollYProgress: any, isMobile: boolean }) {
+    // Stacking Strategy:
+    // Only animate non-static cards. 
+    // Start at y: "100vh" (bottom of screen) and transform to y: "0%" (final position).
 
-    const start = index === 0 ? 0 : (index - 1) * 0.25 + 0.1;
-    const end = index === 0 ? 0 : index * 0.25 + 0.1;
+    const range = card.scrollRange || [0, 0];
 
-    let initialY: any = 0;
-    if (!card.isStatic) {
-        initialY = card.triggerTop;
-    }
-
+    // Y-Axis Fly-in using percentages for responsive accuracy
     const y = useTransform(
         scrollYProgress,
-        [start === 0 ? 0 : start, end === 0 ? 0.01 : end],
-        [initialY, isMobile ? "0px" : "0vw"]
+        [range[0], range[1]],
+        ["100vh", "0%"]
     );
 
+    // Fade-in as it approaches
     const opacity = useTransform(
         scrollYProgress,
-        [start === 0 ? 0 : start - 0.05, start === 0 ? 0.05 : start + 0.05],
+        [range[0], range[0] + 0.1],
         [0, 1]
     );
 
-    const displayOpacity = card.isStatic ? 1 : opacity;
-    const finalY = card.isStatic ? 0 : y;
+    const finalY = card.isStatic ? "0%" : y;
+    const finalOpacity = card.isStatic ? 1 : opacity;
 
     return (
         <motion.div
             style={{
                 position: "absolute",
-                // Mobile: centered. Desktop: offset left/right.
+                // Mobile: Stacks vertically (same center). Desktop: Horizontal row offsets.
                 left: isMobile ? "calc(50% - 200px + 1px)" : (card.left || "auto"),
                 right: isMobile ? "auto" : (card.right || "auto"),
                 top: 0,
                 y: finalY,
-                opacity: displayOpacity,
+                opacity: finalOpacity,
                 width: isMobile ? "400px" : "18.6vw",
                 height: isMobile ? "400px" : "18.6vw",
+                zIndex: index + 10 // Ensure later cards stack on top
             }}
-            className="z-10 flex items-center justify-center"
+            className="flex items-center justify-center"
         >
-            {/* Card Content (400x400 wrapper containing the actual card) */}
+            {/* The Actual Card Component */}
             <motion.div
                 className={`relative bg-[#5F00DB] border-[#111111] overflow-hidden group shadow-2xl transition-all duration-300 ${isMobile
                     ? 'w-[376px] h-[376px] border-[5px] rounded-[16px]'
@@ -217,10 +215,10 @@ function CardItem({ card, index, scrollYProgress, isMobile }: { card: any; index
                 style={{
                     rotate: `${card.rotate}deg`,
                 }}
-                whileHover={{ scale: 1.05, rotate: card.rotate * 1.2 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300, damping: 25 }}
             >
-                {/* Image Layer */}
+                {/* Image Background */}
                 <div className={`absolute z-0 ${isMobile
                     ? 'inset-x-[-73.9px] top-[-3.87px] bottom-[3.87px]'
                     : 'inset-x-[-3.4vw] top-[-0.3vw] bottom-[0.3vw]'
@@ -229,26 +227,29 @@ function CardItem({ card, index, scrollYProgress, isMobile }: { card: any; index
                         src={card.image}
                         alt={card.title}
                         fill
-                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-80"
+                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-60"
                         sizes={isMobile ? "376px" : "18.6vw"}
                     />
                 </div>
 
-                {/* Text Layer (Bottom UI) */}
+                {/* Light Purple Shade Hover Overlay */}
+                <div className="absolute inset-0 bg-[#9D59FF]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-[5] pointer-events-none" />
+
+                {/* Text Section (Bottom UI) */}
                 <div
-                    className={`absolute bottom-0 left-0 right-0 z-10 flex flex-col justify-end transition-all duration-500 transform ${isMobile ? 'translate-y-0' : 'translate-y-[0.8vw] group-hover:translate-y-0'
+                    className={`absolute bottom-0 left-0 right-0 z-10 flex flex-col justify-end ${isMobile ? 'p-4 pb-6' : 'p-[1.1vw] pb-[1.45vw]'
                         }`}
                     style={{
                         height: card.textHeight,
                         background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 63, 0.75) 100%)",
-                        backdropFilter: isMobile ? "blur(4px)" : "blur(0.2vw)",
-                        WebkitBackdropFilter: isMobile ? "blur(4px)" : "blur(0.2vw)"
+                        backdropFilter: "blur(4px)",
+                        WebkitBackdropFilter: "blur(4px)"
                     }}
                 >
                     <div
-                        className={`flex flex-col ${isMobile ? 'gap-4 p-4' : 'gap-[0.76vw] p-[1.1vw]'}`}
+                        className={`flex flex-col ${isMobile ? 'gap-3' : 'gap-[0.76vw]'}`}
                         style={{
-                            paddingLeft: isMobile ? (card.textOffset !== "0px" ? "20px" : "16px") : (card.textOffset !== "0vw" ? card.textOffset : "1.1vw")
+                            paddingLeft: isMobile ? (card.textOffset !== "0px" ? "12px" : "0px") : (card.textOffset !== "0vw" ? card.textOffset : "0px")
                         }}
                     >
                         <h3 className={`${isMobile ? 'text-[24px]' : 'text-[1.45vw]'} font-bold leading-[120%] tracking-[-0.04em] text-white`}>
