@@ -22,8 +22,8 @@ const CARDS_DESKTOP = [
         image: "/assets/How to work Section/StickyWrapper_4.png",
         left: "0vw",
         rotate: -5,
-        textHeight: "9.93vw",
-        textOffset: "0.75vw",
+        textHeight: "11.14vw",
+        textOffset: "0.84vw",
         isStatic: true
     },
     {
@@ -31,9 +31,9 @@ const CARDS_DESKTOP = [
         title: "Match With Other Groups",
         description: "Swipe through groups that share your vibe, interests, and intentions.",
         image: "/assets/How to work Section/StickyWrapper_3.png",
-        left: "18.89vw",
+        left: "21.14vw",
         rotate: 5,
-        textHeight: "11.74vw",
+        textHeight: "13.12vw",
         textOffset: "0vw",
         scrollRange: [0.1, 0.4]
     },
@@ -42,10 +42,10 @@ const CARDS_DESKTOP = [
         title: "Start the Conversation",
         description: "Chat, send photos, poke someone you like, or jump on voice/video calls when you're ready.",
         image: "/assets/How to work Section/StickyWrapper_2.png",
-        left: "37.78vw",
+        left: "42.29vw",
         rotate: -5,
-        textHeight: "11.46vw",
-        textOffset: "0.624vw",
+        textHeight: "12.8vw",
+        textOffset: "0.7vw",
         scrollRange: [0.4, 0.7]
     },
     {
@@ -53,9 +53,9 @@ const CARDS_DESKTOP = [
         title: "Meet IRL",
         description: "Take your connections from screen to real life—with the comfort of people you trust.",
         image: "/assets/How to work Section/StickyWrapper_1.png",
-        right: "-0.07vw",
+        left: "63.43vw",
         rotate: 5,
-        textHeight: "11.46vw",
+        textHeight: "12.8vw",
         textOffset: "0vw",
         scrollRange: [0.7, 1.0]
     },
@@ -132,14 +132,14 @@ export default function HowItWorks() {
             className="relative w-full bg-[#111111] h-[500vh]" // Sticky stacking needs vertical room
         >
             {/* Sticky Viewport Layer */}
-            <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden lg:px-[152px]">
+            <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden lg:px-[7.91vw]">
 
                 {/* Visual Bounds Container */}
-                <div className={`relative w-full h-full flex items-center justify-center ${isMobile ? 'max-w-[408px]' : 'max-w-[75.2vw] lg:max-w-none lg:w-full'}`}>
+                <div className={`relative w-full h-full flex items-center justify-center ${isMobile ? 'max-w-[408px]' : 'max-w-[84.16vw] lg:w-full'}`}>
 
                     {/* Fixed Background Heading */}
-                    <div className={`absolute w-full text-center pointer-events-none z-0 ${isMobile ? 'top-[12vh]' : 'top-[8.3vw]'}`}>
-                        <h2 className={`${isMobile ? 'text-[60px]' : 'text-[5.5vw]'} font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap`}>
+                    <div className={`absolute w-full text-center pointer-events-none z-0 ${isMobile ? 'top-[12vh]' : 'top-[7.81vw]'}`}>
+                        <h2 className={`${isMobile ? 'text-[60px]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 uppercase tracking-[-0.04em] select-none whitespace-nowrap`}>
                             {isMobile ? (
                                 <>Effortless Group <br /> Matching</>
                             ) : (
@@ -149,7 +149,7 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Cards Render Area */}
-                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[15vh]' : 'h-[18.6vw] mt-[22.2vw]'}`}>
+                    <div className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[400px] mt-[15vh]' : 'h-[20.83vw] mt-[28.12vw]'}`}>
                         {cards.map((card, index) => (
                             <StickyCard
                                 key={card.id}
@@ -200,22 +200,21 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
                 top: 0,
                 y: finalY,
                 opacity: finalOpacity,
-                width: isMobile ? "400px" : "18.6vw",
-                height: isMobile ? "400px" : "18.6vw",
+                width: isMobile ? "400px" : "20.83vw",
+                height: isMobile ? "400px" : "20.83vw",
                 zIndex: index + 10 // Ensure later cards stack on top
             }}
             className="flex items-center justify-center"
         >
-            {/* The Actual Card Component */}
             <motion.div
                 className={`relative bg-[#5F00DB] border-[#111111] overflow-hidden group shadow-2xl transition-all duration-300 ${isMobile
                     ? 'w-[376px] h-[376px] border-[5px] rounded-[16px]'
-                    : 'w-[18.6vw] h-[18.6vw] border-[0.2vw] rounded-[1.1vw]'
+                    : 'w-[20.83vw] h-[20.83vw] border-[0.26vw] rounded-[1.25vw]'
                     }`}
                 style={{
                     rotate: `${card.rotate}deg`,
                 }}
-                whileHover={{ scale: 1.02 }}
+                // Removed scale on hover for the card container to keep text static
                 transition={{ type: "spring", stiffness: 300, damping: 25 }}
             >
                 {/* Image Background */}
@@ -227,35 +226,34 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
                         src={card.image}
                         alt={card.title}
                         fill
-                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-60"
-                        sizes={isMobile ? "376px" : "18.6vw"}
+                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-60 rounded-[16px] lg:rounded-[1.25vw]"
+                        sizes={isMobile ? "376px" : "20.83vw"}
                     />
                 </div>
 
                 {/* Light Purple Shade Hover Overlay */}
-                <div className="absolute inset-0 bg-[#9D59FF]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-[5] pointer-events-none" />
+                <div className="absolute inset-0 bg-[#9D59FF]/40 opacity-0 group-hover:opacity-10 transition-opacity duration-500 z-[5] pointer-events-none" />
 
-                {/* Text Section (Bottom UI) */}
                 <div
-                    className={`absolute bottom-0 left-0 right-0 z-10 flex flex-col justify-end ${isMobile ? 'p-4 pb-6' : 'p-[1.1vw] pb-[1.45vw]'
+                    className={`absolute bottom-0 left-0 right-0 z-10 flex flex-col justify-end ${isMobile ? 'p-4 pb-6' : 'p-[1.25vw] pb-[1.25vw] pt-[3.33vw]'
                         }`}
                     style={{
                         height: card.textHeight,
                         background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 63, 0.75) 100%)",
-                        backdropFilter: "blur(4px)",
-                        WebkitBackdropFilter: "blur(4px)"
+                        backdropFilter: isMobile ? "blur(4px)" : "blur(0.625vw)",
+                        WebkitBackdropFilter: isMobile ? "blur(4px)" : "blur(0.625vw)"
                     }}
                 >
                     <div
-                        className={`flex flex-col ${isMobile ? 'gap-3' : 'gap-[0.76vw]'}`}
+                        className={`flex flex-col ${isMobile ? 'gap-3' : 'gap-[1.25vw]'}`}
                         style={{
                             paddingLeft: isMobile ? (card.textOffset !== "0px" ? "12px" : "0px") : (card.textOffset !== "0vw" ? card.textOffset : "0px")
                         }}
                     >
-                        <h3 className={`${isMobile ? 'text-[24px]' : 'text-[1.45vw]'} font-bold leading-[120%] tracking-[-0.04em] text-white`}>
+                        <h3 className={`${isMobile ? 'text-[24px]' : 'text-[1.66vw]'} font-bold leading-[120%] tracking-[-0.04em] text-white`}>
                             {card.title}
                         </h3>
-                        <p className={`${isMobile ? 'text-[16px]' : 'text-[0.83vw]'} font-normal leading-relaxed text-white/95`}>
+                        <p className={`${isMobile ? 'text-[16px]' : 'text-[0.93vw]'} font-normal leading-relaxed text-white/95`}>
                             {card.description}
                         </p>
                     </div>
