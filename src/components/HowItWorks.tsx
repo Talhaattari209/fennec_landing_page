@@ -111,7 +111,7 @@ export default function HowItWorks() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
+            setIsMobile(window.innerWidth < 440);
         };
         handleResize();
         window.addEventListener("resize", handleResize);
@@ -132,10 +132,10 @@ export default function HowItWorks() {
             className="relative w-full bg-[#111111] h-[500vh]" // Sticky stacking needs vertical room
         >
             {/* Sticky Viewport Layer */}
-            <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden">
+            <div className="sticky top-0 h-screen w-full flex justify-center items-center overflow-hidden lg:px-[152px]">
 
                 {/* Visual Bounds Container */}
-                <div className={`relative w-full h-full flex items-center justify-center ${isMobile ? 'max-w-[408px]' : 'max-w-[75.2vw]'}`}>
+                <div className={`relative w-full h-full flex items-center justify-center ${isMobile ? 'max-w-[408px]' : 'max-w-[75.2vw] lg:max-w-none lg:w-full'}`}>
 
                     {/* Fixed Background Heading */}
                     <div className={`absolute w-full text-center pointer-events-none z-0 ${isMobile ? 'top-[12vh]' : 'top-[8.3vw]'}`}>

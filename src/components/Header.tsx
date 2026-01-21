@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-    { label: "How It Works", href: "#how-it-works", width: "6.66vw", mobileWidth: "51.4vw" },
-    { label: "Features", href: "#features", width: "4.93vw", mobileWidth: "37.8vw" },
-    { label: "About", href: "#about", width: "3.88vw", mobileWidth: "29.6vw" },
+    { label: "How It Works", href: "#how-it-works", width: "7.5vw", mobileWidth: "51.4vw" },
+    { label: "Features", href: "#features", width: "5.52vw", mobileWidth: "37.8vw" },
+    { label: "About", href: "#about", width: "4.32vw", mobileWidth: "29.6vw" },
 ];
 
 export default function Header() {
@@ -45,21 +45,21 @@ export default function Header() {
 
     return (
         <>
-            <header className="fixed top-[3.2vw] md:top-[1.38vw] left-0 right-0 z-50 flex justify-center px-[3.2vw] md:px-4">
+            <header className="fixed top-[3.2vw] mobile:top-[1.38vw] left-0 right-0 z-50 flex justify-center px-[3.2vw] mobile:px-4">
                 <nav className={cn(
                     "w-full transition-all duration-300 relative flex items-center justify-between",
                     // Desktop Styles
-                    "md:max-w-[75.2vw] md:h-[4.1vw] md:px-[0.83vw] md:bg-[#5F00DB]/25 md:backdrop-blur-[0.55vw] md:border md:border-white/10 md:rounded-[2.98vw]",
+                    "mobile:max-w-[84.16vw] mobile:h-auto mobile:p-[0.83vw] mobile:bg-[#5F00DB]/25 mobile:backdrop-blur-[0.625vw] mobile:rounded-[3.33vw] mobile:gap-[1.25vw] border-none shadow-none",
                     // Mobile Styles
                     "h-[12.2vw] px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5 max-w-[93.6vw]",
-                    isScrolled && "md:bg-[#5F00DB]/40"
+                    isScrolled && "mobile:bg-[#5F00DB]/40"
                 )}>
                     {/* Logo - Center on Desktop, Left on Mobile */}
                     <Link
                         href="/"
-                        className="flex items-center gap-[2.1vw] md:gap-[0.55vw] h-[8.5vw] md:h-[2.22vw] order-1 md:absolute md:left-1/2 md:-translate-x-1/2"
+                        className="flex items-center gap-[2.1vw] mobile:gap-[0.55vw] h-[8.5vw] mobile:h-[2.22vw] order-1 mobile:absolute mobile:left-1/2 mobile:-translate-x-1/2"
                     >
-                        <div className="relative w-[8.5vw] md:w-[2.22vw] h-[8.5vw] md:h-[2.22vw]">
+                        <div className="relative w-[8.5vw] mobile:w-[1.875vw] h-[8.5vw] mobile:h-[1.875vw]">
                             <Image
                                 src="/assets/Header_Section/Vector_logo.png"
                                 alt="Fennec Logo"
@@ -67,13 +67,13 @@ export default function Header() {
                                 className="object-contain"
                             />
                         </div>
-                        <span className="font-michroma text-[4.2vw] md:text-[1.11vw] leading-[140%] text-white">
+                        <span className="font-michroma text-[4.2vw] mobile:text-[1.25vw] leading-[140%] text-white">
                             Fennec
                         </span>
                     </Link>
 
                     {/* Nav Links - Desktop Only */}
-                    <div className="hidden md:flex items-center h-full order-1">
+                    <div className="hidden mobile:flex items-center h-full order-1">
                         <div className="flex items-center">
                             {NAV_LINKS.map((link) => (
                                 <Link
@@ -82,7 +82,7 @@ export default function Header() {
                                     className="group relative flex flex-col items-center justify-center h-[2.22vw] px-[0.83vw] transition-colors"
                                     style={{ width: link.width }}
                                 >
-                                    <span className="text-[0.83vw] leading-[175%] text-white font-['SF_Pro_Text',sans-serif] flex items-center">
+                                    <span className="text-[0.94vw] leading-[1.66vw] text-white font-['SF_Pro_Text',sans-serif] flex items-center font-normal">
                                         {link.label}
                                     </span>
                                     {/* Hover Indicator (Rectangle 3) */}
@@ -97,21 +97,21 @@ export default function Header() {
                         {/* Desktop Button */}
                         <Button
                             className={cn(
-                                "hidden md:flex w-[9.1vw] h-[2.64vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[2.4vw] px-[1.1vw] items-center justify-center gap-[0.55vw] transition-all",
-                                "shadow-[0px_0.2vw_0.55vw_rgba(95,0,219,0.25)]"
+                                "hidden mobile:flex w-[10.21vw] h-[2.92vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[2.71vw] px-[1.25vw] py-[0.83vw] items-center justify-center gap-[0.625vw] transition-all",
+                                "shadow-[0px_0.2vw_0.625vw_rgba(95,0,219,0.25)]"
                                 // shadow-[0px_3px_8px] -> 3/1440 = 0.2vw
                             )}
                             onClick={scrollToDownload}
                         >
-                            <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[0.76vw] leading-[1.11vw]">
+                            <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[0.83vw] leading-[1.25vw]">
                                 Download App
                             </span>
-                            <Download className="w-[1.11vw] h-[1.11vw]" />
+                            <Download className="w-[1.25vw] h-[1.25vw]" />
                         </Button>
 
                         {/* Mobile Menu Icon Button */}
                         <button
-                            className="md:hidden w-[6.4vw] h-[6.4vw] flex items-center justify-center text-white rounded-full transition-colors"
+                            className="mobile:hidden w-[6.4vw] h-[6.4vw] flex items-center justify-center text-white rounded-full transition-colors"
                             onClick={() => setIsMobileMenuOpen(true)}
                         >
                             <Menu className="w-[6.4vw] h-[6.4vw]" />

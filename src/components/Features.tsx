@@ -58,9 +58,9 @@ export default function Features() {
     const activeFeature = FEATURES.find(f => f.id === activeId) || FEATURES[0];
 
     return (
-        <section id="features" className="w-full bg-[#111111] py-[40px] md:py-[5.5vw] flex flex-col items-center">
+        <section id="features" className="w-full bg-[#111111] py-[40px] mobile:py-[5.5vw] flex flex-col items-center lg:px-[152px]">
             {/* Desktop Features Container - 1083px wide (Hidden on Mobile) */}
-            <div className="hidden lg:flex w-full max-w-[75.2vw] h-[37.2vw] relative rounded-[1.8vw] overflow-hidden">
+            <div className="hidden lg:flex w-full max-w-[75.2vw] lg:max-w-none lg:w-full h-[37.2vw] relative rounded-[1.8vw] overflow-hidden">
                 {/* Background Gradient & Pattern */}
                 <div
                     className="absolute inset-0 bg-[#111111]"
@@ -74,7 +74,7 @@ export default function Features() {
                 </div>
 
                 {/* Content Layout: 3 Columns */}
-                <div className="relative z-10 w-full h-full flex items-center px-[2vw] md:px-[1.87vw]">
+                <div className="relative z-10 w-full h-full flex items-center px-[2vw] mobile:px-[1.87vw]">
 
                     {/* 1. Left Column: Stacked Cards */}
                     <div className="w-[24.5vw] flex flex-col gap-[1.1vw] items-start">
@@ -263,29 +263,29 @@ export default function Features() {
 
 
             {/* Subsection 1: Problem Statement (formerly Subsection 2) */}
-            <div className="w-full flex flex-col items-center py-[5.5vw] px-0">
-                <div className="w-full max-w-[90.24vw] flex flex-col items-start gap-[1.87vw]">
+            <div className="w-full flex flex-col items-center py-[40px] mobile:py-[5.5vw] px-[16px] mobile:px-0">
+                <div className="w-full max-w-[408px] mobile:max-w-[90.24vw] flex flex-col items-start gap-[40px] mobile:gap-[1.87vw]">
 
                     {/* Heading Section */}
                     <div className="w-full relative flex flex-col items-start">
-                        <h2 className="text-white text-[8.5vw] md:text-[3vw] font-bold leading-[110%] tracking-[-0.04em] text-left">
-                            Traditional dating <br className="md:hidden" />
-                            apps are <br className="md:hidden" />
-                            <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] md:px-[0.97vw] md:py-[0.14vw] rounded-[1.5vw] md:rounded-[0.76vw] my-[1vw] md:my-0">too individual.</span> <br />
-                            Social networks <br className="md:hidden" />
-                            <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] md:px-[0.97vw] md:py-[0.14vw] rounded-[1.5vw] md:rounded-[0.76vw] my-[1vw] md:my-0 mt-[1vw]">are too broad.</span>
+                        <h2 className="text-white text-[48px] mobile:text-[3vw] font-bold leading-[110%] tracking-[-0.04em] text-left">
+                            Traditional dating <br className="mobile:hidden" />
+                            apps are <br className="mobile:hidden" />
+                            <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] mobile:px-[0.97vw] mobile:py-[0.14vw] rounded-[12px] mobile:rounded-[0.76vw] my-[1vw] mobile:my-0">too individual.</span> <br />
+                            Social networks <br className="mobile:hidden" />
+                            <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] mobile:px-[0.97vw] mobile:py-[0.14vw] rounded-[12px] mobile:rounded-[0.76vw] my-[1vw] mobile:my-0 mt-[1vw]">are too broad.</span>
                         </h2>
                     </div>
 
                     {/* Description */}
-                    <p className="text-[#CCCCCC] text-[4.2vw] md:text-[1.11vw] font-normal leading-[140%] tracking-[-0.02em] text-left max-w-[90.24vw]">
-                        There&apos;s no space for small groups who want to <br className="md:hidden" />
-                        meet new people—whether for friendships, <br className="md:hidden" />
+                    <p className="text-[#CCCCCC] text-[20px] mobile:text-[1.11vw] font-normal leading-[120%] mobile:leading-[140%] tracking-[-0.02em] text-left max-w-[408px] mobile:max-w-[90.24vw]">
+                        There&apos;s no space for small groups who want to
+                        meet new people—whether for friendships,
                         hangouts, trips, or shared hobbies.
                     </p>
 
                     {/* Lower Image Card */}
-                    <div className="relative w-full h-[100vw] md:h-[31.9vw] rounded-[4.5vw] md:rounded-[1.8vw] overflow-hidden mt-[4vw] md:mt-[1.87vw] group shadow-2xl">
+                    <div className="relative w-full h-[408px] mobile:h-[31.9vw] rounded-[24px] mobile:rounded-[1.8vw] overflow-hidden group shadow-2xl">
                         <Image
                             src="/assets/Feature Subsection-1/lottie_file.png"
                             alt="Group Connection"
@@ -293,10 +293,10 @@ export default function Features() {
                             className="object-cover transition-transform duration-1000 group-hover:scale-105"
                         />
                         {/* Overlay with Content */}
-                        <div className="absolute inset-0 bg-black/50 p-[8vw] md:p-[3.75vw] flex flex-col md:flex-row items-start md:items-end justify-between gap-[1.87vw]">
+                        <div className="absolute inset-0 bg-[#16003F]/50 p-[24px] mobile:p-[3.75vw] flex flex-col mobile:flex-row items-start mobile:items-end justify-end mobile:justify-between gap-[40px] mobile:gap-[1.87vw]">
 
                             {/* Logo / Pattern - Top Left on Mobile, Bottom Right on Desktop */}
-                            <div className="w-[18vw] h-[18vw] md:w-[7.36vw] md:h-[7.36vw] relative flex-shrink-0 md:order-2">
+                            <div className="w-[80px] h-[80px] mobile:w-[7.36vw] mobile:h-[7.36vw] relative flex-shrink-0 mobile:order-2">
                                 <Image
                                     src="/assets/Feature Subsection-1/Vector_logo.png"
                                     alt="Fennec Pattern"
@@ -305,59 +305,71 @@ export default function Features() {
                                 />
                             </div>
 
-                            <h3 className="text-white text-[7.5vw] md:text-[3.33vw] font-normal leading-[110%] tracking-[-0.04em] flex-1 text-left md:order-1">
-                                Fennec makes expanding your circle natural, effortless, and fun—together.
-                            </h3>
+                            <h4
+                                className="text-white text-[28px] mobile:text-[3.33vw] font-normal leading-[120%] mobile:leading-[110%] tracking-[-0.04em] flex-1 w-full max-w-[360px] mobile:max-w-none h-[240px] mobile:h-auto flex flex-col justify-end text-left mobile:order-1"
+                                style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" }}
+                            >
+                                Fennec makes expanding
+                                your circle natural, effortless,
+                                and fun—together.
+                            </h4>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Subsection 3: Statistics Grid */}
-            <div className="mt-[5.5vw] grid grid-cols-1 lg:grid-cols-2 gap-[1.4vw] max-w-[72vw] mx-auto w-full">
-                <div className="bg-[#16003F] rounded-[2.7vw] p-[3.75vw] flex flex-col justify-center items-center text-center min-h-[32.5vw] border border-white/5 relative overflow-hidden group">
-                    <div
-                        className="absolute inset-0 z-0 opacity-40 transition-opacity duration-700"
-                        style={{
-                            backgroundImage: 'url("/assets/Hero_Background.PNG")',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center'
-                        }}
-                    />
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[27.9vw] h-[27.9vw] bg-purple-500/10 blur-[5.5vw] rounded-full z-1" />
-                    <motion.h2
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8 }}
-                        className="text-[25vw] md:text-[10.2vw] font-black text-white leading-none tracking-tight transition-transform duration-700"
-                    >
-                        94%
-                    </motion.h2>
-                    <p className="text-white/90 text-[6.4vw] md:text-[2.08vw] font-bold mt-[2.2vw] max-w-[39.5vw] leading-tight">
-                        People Feel More Comfortable Meeting New People via Group Matching
-                    </p>
-                </div>
+            <div className="w-full flex flex-col items-center py-[40px] mobile:py-[5.5vw] px-[16px] mobile:px-0">
+                <div className="w-full max-w-[408px] mobile:max-w-[72vw] flex flex-col lg:flex-row gap-[16px] mobile:gap-[1.4vw]">
 
-                <div className="flex flex-col gap-[1.4vw]">
-                    <div className="bg-[#5F00DB] rounded-[2.7vw] p-[3vw] flex flex-col justify-center items-center text-center flex-1 border border-white/5 shadow-2xl transition-transform duration-500">
-                        <h2 className="text-[16vw] md:text-[6.5vw] font-black text-white leading-none">78%</h2>
-                        <p className="text-white/90 text-[5.3vw] md:text-[1.66vw] font-bold mt-[1.4vw]">
-                            of Users Report Better First Interactions in Groups
+                    {/* Left/Top Card: 94% */}
+                    <div className="bg-[#16003F] rounded-[16px] mobile:rounded-[2.7vw] p-4 mobile:p-[3.75vw] flex flex-col justify-center items-center text-center w-full lg:w-1/2 min-h-[320px] mobile:min-h-[32.5vw] border border-white/5 relative overflow-hidden group">
+                        <div
+                            className="absolute inset-0 z-0 opacity-40 transition-opacity duration-700"
+                            style={{
+                                backgroundImage: 'url("/assets/Hero_Background.PNG")',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                            }}
+                        />
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] mobile:w-[27.9vw] h-[200px] mobile:h-[27.9vw] bg-purple-500/10 blur-[40px] mobile:blur-[5.5vw] rounded-full z-1" />
+                        <motion.h2
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8 }}
+                            className="text-[72px] mobile:text-[10.2vw] font-bold text-white leading-[110%] tracking-[-0.04em] relative z-10"
+                        >
+                            94%
+                        </motion.h2>
+                        <p className="text-white text-[16px] mobile:text-[2.08vw] font-bold leading-[120%] tracking-[-0.04em] mt-2 mobile:mt-[2.2vw] max-w-[376px] mobile:max-w-[39.5vw] relative z-10">
+                            People Feel More Comfortable Meeting New People via Group Matching
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.4vw]">
-                        <div className="bg-[#5F00DB]/75 rounded-[2.7vw] p-[2.2vw] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl transition-transform duration-500">
-                            <h2 className="text-[10.6vw] md:text-[4.16vw] font-black text-white">1.2M+</h2>
-                            <p className="text-white/70 text-[3.7vw] md:text-[0.97vw] font-bold mt-[1.1vw] uppercase tracking-wider">
-                                Conversations Started
+                    {/* Right/Bottom Cards Column */}
+                    <div className="flex flex-col gap-[16px] mobile:gap-[1.4vw] w-full lg:w-1/2">
+                        {/* 78% Card */}
+                        <div className="bg-[#5F00DB] rounded-[16px] mobile:rounded-[2.7vw] p-4 mobile:p-[3vw] flex flex-col justify-center items-center text-center h-[139px] mobile:flex-1 border border-white/5 shadow-2xl">
+                            <h2 className="text-[48px] mobile:text-[6.5vw] font-bold text-white leading-[110%] tracking-[-0.04em]">78%</h2>
+                            <p className="text-white text-[16px] mobile:text-[1.66vw] font-bold leading-[120%] tracking-[-0.04em] mt-2 mobile:mt-[1.4vw]">
+                                of Users Report Better First Interactions in Groups
                             </p>
                         </div>
-                        <div className="bg-[#5F00DB]/50 rounded-[2.7vw] p-[2.2vw] flex flex-col justify-center items-center text-center border border-white/5 shadow-xl transition-transform duration-500">
-                            <h2 className="text-[10.6vw] md:text-[4.16vw] font-black text-white">350K+</h2>
-                            <p className="text-white/70 text-[3.7vw] md:text-[0.97vw] font-bold mt-[1.1vw] uppercase tracking-wider">
-                                Groups Connected
-                            </p>
+
+                        {/* Two Small Cards Row */}
+                        <div className="flex flex-row gap-[16px] mobile:gap-[1.4vw] w-full">
+                            <div className="bg-[rgba(95,0,219,0.75)] rounded-[16px] mobile:rounded-[2.7vw] p-4 mobile:p-[2.2vw] flex flex-col justify-center items-center text-center flex-1 h-[105px] border border-white/5 shadow-xl">
+                                <h2 className="text-[32px] mobile:text-[4.16vw] font-bold text-white leading-[120%] tracking-[-0.04em]">1.2M+</h2>
+                                <p className="text-white text-[16px] mobile:text-[0.97vw] font-bold leading-tight tracking-[-0.04em]">
+                                    Conversation Started
+                                </p>
+                            </div>
+                            <div className="bg-[rgba(95,0,219,0.5)] rounded-[16px] mobile:rounded-[2.7vw] p-4 mobile:p-[2.2vw] flex flex-col justify-center items-center text-center flex-1 h-[105px] border border-white/5 shadow-xl">
+                                <h2 className="text-[32px] mobile:text-[4.16vw] font-bold text-white leading-[120%] tracking-[-0.04em]">350K+</h2>
+                                <p className="text-white text-[16px] mobile:text-[0.97vw] font-bold leading-tight tracking-[-0.04em]">
+                                    Groups Connected
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -451,20 +463,20 @@ function TestimonialsSlider() {
     };
 
     return (
-        <section className="w-full h-[36vw] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[5.5vw] px-[7vw]">
-            {/* Outer Container - 1083px */}
-            <div className="w-full max-w-[75.2vw] h-[24.8vw] flex flex-col items-center gap-[1.87vw] relative isolation-isolate">
+        <section className="w-full h-auto mobile:h-[36vw] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[40px] mobile:py-[5.5vw] px-[16px] mobile:px-[7vw]">
+            {/* Outer Container - 1083px for desktop, 408px for mobile */}
+            <div className="w-full max-w-[408px] mobile:max-w-[75.2vw] h-[300px] mobile:h-[24.8vw] flex flex-col items-center gap-[40px] mobile:gap-[1.87vw] relative isolation-isolate">
 
                 {/* Huge Quotation Mark Decor */}
                 <div
-                    className="absolute right-[-0.9vw] top-[-0.9vw] w-[8.75vw] h-[6.3vw] flex items-center justify-center select-none pointer-events-none z-0"
+                    className="absolute right-0 top-[13px] mobile:right-[-0.9vw] mobile:top-[-0.9vw] w-[75px] h-[54px] mobile:w-[8.75vw] mobile:h-[6.3vw] flex items-center justify-center select-none pointer-events-none z-0"
                     style={{ opacity: 0.2 }}
                 >
-                    <span className="text-[9.3vw] text-white font-serif leading-none">”</span>
+                    <span className="text-[120px] mobile:text-[9.3vw] text-white font-serif leading-none">”</span>
                 </div>
 
                 {/* Slides Container */}
-                <div className="w-full h-[17.4vw] flex flex-col items-start relative z-10">
+                <div className="w-full h-[268px] mobile:h-[17.4vw] flex flex-col items-start relative z-10">
                     <AnimatePresence initial={false} custom={direction} mode="popLayout">
                         <motion.div
                             key={index}
@@ -478,14 +490,14 @@ function TestimonialsSlider() {
                                 ease: [0.32, 0.72, 0, 1],
                                 opacity: { duration: 0.4 }
                             }}
-                            className="absolute w-full h-full flex flex-col items-start gap-[1.87vw]"
+                            className="absolute w-full h-full flex flex-col items-start gap-[24px] mobile:gap-[1.87vw]"
                         >
                             {/* Avatars Row */}
-                            <div className="flex flex-row items-start gap-[0.76vw] w-[20vw] h-[4.4vw]">
+                            <div className="flex flex-row items-start gap-[8px] mobile:gap-[0.76vw] w-fit h-[48px] mobile:h-[4.4vw]">
                                 {TESTIMONIALS[index].avatars.map((src, i) => (
                                     <div
                                         key={i}
-                                        className="w-[4.4vw] h-[4.4vw] rounded-full overflow-hidden flex-shrink-0 bg-[#5F00DB]"
+                                        className="w-[48px] h-[48px] mobile:w-[4.4vw] mobile:h-[4.4vw] rounded-full overflow-hidden flex-shrink-0 bg-[#5F00DB]"
                                     >
                                         <Image
                                             src={src}
@@ -500,28 +512,30 @@ function TestimonialsSlider() {
 
                             {/* Testimonial Text */}
                             <h2
-                                className="w-full h-[7.36vw] flex items-center text-white font-normal"
+                                className="w-full h-[152px] mobile:h-[7.36vw] flex items-center text-white font-normal"
                                 style={{
                                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
-                                    fontSize: '3.33vw',
-                                    lineHeight: '110%',
+                                    fontSize: 'clamp(24px, 32px, 32px)', // Fixed 32px for mobile, fallback to 24 if too small but specs say 32
+                                    lineHeight: '120%',
                                     letterSpacing: '-0.04em'
                                 }}
                             >
-                                {TESTIMONIALS[index].text}
+                                <span className="block mobile:hidden text-[32px]">{TESTIMONIALS[index].text}</span>
+                                <span className="hidden mobile:block text-[3.33vw] leading-[110%]">{TESTIMONIALS[index].text}</span>
                             </h2>
 
                             {/* Author Name */}
                             <p
-                                className="w-full h-[1.87vw] flex items-center text-white font-normal"
+                                className="w-full h-[20px] mobile:h-[1.87vw] flex items-center text-white font-normal"
                                 style={{
                                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
-                                    fontSize: '1.66vw',
+                                    fontSize: 'clamp(16px, 18px, 18px)',
                                     lineHeight: '110%',
                                     letterSpacing: '-0.04em'
                                 }}
                             >
-                                {TESTIMONIALS[index].author}
+                                <span className="block mobile:hidden text-[18px]">{TESTIMONIALS[index].author}</span>
+                                <span className="hidden mobile:block text-[1.66vw]">{TESTIMONIALS[index].author}</span>
                             </p>
                         </motion.div>
                     </AnimatePresence>
@@ -529,19 +543,19 @@ function TestimonialsSlider() {
 
                 {/* Navigator / Controls */}
                 <div
-                    className="absolute right-0 bottom-0 flex flex-row items-center gap-[1.1vw] w-[5.5vw] h-[2.2vw]"
+                    className="absolute right-0 bottom-0 flex flex-row items-center justify-end px-[16px] mobile:px-0 gap-[24px] mobile:gap-[1.1vw] w-full mobile:w-[5.5vw] h-[48px] mobile:h-[2.2vw]"
                 >
                     <button
                         onClick={prev}
-                        className="w-[2.2vw] h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
+                        className="w-[48px] h-[48px] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
                     >
-                        <ChevronLeft className="w-[1.1vw] h-[1.1vw] text-white" />
+                        <ChevronLeft className="w-[24px] h-[24px] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
                     </button>
                     <button
                         onClick={next}
-                        className="w-[2.2vw] h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
+                        className="w-[48px] h-[48px] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
                     >
-                        <ChevronRight className="w-[1.1vw] h-[1.1vw] text-white" />
+                        <ChevronRight className="w-[24px] h-[24px] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
                     </button>
                 </div>
             </div>

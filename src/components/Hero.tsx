@@ -38,7 +38,7 @@ export default function Hero() {
     const [activeIconIndex, setActiveIconIndex] = useState(0);
 
     useEffect(() => {
-        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        const checkMobile = () => setIsMobile(window.innerWidth < 440);
         checkMobile();
         window.addEventListener("resize", checkMobile);
         return () => window.removeEventListener("resize", checkMobile);
@@ -111,7 +111,7 @@ export default function Hero() {
     });
 
     return (
-        <section className="relative w-full h-[205vw] md:h-[60vw] flex flex-col items-center overflow-hidden bg-[#111111] select-none">
+        <section className="relative w-full h-[205vw] mobile:h-[62.2vw] flex flex-col items-center overflow-hidden bg-[#111111] select-none">
             {/* Background Image Layer */}
             <div
                 className="absolute inset-x-[-2.08%] inset-y-[-3.7%] z-0"
@@ -126,84 +126,84 @@ export default function Hero() {
 
             {/* Icon 1: Eyes (Top Left) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] md:w-[5.5vw] md:h-[5.5vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
-                    left: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '7.08vw',
-                    top: isMobile ? '27.27vw' : '11.18vw'
+                    left: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '7.91vw',
+                    top: isMobile ? '27.27vw' : '12.5vw'
                 }}
                 animate={iconAnimation(0)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] opacity-50 blur-[5.68vw] md:blur-[1.18vw]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
                     <Image src={isMobile ? ICONS.eyes.mobile : ICONS.eyes.desktop} alt="" fill className="object-contain" />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] md:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.eyes.mobile : ICONS.eyes.desktop} alt="Eyes Icon" fill className="object-contain" />
                 </div>
             </motion.div>
 
             {/* Icon 2: Tick (Top Right) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] md:w-[5.5vw] md:h-[5.5vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
-                    right: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '12.6vw',
-                    top: isMobile ? '27.27vw' : '11.18vw'
+                    right: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '7.91vw',
+                    top: isMobile ? '27.27vw' : '12.5vw'
                 }}
                 animate={iconAnimation(1)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] opacity-50 blur-[5.68vw] md:blur-[1.18vw]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
                     <Image src={isMobile ? ICONS.tick.mobile : ICONS.tick.desktop} alt="" fill className="object-contain" />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] md:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.tick.mobile : ICONS.tick.desktop} alt="Tick Icon" fill className="object-contain" />
                 </div>
             </motion.div>
 
             {/* Icon 3: Human/People (Bottom Left) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] md:w-[5.5vw] md:h-[5.5vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
-                    left: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '21.9vw',
-                    top: isMobile ? '124.9vw' : '24.9vw'
+                    left: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '18.33vw',
+                    top: isMobile ? '124.9vw' : '27.91vw'
                 }}
                 animate={iconAnimation(2)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] opacity-50 blur-[5.68vw] md:blur-[1.18vw]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
                     <Image src={isMobile ? ICONS.human.mobile : ICONS.human.desktop} alt="" fill className="object-contain" />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] md:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.human.mobile : ICONS.human.desktop} alt="Human Icon" fill className="object-contain" />
                 </div>
             </motion.div>
 
             {/* Icon 4: Handshake (Bottom Right) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] md:w-[5.5vw] md:h-[5.5vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
-                    right: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '16.3vw',
-                    top: isMobile ? '124.9vw' : '24.9vw'
+                    right: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '18.33vw',
+                    top: isMobile ? '124.9vw' : '27.91vw'
                 }}
                 animate={iconAnimation(3)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] opacity-50 blur-[5.68vw] md:blur-[1.18vw]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
                     <Image src={isMobile ? ICONS.handshake.mobile : ICONS.handshake.desktop} alt="" fill className="object-contain" />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] md:w-[4.65vw] md:h-[4.65vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] md:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.handshake.mobile : ICONS.handshake.desktop} alt="Handshake Icon" fill className="object-contain" />
                 </div>
             </motion.div>
 
             {/* Content Layer */}
             <div
-                className="absolute z-20 flex flex-col items-center w-full px-[4.5vw] md:px-[3.2vw]"
+                className="absolute z-20 flex flex-col items-center w-full px-[4.5vw] mobile:px-[3.2vw] lg:px-[152px]"
                 style={{
-                    top: isMobile ? '50vw' : '11.18vw',
-                    gap: isMobile ? '5.45vw' : '1.87vw'
+                    top: isMobile ? '50vw' : '12.5vw',
+                    gap: isMobile ? '5.45vw' : '2.08vw'
                 }}
             >
                 {/* Heading */}
-                <div className="flex flex-col items-center gap-[2.72vw] md:gap-[1.1vw] w-full text-center max-w-[81.82vw] md:max-w-none">
+                <div className="flex flex-col items-center gap-[2.72vw] mobile:gap-[1.25vw] w-full text-center max-w-[81.82vw] mobile:max-w-none">
                     <h1
-                        className="text-white font-bold text-[13.63vw] md:text-[4.65vw] leading-[110%] tracking-[-0.04em]"
+                        className="text-white font-bold text-[13.63vw] mobile:text-[5.21vw] leading-[110%] tracking-[-0.04em]"
                         style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" }}
                     >
                         Meet New People,<br />
@@ -213,14 +213,14 @@ export default function Hero() {
 
                 {/* Text */}
                 <p
-                    className="text-white font-normal text-[4.09vw] md:text-[1.11vw] leading-[4.77vw] md:leading-[1.45vw] text-center w-full max-w-[81.82vw] md:max-w-none"
+                    className="text-white font-normal text-[4.09vw] mobile:text-[1.25vw] leading-[4.77vw] mobile:leading-[1.66vw] text-center w-full max-w-[81.82vw] mobile:max-w-none"
                     style={{ fontFamily: "'SF Pro Text', sans-serif" }}
                 >
                     Groups connect with groups. Real conversations. Real chemistry.
                 </p>
 
                 {/* Links / Download Buttons */}
-                <div className="flex flex-row justify-center items-start gap-[3.63vw] md:gap-[1.1vw] w-full mt-[1vw] md:mt-0">
+                <div className="flex flex-row justify-center items-start gap-[3.63vw] mobile:gap-[1.1vw] w-full mt-[1vw] mobile:mt-0">
                     <AppStoreButton />
                     <GooglePlayButton />
                 </div>
@@ -228,8 +228,8 @@ export default function Hero() {
 
             {/* Carousel Layer */}
             <div
-                className="absolute z-20 flex flex-row justify-center items-center w-full h-[40.9vw] md:h-[26.5vw]"
-                style={{ top: isMobile ? '156.72vw' : '31vw' }}
+                className="absolute z-20 flex flex-row justify-center items-center w-full h-[40.9vw] mobile:h-[25vw]"
+                style={{ top: isMobile ? '156.72vw' : '37.18vw' }}
             >
                 <div className="relative w-full h-full flex items-center justify-center">
                     <AnimatePresence initial={false} custom={direction} mode="popLayout">
@@ -251,8 +251,8 @@ export default function Hero() {
                                         opacity: { duration: 0.4 }
                                     }}
                                     className={cn(
-                                        "absolute overflow-hidden rounded-[2vw] md:rounded-[1.1vw] flex-shrink-0 shadow-2xl",
-                                        status === 'center' ? "w-[68.18vw] h-[40.9vw] md:w-[42.5vw] md:h-[26.5vw]" : "w-[68.18vw] h-[40.9vw] md:w-[42.5vw] md:h-[26.5vw]"
+                                        "absolute overflow-hidden rounded-[2vw] mobile:rounded-[1.1vw] flex-shrink-0 shadow-2xl",
+                                        status === 'center' ? "w-[68.18vw] h-[40.9vw] mobile:w-[42.5vw] mobile:h-[25vw]" : "w-[68.18vw] h-[40.9vw] mobile:w-[42.5vw] mobile:h-[25vw]"
                                     )}
                                     style={{
                                         // Use the same width/height and let scale handle the sizing for smooth transitions
