@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function StatisticsGrid() {
   return (
     <section
-      className="w-full flex justify-center mobile:mx-auto"
+      className="w-full bg-[#111111] flex justify-center mobile:mx-auto"
       style={{
         paddingBlock: "6.25vw",
         paddingInline: "7.9167vw",

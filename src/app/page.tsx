@@ -11,7 +11,7 @@ import TestimonialsSlider from "@/components/TestimonialsSlider";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-0">
+    <div className="flex flex-col gap-0 bg-[#111111]">
       <Hero />
       <HowItWorks />
       <Features />

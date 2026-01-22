@@ -85,16 +85,22 @@ export default function TestimonialsSlider() {
     };
 
     return (
-        <section className="w-full h-auto mobile:h-[36vw] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[40px] mobile:py-[5.5vw] px-[7.0vw]">
+        <section className="w-full bg-[#111111] h-auto mobile:h-[36vw] flex flex-col items-center justify-center relative overflow-hidden bg-transparent py-[40px] mobile:py-[5.5vw] px-[7.0vw]">
             {/* Outer Container - 1083px for desktop, 408px for mobile */}
-            <div className="w-full max-w-[408px] mobile:max-w-[75.2vw] h-[300px] mobile:h-[24.8vw] flex flex-col items-center gap-[40px] mobile:gap-[1.87vw] relative isolation-isolate">
+            <div className="w-full bg-[#111111] max-w-[408px] mobile:max-w-[75.2vw] h-[300px] mobile:h-[24.8vw] flex flex-col items-center gap-[40px] mobile:gap-[1.87vw] relative isolation-isolate">
 
                 {/* Huge Quotation Mark Decor */}
                 <div
-                    className="absolute right-0 top-[13px] mobile:right-[-0.9vw] mobile:top-[-0.9vw] w-[75px] h-[54px] mobile:w-[8.75vw] mobile:h-[6.3vw] flex items-center justify-center select-none pointer-events-none z-0"
-                    style={{ opacity: 0.2 }}
+                    className="absolute right-0 lg:top-[-55px] mobile:top-[0.9vw] mobile:right-[-0.9vw] mobile:top-[-0.9vw] w-[75px] h-[54px] mobile:w-[8.75vw] mobile:h-[6.3vw] flex items-center justify-center select-none pointer-events-none z-0"
+                    style={{ opacity: 0.8 }}
                 >
-                    <span className="text-[120px] mobile:text-[9.3vw] text-white font-serif leading-none">”</span>
+                    <Image
+                        src="/assets/Testimonials/comma-1.png"
+                        alt="Decorative Quotation Mark"
+                        width={75}
+                        height={54}
+                        className="object-contain w-full h-full"
+                    />
                 </div>
 
                 {/* Slides Container */}

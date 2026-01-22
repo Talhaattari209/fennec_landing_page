@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProblemStatement() {
     return (
-        <div className="w-full flex flex-col items-center py-[40px] mobile:py-[5.5vw] px-[7.0vw] mobile:px-[7.0vw]">
+        <div className="w-full bg-[#111111] flex flex-col items-center py-[40px] mobile:py-[5.5vw] px-[7.0vw] mobile:px-[7.0vw]">
             <div className="w-full max-w-[408px] mobile:max-w-[90.24vw] flex flex-col items-start gap-[40px] mobile:gap-[1.87vw]">
 
                 {/* Heading Section */}
@@ -10,9 +10,9 @@ export default function ProblemStatement() {
                     <h2 className="text-white text-[48px] mobile:text-[3vw] font-bold leading-[110%] tracking-[-0.04em] text-left">
                         Traditional dating <br className="mobile:hidden" />
                         apps are <br className="mobile:hidden" />
-                        <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] mobile:px-[0.97vw] mobile:py-[0.14vw] rounded-[12px] mobile:rounded-[0.76vw] my-[1vw] mobile:my-0">too individual.</span> <br />
+                        <span className="inline-block bg-[#5F00DB] px-[1.2vw] py-[0.2vw] mobile:px-[0.5vw] mobile:py-[0.05vw] rounded-[12px] mobile:rounded-[0.76vw] my-[0.3vw] mobile:my-0">too individual.</span> <br />
                         Social networks <br className="mobile:hidden" />
-                        <span className="inline-block bg-[#5F00DB] px-[2vw] py-[0.5vw] mobile:px-[0.97vw] mobile:py-[0.14vw] rounded-[12px] mobile:rounded-[0.76vw] my-[1vw] mobile:my-0 mt-[1vw]">are too broad.</span>
+                        <span className="inline-block bg-[#5F00DB] px-[1.2vw] py-[0.2vw] mobile:px-[0.5vw] mobile:py-[0.05vw] rounded-[12px] mobile:rounded-[0.76vw] my-[0.3vw] mobile:my-0 mt-[0.3vw]">are too broad.</span>
                     </h2>
                 </div>
 

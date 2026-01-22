@@ -2,14 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Youtube } from "lucide-react";
 
 const SOCIAL_LINKS = [
-    { icon: <Facebook size={16} />, href: "#" },
-    { icon: <Instagram size={16} />, href: "#" },
-    { icon: <TikTokIcon />, href: "#" },
-    { icon: <XIcon />, href: "#" },
-    { icon: <Youtube size={16} />, href: "#" },
+    { icon: <Image src="/assets/Footer section/facebook_icon.png" alt="Facebook" width={24} height={24} />, href: "#" },
+    { icon: <Image src="/assets/Footer section/insta_icon.png" alt="Instagram" width={24} height={24} />, href: "#" },
+    { icon: <TikTokIcon size={24} />, href: "#" },
+    { icon: <XIcon size={24} />, href: "#" },
+    { icon: <Image src="/assets/Footer section/yt_icon.png" alt="YouTube" width={24} height={24} />, href: "#" },
 ];
 
 const QUICK_LINKS = [

@@ -136,7 +136,7 @@ export default function Header() {
                                 <div className="flex items-center gap-[2.1vw] h-[8.5vw]">
                                     <div className="relative w-[8.5vw] h-[8.5vw]">
                                         <Image
-                                            src="/assets/Header_Section/Vector_logo.png"
+                                            src="/assets/Header_Section/mobile_version/mobile_icon_button.png"
                                             alt="Fennec Logo"
                                             fill
                                             className="object-contain"
