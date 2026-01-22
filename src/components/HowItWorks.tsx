@@ -220,28 +220,28 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
                 {/* Image Background */}
                 <div className={`absolute z-0 ${isMobile
                     ? 'inset-x-[-73.9px] top-[-3.87px] bottom-[3.87px]'
-                    : 'inset-x-[-3.4vw] top-[-0.3vw] bottom-[0.3vw]'
+                    : 'inset-x-[-3.4vw] top-[-0.3vw] bottom-[0.3vw] lg:rounded-[1.25vw]'
                     }`}>
                     <Image
                         src={card.image}
                         alt={card.title}
                         fill
-                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-60 rounded-[16px] lg:rounded-[1.25vw]"
+                        className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-60
+                                    overflow-hidden rounded-[16px] lg:rounded-[1.25vw]"
                         sizes={isMobile ? "376px" : "20.83vw"}
                     />
                 </div>
 
                 {/* Light Purple Shade Hover Overlay */}
-                <div className="absolute inset-0 bg-[#9D59FF]/40 opacity-0 group-hover:opacity-10 transition-opacity duration-500 z-[5] pointer-events-none" />
+                <div className="absolute inset-0 bg-[#5F00DB]/40 opacity-0 group-hover:opacity-10 transition-opacity duration-500 z-[5] pointer-events-none" />
 
                 <div
-                    className={`absolute bottom-0 left-0 right-0 z-10 flex flex-col justify-end ${isMobile ? 'p-4 pb-6' : 'p-[1.25vw] pb-[1.25vw] pt-[3.33vw]'
-                        }`}
+                    className={`absolute bottom-0 left-0 right-0 z-10 flex flex-col justify-end ${isMobile ? 'p-4 pb-6' : 'p-[1.25vw] pb-[1.25vw] pt-[3.33vw]'}`}
                     style={{
-                        height: card.textHeight,
-                        background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 63, 0.75) 100%)",
-                        backdropFilter: isMobile ? "blur(4px)" : "blur(0.625vw)",
-                        WebkitBackdropFilter: isMobile ? "blur(4px)" : "blur(0.625vw)"
+                        height: isMobile ? `calc(${card.textHeight} / 2)` : `calc(${card.textHeight} / 2)`, // Reduced height by 50%
+                        background: "linear-gradient(180deg, rgba(22, 0, 63, 0) 0%, rgba(22, 0, 63, 0.55) 100%)",
+                        backdropFilter: isMobile ? "blur(2px)" : "blur(0.1625vw)", // Adjusted blur height proportionally
+                        WebkitBackdropFilter: isMobile ? "blur(2px)" : "blur(0.1625vw)"
                     }}
                 >
                     <div
