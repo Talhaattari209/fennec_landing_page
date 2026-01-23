@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SOCIAL_LINKS = [
     { icon: <Image src="/assets/Footer section/facebook_icon.png" alt="Facebook" width={24} height={24} />, href: "#" },
-    { icon: <Image src="/assets/Footer section/insta_icon.png" alt="Instagram" width={24} height={24} />, href: "#" },
+    { icon: <InstagramIcon size={24} />, href: "#" },
     { icon: <TikTokIcon size={24} />, href: "#" },
     { icon: <XIcon size={24} />, href: "#" },
     { icon: <Image src="/assets/Footer section/yt_icon.png" alt="YouTube" width={24} height={24} />, href: "#" },
@@ -204,6 +204,16 @@ function XIcon({ size = 16 }: { size?: number }) {
     return (
         <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
+        </svg>
+    );
+}
+
+function InstagramIcon({ size = 24 }: { size?: number }) {
+    return (
+        <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" fillRule="evenodd" d="M7.25 12C7.25 9.37665 9.37665 7.25 12 7.25C14.6234 7.25 16.75 9.37665 16.75 12C16.75 14.6234 14.6234 16.75 12 16.75C9.37665 16.75 7.25 14.6234 7.25 12ZM12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 13.7949 10.2051 15.25 12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 10.2051 13.7949 8.75 12 8.75Z" clipRule="evenodd" />
+            <path fill="currentColor" d="M18.0675 7.00075C18.3446 6.69287 18.3196 6.21865 18.0117 5.94156C17.7038 5.66447 17.2296 5.68942 16.9525 5.99731L16.9425 6.00842C16.6654 6.3163 16.6904 6.79052 16.9983 7.06761C17.3062 7.34471 17.7804 7.31975 18.0575 7.01186L18.0675 7.00075Z" />
+            <path fill="currentColor" fillRule="evenodd" d="M2.25 8C2.25 4.82436 4.82436 2.25 8 2.25H16C19.1756 2.25 21.75 4.82436 21.75 8V16C21.75 19.1756 19.1756 21.75 16 21.75H8C4.82436 21.75 2.25 19.1756 2.25 16V8ZM8 3.75C5.65279 3.75 3.75 5.65279 3.75 8V16C3.75 18.3472 5.65279 20.25 8 20.25H16C18.3472 20.25 20.25 18.3472 20.25 16V8C20.25 5.65279 18.3472 3.75 16 3.75H8Z" clipRule="evenodd" />
         </svg>
     );
 }

@@ -8,7 +8,7 @@ export default function About() {
             id="about"
             className="flex flex-col items-center py-[9.09vw] mobile:py-[5.5vw] px-[3.63vw] mobile:px-[7.08vw] lg:px-[7.92vw] lg:py-[6.25vw] gap-[18.18vw] mobile:gap-[5.5vw] lg:gap-[6.25vw] w-full h-auto"
             style={{
-                background: "linear-gradient(180deg, #111111 10%, rgba(95, 0, 219, 0.25) 80%, #111111 90%)",
+                background: "linear-gradient(180deg, #111111 10%, rgba(95, 0, 219, 0.25) 25%, rgba(95, 0, 219, 0.25) 60%, #111111 95%)",
             }}
         >
             {/* Row 1: About Us */}
@@ -16,7 +16,7 @@ export default function About() {
                 {/* Image */}
                 <div className="relative w-full mobile:w-[35.7vw] lg:w-[40vw] h-[92.72vw] mobile:h-[28.4vw] lg:h-[31.82vw] flex-none order-0 self-stretch shrink-0">
                     <Image
-                        src="/assets/About/Image_Line_1.png"
+                        src="/assets/About/Image_Line_1.webp"
                         alt="About Us"
                         fill
                         className="object-cover rounded-[3.63vw] mobile:rounded-[1.87vw]"
@@ -43,7 +43,7 @@ export default function About() {
                         <span className="block mobile:hidden">We&apos;re redefining how people connect — together.</span>
                         <span className="hidden mobile:block mobile:text-[3vw] mobile:leading-[110%]">We&apos;re redefining how people connect — together.</span>
                     </h1>
-                    <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[1.25vw]">
+                    <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[2.08vw]">
                         <p
                             className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
@@ -80,7 +80,7 @@ export default function About() {
                 {/* Image - Order 0 on Mobile */}
                 <div className="relative w-full mobile:w-[35.7vw] lg:w-[40vw] h-[92.72vw] mobile:h-[32.8vw] lg:h-[36.77vw] flex-none order-0 mobile:order-1 self-stretch shrink-0">
                     <Image
-                        src="/assets/About/Image_Line_2.png"
+                        src="/assets/About/Image_Line_2.webp"
                         alt="Our Mission"
                         fill
                         className="object-cover rounded-[3.63vw] mobile:rounded-[1.87vw]"
@@ -107,7 +107,7 @@ export default function About() {
                         <span className="block mobile:hidden">To create a seamless way for people to form and discover groups that truly align with their interests, identities, and shared goals.</span>
                         <span className="hidden mobile:block mobile:text-[2.22vw] mobile:leading-[110%]">To create a seamless way for people to form and discover groups that truly align with their interests, identities, and shared goals.</span>
                     </h3>
-                    <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[1.25vw]">
+                    <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[2.08vw]">
                         <p
                             className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{
@@ -135,7 +135,7 @@ export default function About() {
                 {/* Image */}
                 <div className="relative w-full mobile:w-[35.7vw] lg:w-[40vw] h-[92.72vw] mobile:h-[31.5vw] lg:h-[35.26vw] flex-none order-0 self-stretch shrink-0">
                     <Image
-                        src="/assets/About/Image_Line_3.png"
+                        src="/assets/About/Image_Line_3.webp"
                         alt="Our Vision"
                         fill
                         className="object-cover rounded-[3.63vw] mobile:rounded-[1.87vw]"
@@ -162,7 +162,7 @@ export default function About() {
                         <span className="block mobile:hidden">To be the leading platform where meaningful group connections spark new friendships, communities, and experiences around the world.</span>
                         <span className="hidden mobile:block mobile:text-[2.22vw] mobile:leading-[110%]">To be the leading platform where meaningful group connections spark new friendships, communities, and experiences around the world.</span>
                     </h3>
-                    <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[1.25vw]">
+                    <div className="flex flex-col gap-[5.45vw] mobile:gap-[0.9vw] lg:gap-[2.08vw]">
                         <p
                             className="w-full text-[#CCCCCC] text-[4.09vw] lg:text-[1.25vw] font-normal flex items-center tracking-[-0.04em] mobile:leading-[177%] lg:leading-[120%]"
                             style={{

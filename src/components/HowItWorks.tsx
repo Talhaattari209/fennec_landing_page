@@ -66,7 +66,7 @@ const CARDS_MOBILE = [
         id: 1,
         title: "Create Your Group",
         description: "Bring up to 5 friends. Your group becomes your identity.",
-        image: "/assets/How to work Section/StickyWrapper_4.png",
+        image: "/assets/How to work Section/StickyWrapper_4.webp",
         rotate: -3,
         textHeight: "39.31vw",
         textOffset: "2.41vw",
@@ -77,7 +77,7 @@ const CARDS_MOBILE = [
         id: 2,
         title: "Match With Other Groups",
         description: "Swipe through groups that share your vibe, interests, and intentions.",
-        image: "/assets/How to work Section/StickyWrapper_3.png",
+        image: "/assets/How to work Section/StickyWrapper_3.webp",
         rotate: 3,
         textHeight: "39.31vw",
         textOffset: "0vw",
@@ -87,7 +87,7 @@ const CARDS_MOBILE = [
         id: 3,
         title: "Start the Conversation",
         description: "Chat, send photos, poke someone you like, or jump on voice/video calls when you're ready.",
-        image: "/assets/How to work Section/StickyWrapper_2.png",
+        image: "/assets/How to work Section/StickyWrapper_2.webp",
         rotate: -3,
         textHeight: "39.31vw",
         textOffset: "2.41vw",
@@ -97,7 +97,7 @@ const CARDS_MOBILE = [
         id: 4,
         title: "Meet IRL",
         description: "Take your connections from screen to real life—with the comfort of people you trust.",
-        image: "/assets/How to work Section/StickyWrapper_1.png",
+        image: "/assets/How to work Section/StickyWrapper_1.webp",
         rotate: 3,
         textHeight: "39.31vw",
         textOffset: "0vw",
@@ -134,7 +134,7 @@ export default function HowItWorks() {
         <section
             id="how-it-works"
             ref={sectionRef}
-            className="relative w-full bg-[#111111] mb-[10vh] h-[500vh]" // Sticky stacking needs vertical room
+            className="relative w-full bg-[#111111] h-[500vh]" // Sticky stacking needs vertical room
         >
             {/* Sticky Viewport Layer */}
             <div className="sticky top-0 h-screen w-full flex flex-col items-center overflow-hidden px-[3.63vw] lg:px-[7.91vw]">

@@ -116,7 +116,7 @@ export default function Hero() {
             <div
                 className="absolute inset-x-[-2.08%] inset-y-[-3.7%] z-0"
                 style={{
-                    background: `linear-gradient(180deg, rgba(17, 17, 17, 0.5) 0%, #111111 70%), url('/assets/Feature Subsection-1/Card BG.png')`,
+                    background: `linear-gradient(180deg, rgba(17, 17, 17, 0.5) 0%, #111111 70%), url('/assets/Feature Subsection-1/Card BG.webp')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}

@@ -51,7 +51,7 @@ export default function Header() {
                     // Desktop Styles
                     "mobile:max-w-[84.16vw] mobile:h-auto mobile:p-[0.83vw] mobile:bg-[#5F00DB]/25 mobile:backdrop-blur-[0.625vw] mobile:rounded-[3.33vw] mobile:gap-[1.25vw] border-none shadow-none",
                     // Mobile Styles
-                    "h-[12.2vw] px-[2.9vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5 max-w-[93.6vw]",
+                    "h-[12.2vw] px-[5vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5 max-w-[93.6vw]",
                     isScrolled && "mobile:bg-[#5F00DB]/40"
                 )}>
                     {/* Logo - Center on Desktop, Left on Mobile */}
@@ -103,7 +103,7 @@ export default function Header() {
                             )}
                             onClick={scrollToDownload}
                         >
-                            <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[0.83vw] leading-[1.25vw]">
+                            <span className="font-['SF_Pro_Text',sans-serif] font-normal text-[0.94vw] leading-[1.25vw]">
                                 Download App
                             </span>
                             <Download className="w-[1.25vw] h-[1.25vw]" />
@@ -111,10 +111,15 @@ export default function Header() {
 
                         {/* Mobile Menu Icon Button */}
                         <button
-                            className="mobile:hidden w-[6.4vw] h-[6.4vw] flex items-center justify-center text-white rounded-full transition-colors"
+                            className="mobile:hidden relative w-[6.4vw] h-[6.4vw] flex items-center justify-center text-white rounded-full transition-colors"
                             onClick={() => setIsMobileMenuOpen(true)}
                         >
-                            <Menu className="w-[6.4vw] h-[6.4vw]" />
+                            <Image
+                                src="/assets/Header_Section/mobile_version/mobile_icon_button.png"
+                                alt="Menu"
+                                fill
+                                className="object-contain"
+                            />
                         </button>
                     </div>
                 </nav>
@@ -132,11 +137,12 @@ export default function Header() {
                     >
                         {/* Menu Header Area */}
                         <div className="w-full flex justify-center  mt-[3.2vw]">
-                            <div className="w-full max-w-[93.6vw] h-[12.2vw] flex items-center justify-between  bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5">
+                            <div className="w-full max-w-[93.6vw] h-[12.2vw] flex items-center justify-between px-[5vw] mobile:px-[8vw] bg-[#5F00DB]/25 backdrop-blur-[2.1vw] rounded-[11.4vw] border border-white/5">
                                 <div className="flex items-center gap-[2.1vw] h-[8.5vw]">
                                     <div className="relative w-[8.5vw] h-[8.5vw]">
+
                                         <Image
-                                            src="/assets/Header_Section/mobile_version/mobile_icon_button.png"
+                                            src="/assets/Header_Section/Vector_logo.png"
                                             alt="Fennec Logo"
                                             fill
                                             className="object-contain"
@@ -191,15 +197,15 @@ export default function Header() {
                             >
                                 <Button
                                     className={cn(
-                                        "w-[35vw] h-[10.1vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[9.3vw] px-[4.2vw] flex items-center justify-center gap-[2.1vw] transition-all",
+                                        "w-[60vw] h-[14vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[9.3vw] px-[6vw] flex items-center justify-center gap-[3vw] transition-all",
                                         "shadow-[0px_0.8vw_2.1vw_rgba(95,0,219,0.25)]"
                                     )}
                                     onClick={scrollToDownload}
                                 >
-                                    <span className="font-['SF_Pro_Text',sans-serif] font-medium text-[2.9vw] leading-[4.2vw]">
+                                    <span className="font-['SF_Pro_Text',sans-serif] font-normal text-[6.4vw] leading-[7.5vw] whitespace-nowrap">
                                         Download App
                                     </span>
-                                    <Download className="w-[4.2vw] h-[4.2vw]" />
+                                    <Download className="w-[6.4vw] h-[6.4vw]" />
                                 </Button>
                             </motion.div>
                         </div>

@@ -26,7 +26,7 @@ export default function ProblemStatement() {
                 {/* Lower Image Card */}
                 <div className="relative w-full h-[92.72vw] mobile:h-[31.9vw] rounded-[5.45vw] mobile:rounded-[1.8vw] overflow-hidden shadow-2xl">
                     <Image
-                        src="/assets/Feature Subsection-1/lottie_file.png"
+                        src="/assets/Feature Subsection-1/lottie_file.webp"
                         alt="Group Connection"
                         fill
                         className="object-cover"
