@@ -115,7 +115,7 @@ export default function Header() {
                             onClick={() => setIsMobileMenuOpen(true)}
                         >
                             <Image
-                                src="/assets/Header_Section/mobile_version/mobile_icon_button.png"
+                                src="/assets/Header_Section/mobile_version/mobile_Icon_Button.png"
                                 alt="Menu"
                                 fill
                                 className="object-contain"
@@ -197,12 +197,12 @@ export default function Header() {
                             >
                                 <Button
                                     className={cn(
-                                        "w-[60vw] h-[14vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[9.3vw] px-[6vw] flex items-center justify-center gap-[3vw] transition-all",
+                                        "w-[60vw] h-[14vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[9.3vw] px-[7.2vw] flex items-center justify-center gap-[3vw] transition-all",
                                         "shadow-[0px_0.8vw_2.1vw_rgba(95,0,219,0.25)]"
                                     )}
                                     onClick={scrollToDownload}
                                 >
-                                    <span className="font-['SF_Pro_Text',sans-serif] font-normal text-[6.4vw] leading-[7.5vw] whitespace-nowrap">
+                                    <span className="font-['SF_Pro_Text',sans-serif] font-normal text-[5vw] leading-[7.5vw] whitespace-nowrap">
                                         Download App
                                     </span>
                                     <Download style={{ width: '7vw', height: '6.5vw' }} />

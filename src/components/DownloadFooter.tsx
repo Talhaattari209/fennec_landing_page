@@ -35,7 +35,7 @@ export function Download() {
                 <div className="relative w-full h-full mobile:absolute mobile:w-[62.4vw] mobile:h-[51.6vw] mobile:top-0 mobile:left-1/2 mobile:-translate-x-1/2 z-10 pointer-events-none">
 
                     {/* Phones Image Block */}
-                    <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[376px] h-[634px] mobile:w-[37.2vw] mobile:h-[51.6vw] lg:w-[41.7vw] lg:h-[57.8vw] flex justify-center items-center">
+                    <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[376px] h-[634px] mobile:w-[37.2vw] mobile:h-[51.6vw] lg:w-[41.7vw] lg:h-[57.8vw] flex justify-center items-center z-20">
                         <div className="relative w-full h-full">
                             <Image
                                 src="/assets/download_Section/Phones.png"
@@ -49,7 +49,7 @@ export function Download() {
 
                     {/* CTA Card */}
                     <div
-                        className="absolute left-1/2 -translate-x-1/2 w-[376px] h-[365px] bg-[#5F00DB] rounded-[24px] flex flex-col items-center justify-center p-[24px] gap-[24px] z-30 shadow-[0px_-100px_100px_rgba(22,0,63,0.5)] pointer-events-auto top-[659px]
+                        className="absolute left-1/2 -translate-x-1/2 w-[376px] h-[365px] bg-[#5F00DB] rounded-[24px] flex flex-col items-center justify-center p-[24px] gap-[24px] z-40 shadow-[0px_-100px_100px_rgba(22,0,63,0.5)] pointer-events-auto top-[659px]
                                    mobile:w-[62.3vw] mobile:h-[18.2vw] mobile:rounded-[1.87vw] mobile:p-[1.87vw] mobile:gap-[1.87vw] mobile:shadow-[0px_-4.65vw_4.65vw_rgba(22,0,63,0.5)] mobile:top-[calc(50%-9.1vw+16.6vw)]
                                    lg:w-[69.8vw] lg:h-[20.5vw] lg:rounded-[2.1vw] lg:p-[2.1vw] lg:gap-[2.1vw] lg:shadow-[0px_-5.2vw_5.2vw_rgba(22,0,63,0.5)] lg:top-[37.48vw]"
                     >

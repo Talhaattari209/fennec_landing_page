@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 interface StoreButtonProps {
@@ -9,8 +10,8 @@ interface StoreButtonProps {
 
 export function AppStoreButton({ className }: StoreButtonProps) {
     return (
-        <button className={cn(
-            "relative w-[150px] mobile:w-[8.4vw] h-[50px] mobile:h-[2.77vw] group transition-all active:scale-95",
+        <Link href="#" className={cn(
+            "relative w-[150px] mobile:w-[8.4vw] h-[50px] mobile:h-[2.77vw] group transition-all active:scale-95 block",
             className
         )}>
             <Image
@@ -20,14 +21,14 @@ export function AppStoreButton({ className }: StoreButtonProps) {
                 className="object-contain"
                 sizes="(max-width: 768px) 150px, 8.4vw"
             />
-        </button>
+        </Link>
     );
 }
 
 export function GooglePlayButton({ className }: StoreButtonProps) {
     return (
-        <button className={cn(
-            "relative w-[150px] mobile:w-[8.4vw] h-[50px] mobile:h-[2.77vw] group transition-all active:scale-95",
+        <Link href="#" className={cn(
+            "relative w-[150px] mobile:w-[8.4vw] h-[50px] mobile:h-[2.77vw] group transition-all active:scale-95 block",
             className
         )}>
             <Image
@@ -37,6 +38,7 @@ export function GooglePlayButton({ className }: StoreButtonProps) {
                 className="object-contain"
                 sizes="(max-width: 768px) 150px, 8.4vw"
             />
-        </button>
+        </Link>
     );
 }
+

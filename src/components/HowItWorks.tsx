@@ -138,7 +138,7 @@ export default function HowItWorks() {
                 <div className={`relative w-full h-full flex ${isMobile ? 'flex-col justify-start pt-[15vw] gap-[4vw]' : 'items-center justify-center'}`}>
 
                     <motion.div
-                        className={`${isMobile ? 'relative w-full text-center z-0' : 'absolute w-full text-center z-0 top-[7.81vw]'}`}
+                        className={`${isMobile ? 'relative w-full text-center z-0' : 'absolute w-full text-center z-0 top-[3.9vw]'}`}
                     >
                         <h2 className={`${isMobile ? 'text-[14vw]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 tracking-[-0.04em] select-none whitespace-nowrap`}>
                             {isMobile ? (

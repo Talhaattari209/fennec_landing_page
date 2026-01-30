@@ -45,7 +45,7 @@ export default function ProblemStatement() {
                         </div>
 
                         <h4
-                            className="text-white text-[6.36vw] mobile:text-[3.33vw] font-normal leading-[120%] mobile:leading-[110%] tracking-[-0.04em] flex-1 w-full max-w-full mobile:max-w-none h-auto mobile:h-auto flex flex-col justify-end text-left mobile:order-1"
+                            className="text-white text-[6.36vw] mobile:text-[4vw] font-normal leading-[120%] mobile:leading-[110%] tracking-[-0.02em] flex-1 w-full max-w-full mobile:max-w-none h-auto mobile:h-auto flex flex-col justify-end text-left mobile:order-1"
                             style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" }}
                         >
                             Fennec makes expanding

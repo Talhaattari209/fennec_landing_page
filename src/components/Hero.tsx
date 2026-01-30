@@ -79,14 +79,14 @@ export default function Hero() {
             filter: 'blur(0px)',
         },
         left: {
-            x: isMobile ? '-40.9vw' : '-37.9vw',
+            x: isMobile ? '-38.3vw' : '-37.4vw',
             opacity: 0.5,
             scale: 0.75,
             zIndex: 20,
             filter: isMobile ? 'blur(1px)' : 'blur(4px)',
         },
         right: {
-            x: isMobile ? '40.9vw' : '37.9vw',
+            x: isMobile ? '38.3vw' : '37.4vw',
             opacity: 0.5,
             scale: 0.75,
             zIndex: 20,
@@ -162,7 +162,9 @@ export default function Hero() {
             <motion.div
                 className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
-                    left: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '18.33vw',
+                    // People (Human): Desktop -> Right side
+                    right: isMobile ? 'auto' : '18.33vw', // Changed to right for desktop
+                    left: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : 'auto', // Keep mobile logic
                     top: isMobile ? '124.9vw' : '27.91vw'
                 }}
                 animate={iconAnimation(2)}
@@ -179,7 +181,9 @@ export default function Hero() {
             <motion.div
                 className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
-                    right: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '18.33vw',
+                    // Handshake: Desktop -> Left side
+                    left: isMobile ? 'auto' : '18.33vw', // Changed to left for desktop
+                    right: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : 'auto', // Keep mobile logic
                     top: isMobile ? '124.9vw' : '27.91vw'
                 }}
                 animate={iconAnimation(3)}
@@ -194,7 +198,7 @@ export default function Hero() {
 
             {/* Content Layer */}
             <div
-                className="absolute z-20 flex flex-col items-center w-full px-[4.5vw] mobile:px-[3.2vw] lg:px-[152px]"
+                className="absolute z-30 flex flex-col items-center w-full px-[4.5vw] mobile:px-[3.2vw] lg:px-[152px]"
                 style={{
                     top: isMobile ? '50vw' : '12.5vw',
                     gap: isMobile ? '5.45vw' : '2.08vw'
@@ -229,7 +233,7 @@ export default function Hero() {
             {/* Carousel Layer */}
             <div
                 className="absolute z-20 flex flex-row justify-center items-center w-full h-[40.9vw] mobile:h-[25vw]"
-                style={{ top: isMobile ? '156.72vw' : '37.18vw' }}
+                style={{ top: isMobile ? '156.72vw' : '36vw' }}
             >
                 <div className="relative w-full h-full flex items-center justify-center">
                     <AnimatePresence initial={false} custom={direction} mode="popLayout">
