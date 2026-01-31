@@ -16,7 +16,7 @@ export default function StatisticsGrid() {
         >
           {/* LEFT CARD — 94% */}
           <div
-            className="relative overflow-hidden flex flex-col justify-center items-center text-center border border-white/5 w-full mobile:w-[41.67vw] h-[92.74vw] mobile:h-[41.67vw] p-[3.63vw] mobile:p-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[#16003F]"
+            className="relative overflow-hidden flex flex-col justify-center items-center text-center border border-white/5 w-full mobile:w-[41.67vw] h-[92.74vw] mobile:h-[41.67vw] p-[3.63vw] mobile:p-[2.08vw] gap-[3.63vw] mobile:gap-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[#16003F]"
           >
             {/* Background image */}
             <Image
@@ -56,7 +56,7 @@ export default function StatisticsGrid() {
           >
             {/* 78% CARD */}
             <div
-              className="flex flex-col justify-center items-center text-center border border-white/5 h-[45.45vw] mobile:h-[20.42vw] p-[3.63vw] mobile:p-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[#5F00DB]"
+              className="flex flex-col justify-center items-center text-center border border-white/5 h-[45.45vw] mobile:h-[20.42vw] p-[3.63vw] mobile:p-[2.08vw] gap-[3.63vw] mobile:gap-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[#5F00DB]"
             >
               <h2
                 className="font-bold text-white tracking-[-0.04em] text-[10.8vw] leading-[11.9vw] mobile:text-[5.63vw] mobile:leading-[6.2vw]"
@@ -64,9 +64,9 @@ export default function StatisticsGrid() {
                 78%
               </h2>
               <p
-                className="font-bold text-white tracking-[-0.04em] text-[3.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
+                className="font-bold text-white tracking-[-0.01em] text-[5.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
               >
-                of Users Report Better First Interactions in Groups
+                of Users Report Better <br />First Interactions in Groups
               </p>
             </div>
 
@@ -76,7 +76,7 @@ export default function StatisticsGrid() {
             >
               {/* 1.2M+ */}
               <div
-                className="flex flex-col justify-center items-center text-center border border-white/5 flex-1 p-[3.63vw] mobile:p-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[rgba(95,0,219,0.75)]"
+                className="flex flex-col justify-center items-center text-center border border-white/5 flex-1 p-[3.63vw] mobile:p-[2.08vw] gap-[3.63vw] mobile:gap-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[rgba(95,0,219,0.75)]"
               >
                 <h3
                   className="font-bold text-white tracking-[-0.04em] text-[7.2vw] leading-[7.9vw] mobile:text-[3.75vw] mobile:leading-[4.11vw]"
@@ -92,7 +92,8 @@ export default function StatisticsGrid() {
 
               {/* 350K+ */}
               <div
-                className="flex flex-col justify-center items-center text-center border border-white/5 flex-1 p-[3.63vw] mobile:p-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[rgba(95,0,219,0.5)]"
+                className="flex flex-col justify-center items-center text-center border border-white/5 flex-1 p-[3.63vw] mobile:p-[2.08vw] gap-[3.63vw] mobile:gap-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[rgba(95,0,219,0.5)]"
+
               >
                 <h3
                   className="font-bold text-white tracking-[-0.04em] text-[7.2vw] leading-[7.9vw] mobile:text-[3.75vw] mobile:leading-[4.11vw]"
