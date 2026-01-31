@@ -111,7 +111,7 @@ export default function Hero() {
     });
 
     return (
-        <section className="relative w-full h-[205vw] mobile:h-[62.2vw] flex flex-col items-center overflow-hidden bg-[#111111] select-none">
+        <section id="hero" className="relative w-full h-[205vw] mobile:h-[62.2vw] flex flex-col items-center overflow-hidden bg-[#111111] select-none">
             {/* Background Image Layer */}
             <div
                 className="absolute inset-x-[-2.08%] inset-y-[-3.7%] z-0"

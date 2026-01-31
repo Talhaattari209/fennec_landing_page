@@ -12,19 +12,18 @@ const SOCIAL_LINKS = [
 ];
 
 const QUICK_LINKS = [
-    { label: "Home", href: "#home" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Features", href: "#features" },
-    { label: "About", href: "#about" },
-    { label: "Download the App", href: "#download" },
+    { label: "Home", href: "/#hero" },
+    { label: "How It Works", href: "/#how-it-works" },
+    { label: "Features", href: "/#features" },
+    { label: "About", href: "/#about" },
+    { label: "Download the App", href: "/#download" },
 ];
 
 const COMMUNITY_LINKS = [
-    { label: "Safety Guidelines", href: "#" },
-    { label: "Help Center", href: "#" },
-    { label: "Report an Issue", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Privacy Policy", href: "#" },
+    { label: "Safety Guidelines", href: "/safety-guidelines" },
+    { label: "Help Center", href: "/help-center" },
+    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 export default function Footer() {
