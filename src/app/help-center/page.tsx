@@ -96,96 +96,138 @@ export default function HelpCenterPage() {
     };
 
     return (
-        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[8.33vw] font-['SF_Pro_Text',sans-serif]">
-
-            {/* Layout provides Header. We use pt to clear it + gap. */}
+        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw] font-['SF_Pro_Text',sans-serif] overflow-x-hidden">
 
             {/* Hero Section */}
-            {/* Top Image: 1616x560 (84.17vw x 29.17vw), Radius 40px (2.08vw) */}
-            <div className="relative w-[84.17vw] h-[29.17vw] mb-[4.17vw]">
+            {/* Desktop: 1616x560 (84.17vw x 29.17vw) */}
+            {/* Mobile: 408x408 (92.73vw x 92.73vw) - Ref 440px, padding 16px (3.64vw) each side */}
+            <div className="relative w-[92.73vw] h-[92.73vw] mb-[9.09vw] mobile:w-[84.17vw] mobile:h-[29.17vw] mobile:mb-[4.17vw]">
+                <Image
+                    src="/assets/help-center/helpCenter_top_image_mobile.png"
+                    alt="Help Center"
+                    fill
+                    className="object-cover rounded-[5.45vw] mobile:rounded-[2.08vw] block mobile:hidden"
+                    priority
+                />
                 <Image
                     src="/assets/help-center/top_Img.png"
                     alt="Help Center"
                     fill
-                    className="object-cover rounded-[2.08vw]"
+                    className="object-cover rounded-[5.45vw] mobile:rounded-[2.08vw] hidden mobile:block"
                     priority
                 />
                 {/* Overlay Content */}
-                <div className="absolute inset-0 bg-[#16003F]/50 rounded-[2.08vw] flex flex-col items-center justify-end pb-[2.08vw]">
-                    {/* Title 72px = 3.75vw */}
-                    <h1 className="font-bold text-[3.75vw] text-white leading-[1.1] mb-[1.25vw] tracking-[-0.04em]">
+                <div className="absolute inset-0 bg-[#16003F]/50 rounded-[5.45vw] mobile:rounded-[2.08vw] flex flex-col items-center justify-end pb-[5.45vw] mobile:pb-[2.08vw] px-[5.45vw] mobile:px-0">
+
+                    {/* Title 
+                       Desktop: 72px/1920 = 3.75vw
+                       Mobile: 28px/440 = 6.36vw 
+                    */}
+                    <h1 className="font-bold text-[6.36vw] mobile:text-[3.75vw] text-white leading-[1.2] mb-[3.64vw] mobile:mb-[1.25vw] tracking-[-0.04em] text-center">
                         Help Center
                     </h1>
 
-                    {/* Subtitle 24px = 1.25vw */}
-                    <h4 className="font-bold text-[1.25vw] text-white leading-[1.2] mb-[0.83vw] tracking-[-0.04em]">
+                    {/* Subtitle 
+                       Desktop: 24px/1920 = 1.25vw
+                       Mobile: 16px/440 = 3.64vw
+                    */}
+                    <h4 className="font-bold text-[3.64vw] mobile:text-[1.25vw] text-white leading-[1.2] mb-[3.64vw] mobile:mb-[0.83vw] tracking-[-0.04em] text-center max-w-[81.82vw] mobile:max-w-none">
                         We’re here to help you get the most out of Fennec.
                     </h4>
 
-                    {/* Body 16px = 0.83vw */}
-                    <p className="font-normal text-[0.83vw] text-white leading-[1.5] mb-[1.25vw] max-w-[33.33vw] text-center">
+                    {/* Body
+                       Desktop: 16px/1920 = 0.83vw
+                       Mobile: 16px/440 = 3.64vw
+                    */}
+                    <p className="font-normal text-[3.64vw] mobile:text-[0.83vw] text-white leading-[1.5] mb-[5.45vw] mobile:mb-[1.25vw] max-w-[100%] mobile:max-w-[33.33vw] text-center">
                         Find answers to common questions, learn how features work, or reach out to our support team if you need assistance.
                     </p>
 
-                    {/* Search Bar - Width 640px (33.33vw), Height 56px (2.92vw) */}
-                    <div className="relative w-[33.33vw] h-[2.92vw]">
-                        <div className="absolute inset-0 bg-[#111111]/75 backdrop-blur-[12px] rounded-[0.83vw] border border-[#666666]/50 flex items-center px-[0.83vw] gap-[0.83vw]">
-                            <Search className="w-[1.25vw] h-[1.25vw] text-white" />
+                    {/* Search Bar 
+                       Desktop: 640px (33.33vw) x 56px (2.92vw)
+                       Mobile: 360px (81.82vw) x 56px (12.73vw)
+                    */}
+                    <div className="relative w-[81.82vw] h-[12.73vw] mobile:w-[33.33vw] mobile:h-[2.92vw]">
+                        <div className="absolute inset-0 bg-[#111111]/75 backdrop-blur-[12px] rounded-[3.64vw] mobile:rounded-[0.83vw] border border-[#666666]/50 flex items-center px-[3.64vw] mobile:px-[0.83vw] gap-[3.64vw] mobile:gap-[0.83vw]">
+                            <Search className="w-[5.45vw] h-[5.45vw] mobile:w-[1.25vw] mobile:h-[1.25vw] text-white" />
                             <input
                                 type="text"
                                 placeholder="Search frequently asked questions..."
-                                className="bg-transparent border-none outline-none text-white text-[0.83vw] placeholder-white/40 w-full font-normal"
+                                className="bg-transparent border-none outline-none text-white text-[3.64vw] mobile:text-[0.83vw] placeholder-white/40 w-full font-normal"
                             />
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Main Content: Two Columns */}
-            {/* Gap between image and heading is 80px (4.17vw) - handled by mb above */}
+            {/* Main Content */}
+            {/* Desktop: Row, Gap 0.83vw, mb 6.25vw */}
+            {/* Mobile: Col, Gap 14.55vw (64px/440), mb 27.27vw (120px/440) */}
+            <div className="flex flex-col mobile:flex-row items-center mobile:items-start w-[92.73vw] mobile:w-[84.17vw] gap-[14.55vw] mobile:gap-[0.83vw] mb-[27.27vw] mobile:mb-[6.25vw]">
 
-            <div className="flex flex-row items-start w-[84.17vw] gap-[0.83vw] mb-[6.25vw]">
-
-                {/* Left Column: FAQs - Width 1072px (55.83vw) */}
-                <div className="flex flex-col w-[55.83vw]">
-                    {/* Heading 36px = 1.88vw */}
-                    {/* Gap to card 64px = 3.33vw */}
-                    <h2 className="font-bold text-[1.88vw] text-white leading-[1.1] mb-[3.33vw] tracking-[-0.04em]">
+                {/* Left Column (FAQs) */}
+                {/* Desktop: 55.83vw */}
+                {/* Mobile: 100% (92.73vw container) */}
+                <div className="flex flex-col w-full mobile:w-[55.83vw]">
+                    {/* Heading 
+                       Desktop: 36px (1.88vw)
+                       Mobile: 24px (5.45vw)
+                    */}
+                    <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] text-white leading-[1.1] mb-[3.64vw] mobile:mb-[3.33vw] tracking-[-0.04em]">
                         Frequently Asked Questions
                     </h2>
 
-                    {/* FAQ List - Gap 16px (0.83vw) as requested in prompt */}
-                    <div className="flex flex-col gap-[0.83vw]">
+                    {/* FAQ List 
+                       Desktop: Gap 0.83vw (Styled Cards)
+                       Mobile: Gap 0px / Borders? (Styled List)
+                       
+                       Ref Mobile CSS: "FAQ List Item" has border-width: 1px 0px.
+                       But prompt said "distance between faqs is only 16px".
+                       The Mobile CSS has 'gap: 16px' in one view, but also 'border' in another.
+                       I will stick to the User Request "distance between faqs is only 16px" as a primary directive, 
+                       but adapt styles for Mobile (transparent bg, borders) vs Desktop (purple bg, rounded).
+                    */}
+                    <div className="flex flex-col gap-[3.64vw] mobile:gap-[0.83vw]">
                         {FAQS.map((faq, index) => {
                             const isOpen = openIndex === index;
                             return (
                                 <div
                                     key={index}
                                     onClick={() => toggleFAQ(index)}
+                                    // Mobile: Transparent, border-b (divider look), no radius
+                                    // Desktop: Purple bg, rounded
                                     className={`
-                                    w-full rounded-[0.83vw] cursor-pointer transition-all duration-300
-                                    flex flex-col justify-center px-[0.83vw]
-                                    ${isOpen
-                                            ? 'bg-[#5F00DB] py-[0.83vw]' // Open style: Min Height 96px (5vw)
-                                            : 'bg-[#5F00DB]/25 h-[3.75vw]' // Closed style: Height 72px (3.75vw)
+                                        w-full cursor-pointer transition-all duration-300
+                                        flex flex-col justify-center
+                                        
+                                        /* Mobile Styles */
+                                        bg-transparent border-b border-[#444444]/50 py-[3.64vw] px-0
+                                        
+                                        /* Desktop Styles */
+                                        mobile:border-none mobile:rounded-[0.83vw] mobile:px-[0.83vw] mobile:py-[0.83vw]
+                                        ${isOpen
+                                            ? 'mobile:bg-[#5F00DB]'
+                                            : 'mobile:bg-[#5F00DB]/25 mobile:h-[3.75vw]'
                                         }
-                                `}
+                                    `}
                                 >
                                     <div className="flex flex-row justify-between items-start w-full gap-[0.52vw]">
-                                        <div className="flex flex-col gap-[0.83vw] flex-1">
-                                            <h5 className="font-medium text-[0.94vw] text-white leading-[1.2] tracking-[-0.02em]">
+                                        <div className="flex flex-col gap-[3.64vw] mobile:gap-[0.83vw] flex-1">
+                                            {/* Question: Mobile 16px (3.64vw), Desktop 18px (0.94vw) */}
+                                            <h5 className="font-medium text-[3.64vw] mobile:text-[0.94vw] text-white leading-[1.2] tracking-[-0.02em]">
                                                 {faq.q}
                                             </h5>
                                             {isOpen && (
-                                                <p className="font-normal text-[0.83vw] text-[#CCCCCC] leading-[1.5]">
+                                                <p className="font-normal text-[3.64vw] mobile:text-[0.83vw] text-[#CCCCCC] leading-[1.5]">
                                                     {faq.a}
                                                 </p>
                                             )}
                                         </div>
+                                        {/* Icon: Mobile 24px (5.45vw), Desktop 24px (1.25vw) */}
                                         {isOpen ? (
-                                            <ChevronUp className="w-[1.25vw] h-[1.25vw] text-white flex-shrink-0" />
+                                            <ChevronUp className="w-[5.45vw] h-[5.45vw] mobile:w-[1.25vw] mobile:h-[1.25vw] text-white flex-shrink-0" />
                                         ) : (
-                                            <ChevronDown className="w-[1.25vw] h-[1.25vw] text-white flex-shrink-0" />
+                                            <ChevronDown className="w-[5.45vw] h-[5.45vw] mobile:w-[1.25vw] mobile:h-[1.25vw] text-white flex-shrink-0" />
                                         )}
                                     </div>
                                 </div>
@@ -194,61 +236,53 @@ export default function HelpCenterPage() {
                     </div>
                 </div>
 
-                {/* Right Column: Contact Support - Width 528px (27.5vw) */}
-                <div className="flex flex-col w-[27.5vw]">
-                    {/* Heading for alignment - Must align with FAQ heading visually.
-                    If FAQ Heading has mb-[3.33vw], this needs same spacing logic from top or same mb.
-                    The layout is row, so they share top alignment.
-                    This heading height matches FAQ heading height?
-                    FAQ Heading 36px. Support form heading 24px is inside the card? No.
-                    Prompt: "then comes 2 div (FAQs and Contact support) ... between heading of 2 divs and card is 64px".
-                    This implies both columns have headings!
-                    Left col: "Frequently Asked Questions" heading.
-                    Right col: "Contact Support" heading?
-                    The CSS file `Form_css.txt` has a heading inside the form card: "We’re here to help..."
-                    But the Prompt says: "2 div (FAQs and Contact support)".
-                    And "between heading of 2 divs and card is 64px".
-                    This implies there is a heading OUTSIDE the card for Contact Support too. Or maybe just "Contact Support" is the heading.
-                    I will assume "Contact Support" is the exterior heading matching "Frequently Asked Questions".
-                */}
-                    <h2 className="font-bold text-[1.88vw] text-white leading-[1.1] mb-[3.33vw] tracking-[-0.04em]">
+                {/* Right Column (Contact Support) */}
+                {/* Desktop: 27.5vw */}
+                {/* Mobile: 100% */}
+                <div className="flex flex-col w-full mobile:w-[27.5vw]">
+                    {/* Heading */}
+                    <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] text-white leading-[1.1] mb-[5.45vw] mobile:mb-[3.33vw] tracking-[-0.04em]">
                         Contact Support
                     </h2>
 
-                    {/* Form Card */}
-                    <div className="w-full bg-[#5F00DB]/25 rounded-[0.83vw] p-[0.83vw] flex flex-col gap-[1.67vw]">
-                        <div className="flex flex-col gap-[0.83vw]">
-                            <h3 className="font-medium text-[1.25vw] text-white leading-[1.2] tracking-[-0.02em]">
+                    {/* Form Card 
+                       Mobile: bg-[#5F00DB]/25 rounded 16px (3.64vw), padding 16px (3.64vw)
+                    */}
+                    <div className="w-full bg-[#5F00DB]/25 rounded-[3.64vw] mobile:rounded-[0.83vw] p-[3.64vw] mobile:p-[0.83vw] flex flex-col gap-[7.27vw] mobile:gap-[1.67vw]">
+                        <div className="flex flex-col gap-[3.64vw] mobile:gap-[0.83vw]">
+                            {/* Card Title: Mobile 24px (5.45vw), Desktop 24px (1.25vw) */}
+                            <h3 className="font-medium text-[5.45vw] mobile:text-[1.25vw] text-white leading-[1.2] tracking-[-0.02em]">
                                 We’re here to help — anytime you need us.
                             </h3>
-                            <p className="font-normal text-[0.83vw] text-white leading-[1.5]">
+                            {/* Card Desc: Mobile 16px (3.64vw), Desktop 16px (0.83vw) */}
+                            <p className="font-normal text-[3.64vw] mobile:text-[0.83vw] text-white leading-[1.5]">
                                 Tell us what you need help with, and our support team will get back to you within 24 hours.
                             </p>
                         </div>
 
-                        <form className="flex flex-col gap-[1.25vw]">
+                        <form className="flex flex-col gap-[5.45vw] mobile:gap-[1.25vw]">
                             {/* Topic Select */}
-                            <div className="flex flex-col gap-[0.21vw]">
-                                <label className="font-bold text-[0.63vw] text-white">What can we help you with?</label>
-                                <div className="relative border-b border-white h-[2.5vw] flex items-center">
-                                    <span className="text-white/40 text-[0.83vw]">Select a Topic</span>
-                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-[1.25vw] h-[1.25vw] text-white" />
+                            <div className="flex flex-col gap-[0.91vw] mobile:gap-[0.21vw]">
+                                <label className="font-bold text-[2.73vw] mobile:text-[0.63vw] text-white">What can we help you with?</label>
+                                <div className="relative border-b border-white h-[10.91vw] mobile:h-[2.5vw] flex items-center">
+                                    <span className="text-white/40 text-[3.64vw] mobile:text-[0.83vw]">Select a Topic</span>
+                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-[5.45vw] h-[5.45vw] mobile:w-[1.25vw] mobile:h-[1.25vw] text-white" />
                                 </div>
                             </div>
 
                             {/* Message Input */}
-                            <div className="flex flex-col gap-[0.21vw]">
-                                <label className="font-bold text-[0.63vw] text-white">Message</label>
-                                <div className="border-b border-white min-h-[5.83vw] pt-[0.42vw]">
+                            <div className="flex flex-col gap-[0.91vw] mobile:gap-[0.21vw]">
+                                <label className="font-bold text-[2.73vw] mobile:text-[0.63vw] text-white">Message</label>
+                                <div className="border-b border-white min-h-[14.55vw] mobile:min-h-[5.83vw] pt-[1.82vw] mobile:pt-[0.42vw]">
                                     <textarea
-                                        className="w-full bg-transparent border-none outline-none text-white text-[0.83vw] placeholder-white/40 resize-none h-[5vw]"
+                                        className="w-full bg-transparent border-none outline-none text-white text-[3.64vw] mobile:text-[0.83vw] placeholder-white/40 resize-none h-[12vw] mobile:h-[5vw]"
                                         placeholder="Describe your question or issue here..."
                                     />
                                 </div>
                             </div>
 
                             {/* Submit Button */}
-                            <button className="w-full bg-[#5F00DB] h-[2.92vw] rounded-[2.71vw] flex items-center justify-center font-bold text-[0.83vw] text-white shadow-lg mt-[0.83vw]">
+                            <button className="w-full bg-[#5F00DB] h-[12.73vw] mobile:h-[2.92vw] rounded-[11.82vw] mobile:rounded-[2.71vw] flex items-center justify-center font-bold text-[3.64vw] mobile:text-[0.83vw] text-white shadow-lg mt-[3.64vw] mobile:mt-[0.83vw]">
                                 Send Message
                             </button>
                         </form>

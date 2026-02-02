@@ -41,9 +41,9 @@ export default function Footer() {
                 }}
             >
                 {/* Mobile Layout: Logo -> Links -> Socials -> Copyright */}
-                <div className="flex flex-col mobile:hidden items-center w-full gap-[40px]">
+                <div className="flex flex-col mobile:hidden items-center w-full gap-[9.3vw]">
                     {/* Logo */}
-                    <div className="relative w-[282px] h-[60px]">
+                    <div className="relative w-[65.58vw] h-[13.95vw]">
                         <Image
                             src="/assets/Footer section/Vector.png"
                             alt="Fennec Logo"
@@ -53,18 +53,18 @@ export default function Footer() {
                     </div>
 
                     {/* Links Row */}
-                    <div className="flex flex-row items-center justify-center w-full max-w-[408px] gap-[16px]">
+                    <div className="flex flex-row items-start justify-center w-full max-w-[94.88vw] gap-[3.72vw]">
                         {/* Quick Links */}
-                        <div className="flex flex-col items-center gap-[16px] flex-1 min-w-0 justify-center">
-                            <h4 className="text-white text-[24px] font-bold tracking-[-0.04em] leading-[120%] mr-4">
+                        <div className="flex flex-col items-center gap-[3.72vw] flex-1 min-w-0 justify-center">
+                            <h4 className="text-white text-[5.58vw] font-bold tracking-[-0.04em] leading-[120%]">
                                 Quick Links
                             </h4>
-                            <div className="flex flex-col items-start gap-[16px]">
+                            <div className="flex flex-col items-start gap-[3.72vw]">
                                 {QUICK_LINKS.map((link) => (
                                     <Link
                                         key={link.label}
                                         href={link.href}
-                                        className="text-white text-[16px] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap "
+                                        className="text-white text-[3.72vw] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap "
                                     >
                                         {link.label}
                                     </Link>
@@ -73,16 +73,16 @@ export default function Footer() {
                         </div>
 
                         {/* Community */}
-                        <div className="flex flex-col items-center gap-[16px] flex-1 min-w-0">
-                            <h4 className="text-white text-[24px] font-bold tracking-[-0.04em] leading-[120%] flex">
+                        <div className="flex flex-col items-center gap-[3.72vw] flex-1 min-w-0">
+                            <h4 className="text-white text-[5.58vw] font-bold tracking-[-0.04em] leading-[120%]">
                                 Community
                             </h4>
-                            <div className="flex flex-col items-start gap-[16px]">
+                            <div className="flex flex-col items-start gap-[3.72vw]">
                                 {COMMUNITY_LINKS.map((link) => (
                                     <Link
                                         key={link.label}
                                         href={link.href}
-                                        className="text-white text-[16px] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap "
+                                        className="text-white text-[3.72vw] leading-[150%] font-normal hover:opacity-80 transition-opacity whitespace-nowrap "
                                     >
                                         {link.label}
                                     </Link>
@@ -92,19 +92,19 @@ export default function Footer() {
                     </div>
 
                     {/* Socials & Copyright */}
-                    <div className="flex flex-col items-center gap-[40px] w-full max-w-[408px]">
-                        <div className="flex flex-row items-center justify-center gap-[24px]">
+                    <div className="flex flex-col items-center gap-[9.3vw] w-full max-w-[94.88vw]">
+                        <div className="flex flex-row items-center justify-center gap-[5.58vw]">
                             {SOCIAL_LINKS.map((social, index) => (
                                 <Link
                                     key={index}
                                     href={social.href}
-                                    className="text-white hover:opacity-80 transition-opacity flex items-center justify-center w-[24px] h-[24px]"
+                                    className="text-white hover:opacity-80 transition-opacity flex items-center justify-center w-[5.58vw] h-[5.58vw]"
                                 >
                                     {social.icon}
                                 </Link>
                             ))}
                         </div>
-                        <p className="text-white text-[18px] leading-[32px] font-normal text-center w-full">
+                        <p className="text-white text-[4.18vw] leading-[7.44vw] font-normal text-center w-full">
                             © 2025 Fennec. All rights reserved.
                         </p>
                     </div>

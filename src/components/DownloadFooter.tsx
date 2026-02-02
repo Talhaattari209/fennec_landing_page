@@ -14,7 +14,7 @@ export function Download() {
 
                 {/* Background Circle & Boundaries */}
                 <div
-                    className="absolute w-[1454px] h-[1454px] mobile:w-full mobile:h-full left-[-528px] mobile:left-1/2 mobile:-translate-x-1/2 top-0 rounded-full z-0 overflow-hidden lg:left-0 lg:translate-x-0"
+                    className="absolute w-[1454px] h-[1454px] mobile:w-full mobile:h-full left-[-528px] mobile:left-[calc(50%-6.93vw)] mobile:-translate-x-1/2 top-0 rounded-full z-0 overflow-hidden lg:left-0 lg:translate-x-0"
                     style={{
                         background: '#16003F',
                         backdropFilter: 'blur(12px)',

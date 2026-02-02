@@ -1,0 +1,1810 @@
+/* Terms of Service */
+
+position: relative;
+width: 440px;
+height: 3356px;
+
+background: #111111;
+
+
+/* Main */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+height: 3356px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+
+
+/* Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 100px 16px 40px;
+
+width: 440px;
+height: 548px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+max-width: 1616px;
+height: 408px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 408px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 408px;
+height: 408px;
+
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* image 7 */
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+
+background: url(image.png), url(image.png);
+border-radius: 24px;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 24px;
+gap: 16px;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+
+background: rgba(22, 0, 63, 0.5);
+border-radius: 24px;
+
+
+/* Terms of Service */
+
+width: 360px;
+height: 34px;
+
+/* Desktop/Heading/H3 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 120%;
+/* identical to box height, or 34px */
+display: flex;
+align-items: flex-end;
+text-align: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Last updated: [Date] */
+
+width: 360px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 16px 120px;
+gap: 64px;
+
+width: 440px;
+height: 2263px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Col */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 48px;
+
+width: 408px;
+height: 2127px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 117px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 1. Acceptance of Terms */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* By accessing or using Fennec, you agree to be bound by these Terms of Service. If you do not agree, please do not use the app. */
+
+width: 408px;
+height: 72px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 165px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 2. Eligibility */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* You must be at least 18 years old to use Fennec. You agree to provide accurate and truthful information. You are responsible for all activity under your account. */
+
+width: 408px;
+height: 120px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 189px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 3. Accounts & Groups */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Users may create or join groups according to their subscription plan. Free users may belong to one group; Premium users may belong to multiple groups. You are responsible for the content you post, including messages, photos, videos, and prompts. */
+
+width: 408px;
+height: 144px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 261px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 4. Acceptable Use */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* You agree not to: Harass, abuse, or harm other users Post illegal, explicit, or hateful content Impersonate others or misrepresent your identity Use the app for spam, scams, or commercial solicitation We reserve the right to remove content or suspend accounts that violate these rules. */
+
+width: 408px;
+height: 216px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 141px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 5. Matches & Communication */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Matches are created based on mutual interest. Fennec does not guarantee matches or responses. Individual messaging, extended calls, and certain features may require a Premium subscription. */
+
+width: 408px;
+height: 96px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 189px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 6. Subscriptions & Purchases */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Premium subscriptions and in-app purchases are billed through your app store. Payments are non-refundable except where required by law. Subscription terms and pricing may change with notice. */
+
+width: 408px;
+height: 144px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 141px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 7. Safety & Reporting */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Users can report or block individuals or groups. We may investigate reports and take action, including warnings, content removal, or account suspension. */
+
+width: 408px;
+height: 96px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 141px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 8. Termination */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We may suspend or terminate your account if you violate these Terms or engage in harmful behavior. You may stop using the app at any time. */
+
+width: 408px;
+height: 96px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 93px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 9. Disclaimer */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fennec is provided “as is.” We do not guarantee uninterrupted service or compatibility between users. */
+
+width: 408px;
+height: 48px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 117px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 10. Changes to Terms */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We may update these Terms from time to time. Continued use of the app means you accept the updated terms. */
+
+width: 408px;
+height: 72px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 93px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 11. Contact */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* For questions or concerns, contact us at: support@fennecapp.com */
+
+width: 408px;
+height: 48px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 16px;
+gap: 40px;
+
+width: 440px;
+height: 545px;
+
+background: #5F00DB;
+box-shadow: 0px 0px 100px #5F00DB;
+border-radius: 40px 40px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+height: 465px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 282px;
+height: 60px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+height: 229px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 184px;
+height: 229px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Quick Links */
+
+width: 130px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Home */
+
+width: 45px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* How It Works */
+
+width: 100px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Features */
+
+width: 66px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* About */
+
+width: 46px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Download the App */
+
+width: 139px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 184px;
+height: 229px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Community */
+
+width: 131px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Safety Guidelines */
+
+width: 132px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Help Center */
+
+width: 91px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Report an Issue */
+
+width: 118px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Terms of Service */
+
+width: 127px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Privacy Policy */
+
+width: 105px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Socials */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 24px;
+
+width: 216px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0.61%;
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0.06%;
+top: 0%;
+bottom: 0.02%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 24.32%;
+right: 24.32%;
+top: 24.32%;
+bottom: 24.32%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 70.7%;
+right: 17.3%;
+top: 17.31%;
+bottom: 70.7%;
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 6.25%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* X_logo_2023 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24px;
+height: 21.68px;
+left: calc(50% - 24px/2);
+top: calc(50% - 21.68px/2 - 0.04px);
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 14.82%;
+bottom: 14.84%;
+
+background: #FFFFFF;
+
+
+/* © 2025 Fennec. All rights reserved. */
+
+width: 408px;
+height: 32px;
+
+/* Desktop/Body Large */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* identical to box height, or 178% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 16px;
+gap: 24px;
+
+position: absolute;
+width: 408px;
+height: 68px;
+left: calc(50% - 408px/2);
+top: 16px;
+
+background: rgba(95, 0, 219, 0.25);
+/* BG Blur - 24 */
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 64px;
+
+
+/* Nav Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+display: none;
+width: 333px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button - Desktop */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 12px;
+
+margin: 0 auto;
+display: none;
+width: 196px;
+height: 56px;
+
+background: #5F00DB;
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+margin: 0 auto;
+width: 165px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 36px;
+height: 36px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fennec */
+
+width: 113px;
+height: 34px;
+
+font-family: 'Michroma';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Icon Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 16px;
+
+margin: 0 auto;
+width: 36px;
+height: 36px;
+
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* menu */
+
+width: 36px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 22.22%;
+right: 11.11%;
+top: 50%;
+bottom: 50%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 11.11%;
+right: 11.11%;
+top: 30.56%;
+bottom: 69.44%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 11.11%;
+top: 69.44%;
+bottom: 30.56%;
+
+border: 2px solid #FFFFFF;

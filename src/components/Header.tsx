@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-    { label: "How It Works", href: "#how-it-works", mobileWidth: "51.4vw" },
-    { label: "Features", href: "#features", mobileWidth: "37.8vw" },
-    { label: "About", href: "#about", mobileWidth: "29.6vw" },
+    { label: "How It Works", href: "/#how-it-works", mobileWidth: "51.4vw" },
+    { label: "Features", href: "/#features", mobileWidth: "37.8vw" },
+    { label: "About", href: "/#about", mobileWidth: "29.6vw" },
 ];
 
 export default function Header() {

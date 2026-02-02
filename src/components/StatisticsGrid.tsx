@@ -64,7 +64,7 @@ export default function StatisticsGrid() {
                 78%
               </h2>
               <p
-                className="font-bold text-white tracking-[-0.01em] text-[5.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
+                className="font-bold text-white tracking-[-0.04em] text-[3.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
               >
                 of Users Report Better <br />First Interactions in Groups
               </p>

@@ -135,7 +135,7 @@ export default function HowItWorks() {
         >
             <div className="sticky top-0 h-screen w-full flex flex-col items-center overflow-hidden px-[3.63vw] lg:px-[7.91vw] pt-8">
 
-                <div className={`relative w-full h-full flex ${isMobile ? 'flex-col justify-start pt-[15vw] gap-[4vw]' : 'items-center justify-center'}`}>
+                <div className={`relative w-full h-full flex ${isMobile ? 'flex-col justify-start pt-[15vw] gap-[2.66vw]' : 'items-center justify-center'}`}>
 
                     <motion.div
                         className={`${isMobile ? 'relative w-full text-center z-0' : 'absolute w-full text-center z-0 top-[3.9vw]'}`}

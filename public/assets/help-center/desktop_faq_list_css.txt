@@ -1,0 +1,2222 @@
+/* List */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1072px;
+height: 1416px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1072px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 96px;
+
+background: #5F00DB;
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 21px;
+
+/* Mobile/Headings/H5 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+
+
+/* Answer */
+
+width: 1040px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 1072px;
+height: 72px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 1040px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 1040px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 1006px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;

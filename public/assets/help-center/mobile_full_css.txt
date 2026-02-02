@@ -1,0 +1,4036 @@
+/* Safety Guidelines */
+
+position: relative;
+width: 440px;
+height: 3120px;
+
+background: #111111;
+
+
+/* Main */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+height: 3120px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+
+
+/* Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 100px 16px 40px;
+
+width: 440px;
+height: 548px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+max-width: 1616px;
+height: 408px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 408px;
+height: 408px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Image */
+
+width: 408px;
+height: 408px;
+
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* image 7 */
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+
+background: url(image.png), url(image.png);
+border-radius: 24px;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 24px;
+gap: 16px;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+
+background: rgba(22, 0, 63, 0.5);
+border-radius: 24px;
+
+
+/* Help Center */
+
+width: 360px;
+height: 34px;
+
+/* Desktop/Heading/H3 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 120%;
+/* identical to box height, or 34px */
+display: flex;
+align-items: flex-end;
+text-align: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We’re here to help you get the most out of Fennec. */
+
+width: 360px;
+max-width: 640px;
+height: 38px;
+
+/* Desktop/Heading/H6 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 120%;
+/* or 19px */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Find answers to common questions, learn how features work, or reach out to our support team if you need assistance. */
+
+width: 360px;
+max-width: 640px;
+height: 72px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Search Input */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px;
+gap: 16px;
+isolation: isolate;
+
+width: 360px;
+max-width: 640px;
+height: 56px;
+
+background: rgba(17, 17, 17, 0.75);
+border: 1px solid rgba(102, 102, 102, 0.5);
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* search */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 9.38%;
+right: 9.37%;
+top: 9.38%;
+bottom: 9.37%;
+
+background: #FFFFFF;
+
+
+/* Text */
+
+width: 288px;
+height: 24px;
+
+/* Desktop/Input Value */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #FFFFFF;
+
+opacity: 0.4;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+z-index: 1;
+
+
+/* x */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Text Cursor */
+
+position: absolute;
+display: none;
+width: 1px;
+height: 26px;
+left: 52px;
+top: calc(50% - 26px/2);
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+
+
+/* Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 16px 120px;
+gap: 64px;
+
+width: 440px;
+height: 2027px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Col */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 408px;
+height: 1292px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frequently Asked Questions */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* List */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 1px;
+
+width: 440px;
+height: 1239px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 96px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 64px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 96px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 64px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 96px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 64px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* FAQ List item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 440px;
+height: 72px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: rgba(68, 68, 68, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 16px;
+
+width: 408px;
+height: 40px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 408px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Question */
+
+width: 374px;
+height: 24px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-up */
+
+width: 24px;
+height: 24px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Answer */
+
+display: none;
+width: 408px;
+height: 72px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Col */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 408px;
+height: 535px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Contact Support */
+
+width: 408px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Form */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 32px;
+
+width: 408px;
+height: 482px;
+
+background: rgba(95, 0, 219, 0.25);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Heading */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 376px;
+height: 122px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* We’re here to help — anytime you need us. */
+
+width: 376px;
+height: 58px;
+
+/* Mobile/Headings/H3 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Tell us what you need help with, and our support team will get back to you within 24 hours. */
+
+width: 376px;
+height: 48px;
+
+/* Mobile/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Form */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 376px;
+height: 296px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 376px;
+height: 64px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 376px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 167px;
+height: 16px;
+
+/* Mobile/Input Label */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Required */
+
+display: none;
+width: 6px;
+height: 16px;
+
+/* Desktop/Mobile/Label */
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+/* Funtional/Warning */
+color: #E74C3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text Input */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 0px;
+gap: 16px;
+
+width: 376px;
+height: 48px;
+min-height: 48px;
+
+border-bottom: 1px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* square */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 336px;
+height: 24px;
+
+/* Desktop/Input Value */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #FFFFFF;
+
+opacity: 0.4;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* chevron-down */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector  */
+
+position: absolute;
+left: 21.88%;
+right: 21.88%;
+top: 34.38%;
+bottom: 34.38%;
+
+background: #FFFFFF;
+
+
+/* Helping Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 0px 0px;
+gap: 4px;
+
+display: none;
+width: 398px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Text field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 376px;
+height: 128px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 376px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 54px;
+height: 16px;
+
+/* Mobile/Input Label */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Required */
+
+display: none;
+width: 6px;
+height: 16px;
+
+/* Desktop/Mobile/Label */
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+/* Funtional/Warning */
+color: #E74C3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text Input */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 0px;
+gap: 16px;
+
+width: 376px;
+height: 112px;
+min-height: 48px;
+
+border-bottom: 1px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* square */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 376px;
+height: 96px;
+
+/* Desktop/Input Value */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+color: #FFFFFF;
+
+opacity: 0.4;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* square */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Helping Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 0px 0px;
+gap: 4px;
+
+display: none;
+width: 398px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Button - Mobile */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 12px;
+
+width: 376px;
+height: 56px;
+
+background: #5F00DB;
+box-shadow: 0px -8px 12px rgba(95, 0, 219, 0.25), 0px 8px 12px rgba(95, 0, 219, 0.25);
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* arrow-left */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button */
+
+width: 117px;
+height: 24px;
+
+/* Mobile/Button */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* arrow-right */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 16px;
+gap: 40px;
+
+width: 440px;
+height: 545px;
+
+background: #5F00DB;
+box-shadow: 0px 0px 100px #5F00DB;
+border-radius: 40px 40px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+height: 465px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 282px;
+height: 60px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+height: 229px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 184px;
+height: 229px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Quick Links */
+
+width: 130px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Home */
+
+width: 45px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* How It Works */
+
+width: 100px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Features */
+
+width: 66px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* About */
+
+width: 46px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Download the App */
+
+width: 139px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 184px;
+height: 229px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Community */
+
+width: 131px;
+height: 29px;
+
+/* Desktop/Heading/H4 */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Safety Guidelines */
+
+width: 132px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Help Center */
+
+width: 91px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Report an Issue */
+
+width: 118px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Terms of Service */
+
+width: 127px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Privacy Policy */
+
+width: 105px;
+height: 24px;
+
+/* Desktop/Body */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 408px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Socials */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 24px;
+
+width: 216px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0.61%;
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0.06%;
+top: 0%;
+bottom: 0.02%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 24.32%;
+right: 24.32%;
+top: 24.32%;
+bottom: 24.32%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 70.7%;
+right: 17.3%;
+top: 17.31%;
+bottom: 70.7%;
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 6.25%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* X_logo_2023 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24px;
+height: 21.68px;
+left: calc(50% - 24px/2);
+top: calc(50% - 21.68px/2 - 0.04px);
+
+background: #FFFFFF;
+
+
+/* Social Icons */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 14.82%;
+bottom: 14.84%;
+
+background: #FFFFFF;
+
+
+/* © 2025 Fennec. All rights reserved. */
+
+width: 408px;
+height: 32px;
+
+/* Desktop/Body Large */
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* identical to box height, or 178% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 16px;
+gap: 24px;
+
+position: absolute;
+width: 408px;
+height: 68px;
+left: calc(50% - 408px/2);
+top: 16px;
+
+background: rgba(95, 0, 219, 0.25);
+/* BG Blur - 24 */
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 64px;
+
+
+/* Nav Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+display: none;
+width: 333px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button - Desktop */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 12px;
+
+margin: 0 auto;
+display: none;
+width: 196px;
+height: 56px;
+
+background: #5F00DB;
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+margin: 0 auto;
+width: 165px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 36px;
+height: 36px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fennec */
+
+width: 113px;
+height: 34px;
+
+font-family: 'Michroma';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Icon Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 16px;
+
+margin: 0 auto;
+width: 36px;
+height: 36px;
+
+border-radius: 52px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* menu */
+
+width: 36px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 22.22%;
+right: 11.11%;
+top: 50%;
+bottom: 50%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 11.11%;
+right: 11.11%;
+top: 30.56%;
+bottom: 69.44%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 11.11%;
+top: 69.44%;
+bottom: 30.56%;
+
+border: 2px solid #FFFFFF;

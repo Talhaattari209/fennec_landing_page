@@ -190,7 +190,7 @@ export default function TestimonialsSlider() {
 
                 {/* Navigator / Controls */}
                 <div
-                    className="absolute right-0 bottom-0 flex flex-row items-center justify-end px-[3.63vw] mobile:px-0 gap-[5.45vw] mobile:gap-[1.1vw] w-full mobile:w-[5.5vw] h-[10.9vw] mobile:h-[2.2vw]"
+                    className="absolute right-0 bottom-0 mobile:!bottom-[7.5vw] flex flex-row items-center justify-end px-[3.63vw] mobile:px-0 gap-[5.45vw] mobile:gap-[1.1vw] w-full mobile:w-[5.5vw] h-[10.9vw] mobile:h-[2.2vw]"
                 >
                     <button
                         onClick={prev}

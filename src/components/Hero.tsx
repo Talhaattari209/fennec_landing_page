@@ -79,14 +79,14 @@ export default function Hero() {
             filter: 'blur(0px)',
         },
         left: {
-            x: isMobile ? '-38.3vw' : '-37.4vw',
+            x: isMobile ? '-70.53vw' : '-37.4vw',
             opacity: 0.5,
             scale: 0.75,
             zIndex: 20,
             filter: isMobile ? 'blur(1px)' : 'blur(4px)',
         },
         right: {
-            x: isMobile ? '38.3vw' : '37.4vw',
+            x: isMobile ? '70.53vw' : '37.4vw',
             opacity: 0.5,
             scale: 0.75,
             zIndex: 20,
@@ -126,41 +126,41 @@ export default function Hero() {
 
             {/* Icon 1: Eyes (Top Left) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[26.47vw] h-[26.47vw] mobile:w-[7.61vw] mobile:h-[7.61vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
                     left: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '7.91vw',
                     top: isMobile ? '27.27vw' : '12.5vw'
                 }}
                 animate={iconAnimation(0)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
-                    <Image src={isMobile ? ICONS.eyes.mobile : ICONS.eyes.desktop} alt="" fill className="object-contain" />
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] opacity-50 blur-[5.68vw] mobile:blur-[1.7vw]">
+                    <Image src={isMobile ? ICONS.eyes.mobile : ICONS.eyes.desktop} alt="" fill className="object-contain " />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.29vw_0.29vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.eyes.mobile : ICONS.eyes.desktop} alt="Eyes Icon" fill className="object-contain" />
                 </div>
             </motion.div>
 
             {/* Icon 2: Tick (Top Right) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[26.47vw] h-[26.47vw] mobile:w-[7.61vw] mobile:h-[7.61vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
                     right: isMobile ? 'calc(50% - 13.63vw - 40.9vw)' : '7.91vw',
                     top: isMobile ? '27.27vw' : '12.5vw'
                 }}
                 animate={iconAnimation(1)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] opacity-50 blur-[5.68vw] mobile:blur-[1.7vw]">
                     <Image src={isMobile ? ICONS.tick.mobile : ICONS.tick.desktop} alt="" fill className="object-contain" />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.29vw_0.29vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.tick.mobile : ICONS.tick.desktop} alt="Tick Icon" fill className="object-contain" />
                 </div>
             </motion.div>
 
             {/* Icon 3: Human/People (Bottom Left) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[26.47vw] h-[26.47vw] mobile:w-[7.61vw] mobile:h-[7.61vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
                     // People (Human): Desktop -> Right side
                     right: isMobile ? 'auto' : '18.33vw', // Changed to right for desktop
@@ -169,17 +169,17 @@ export default function Hero() {
                 }}
                 animate={iconAnimation(2)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] opacity-50 blur-[5.68vw] mobile:blur-[1.7vw]">
                     <Image src={isMobile ? ICONS.human.mobile : ICONS.human.desktop} alt="" fill className="object-contain" />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.29vw_0.29vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.human.mobile : ICONS.human.desktop} alt="Human Icon" fill className="object-contain" />
                 </div>
             </motion.div>
 
             {/* Icon 4: Handshake (Bottom Right) */}
             <motion.div
-                className="absolute z-10 w-[27.27vw] h-[27.27vw] mobile:w-[6.25vw] mobile:h-[6.25vw] flex items-center justify-center cursor-pointer transition-all duration-300"
+                className="absolute z-10 w-[26.47vw] h-[26.47vw] mobile:w-[7.61vw] mobile:h-[7.61vw] flex items-center justify-center cursor-pointer transition-all duration-300"
                 style={{
                     // Handshake: Desktop -> Left side
                     left: isMobile ? 'auto' : '18.33vw', // Changed to left for desktop
@@ -188,10 +188,10 @@ export default function Hero() {
                 }}
                 animate={iconAnimation(3)}
             >
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] opacity-50 blur-[5.68vw] mobile:blur-[1.18vw]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] opacity-50 blur-[5.68vw] mobile:blur-[1.7vw]">
                     <Image src={isMobile ? ICONS.handshake.mobile : ICONS.handshake.desktop} alt="" fill className="object-contain" />
                 </div>
-                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[5.21vw] mobile:h-[5.21vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.2vw_0.2vw_rgba(0,0,0,0.25)]">
+                <div className="absolute w-[22.72vw] h-[22.72vw] mobile:w-[4.75vw] mobile:h-[4.75vw] drop-shadow-[0_0.9vw_0.9vw_rgba(0,0,0,0.25)] mobile:drop-shadow-[0_0.29vw_0.29vw_rgba(0,0,0,0.25)]">
                     <Image src={isMobile ? ICONS.handshake.mobile : ICONS.handshake.desktop} alt="Handshake Icon" fill className="object-contain" />
                 </div>
             </motion.div>
@@ -256,7 +256,7 @@ export default function Hero() {
                                     }}
                                     className={cn(
                                         "absolute overflow-hidden rounded-[2vw] mobile:rounded-[1.1vw] flex-shrink-0 shadow-2xl",
-                                        status === 'center' ? "w-[68.18vw] h-[40.9vw] mobile:w-[42.5vw] mobile:h-[25vw]" : "w-[68.18vw] h-[40.9vw] mobile:w-[42.5vw] mobile:h-[25vw]"
+                                        status === 'center' ? "w-[80vw] h-[48vw] mobile:w-[42.5vw] mobile:h-[25vw]" : "w-[80vw] h-[48vw] mobile:w-[42.5vw] mobile:h-[25vw]"
                                     )}
                                     style={{
                                         // Use the same width/height and let scale handle the sizing for smooth transitions

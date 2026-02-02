@@ -10,9 +10,9 @@ export default function ProblemStatement() {
                     <h2 className="text-white text-[10.9vw] mobile:text-[3vw] font-bold leading-[110%] tracking-[-0.04em] text-left">
                         Traditional dating <br className="mobile:hidden" />
                         apps are <br className="mobile:hidden" />
-                        <span className="inline-block bg-[#5F00DB] px-[1.2vw] py-[0.2vw] mobile:px-[0.5vw] mobile:py-[0.05vw] rounded-[2.72vw] mobile:rounded-[0.76vw] my-[0.3vw] mobile:my-0">too individual.</span> <br />
+                        <span className="inline-block bg-[#5F00DB] px-[1.2vw] py-[0.06vw] mobile:px-[0.5vw] mobile:py-[0.015vw] rounded-[2.72vw] mobile:rounded-[0.76vw] my-[0.3vw] mobile:my-[0.1vw]">too individual.</span> <br />
                         Social networks <br className="mobile:hidden" />
-                        <span className="inline-block bg-[#5F00DB] px-[1.2vw] py-[0.2vw] mobile:px-[0.5vw] mobile:py-[0.05vw] rounded-[2.72vw] mobile:rounded-[0.76vw] my-[0.3vw] mobile:my-0 mt-[0.3vw]">are too broad.</span>
+                        are <span className="inline-block bg-[#5F00DB] px-[1.2vw] py-[0.06vw] mobile:px-[0.5vw] mobile:py-[0.015vw] rounded-[2.72vw] mobile:rounded-[0.76vw] my-[0.3vw] mobile:my-[0.1vw] mt-[0.3vw]">too broad.</span>
                     </h2>
                 </div>
 
