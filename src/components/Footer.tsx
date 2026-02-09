@@ -30,9 +30,6 @@ export default function Footer() {
     return (
         <footer
             className="relative w-full flex flex-col items-center bg-[#111111]"
-            style={{
-                fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-            }}
         >
             <div
                 className="relative w-full max-w-[768px] mobile:max-w-none flex flex-col items-center px-[16px] mobile:px-[7.08vw] py-[40px] mobile:py-[3.75vw] gap-[40px] mobile:gap-[3.75vw] bg-[#5F00DB] rounded-t-[40px] mobile:rounded-t-[3.75vw]"

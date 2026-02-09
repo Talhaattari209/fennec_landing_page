@@ -55,14 +55,12 @@ export function Download() {
                     >
                         <h2
                             className="text-white font-bold text-[36px] mobile:text-[3vw] lg:text-[3.33vw] leading-[110%] tracking-[-0.04em] text-center"
-                            style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" }}
                         >
                             Ready to Meet Your Next Circle?
                         </h2>
 
                         <p
                             className="text-white font-normal text-[18px] mobile:text-[1.32vw] lg:text-[1.46vw] leading-[32px] mobile:leading-[120%] lg:leading-[1.77vw] tracking-[-0.04em] text-center w-[328px] h-[96px] mobile:w-auto mobile:h-auto mobile:max-w-[58.6vw] lg:max-w-[65.6vw]"
-                            style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" }}
                         >
                             Jump into a world of groups that get <br className="mobile:hidden" /> you. Swipe, match, and meet your <br className="mobile:hidden" /> next favorite people.
                         </p>
@@ -74,7 +72,6 @@ export function Download() {
 
                         <p
                             className="text-white font-bold text-[16px] mobile:text-[1.11vw] lg:text-[1.25vw] leading-[120%] tracking-[-0.04em] text-center"
-                            style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" }}
                         >
                             Download Fennec on iOS and Android.
                         </p>
@@ -89,7 +86,6 @@ export function Download() {
                 >
                     <h3
                         className="text-white font-bold text-[24px] mobile:text-[1.11vw] lg:text-[1.25vw] leading-[120%] tracking-[-0.04em] text-center whitespace-nowrap"
-                        style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" }}
                     >
                         Scan the QR Code to get the app
                     </h3>

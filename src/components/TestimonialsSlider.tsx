@@ -161,8 +161,7 @@ export default function TestimonialsSlider() {
                             <h2
                                 className="w-full h-[34.54vw] mobile:h-[7.36vw] flex items-center text-white font-normal"
                                 style={{
-                                    fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
-                                    fontSize: 'clamp(24px, 32px, 32px)', // Fixed 32px for mobile, fallback to 24 if too small but specs say 32
+                                    fontSize: 'clamp(24px, 32px, 32px)',
                                     lineHeight: '120%',
                                     letterSpacing: '-0.04em'
                                 }}
@@ -175,7 +174,6 @@ export default function TestimonialsSlider() {
                             <p
                                 className="w-full h-[4.54vw] mobile:h-[1.87vw] flex items-center text-white font-normal"
                                 style={{
-                                    fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
                                     fontSize: 'clamp(16px, 18px, 18px)',
                                     lineHeight: '110%',
                                     letterSpacing: '-0.04em'

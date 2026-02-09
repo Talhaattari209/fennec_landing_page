@@ -208,7 +208,6 @@ export default function Hero() {
                 <div className="flex flex-col items-center gap-[2.72vw] mobile:gap-[1.25vw] w-full text-center max-w-[81.82vw] mobile:max-w-none">
                     <h1
                         className="text-white font-bold text-[13.63vw] mobile:text-[5.21vw] leading-[110%] tracking-[-0.01em]"
-                        style={{ fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" }}
                     >
                         Meet New People,<br />
                         Together.
@@ -218,7 +217,6 @@ export default function Hero() {
                 {/* Text */}
                 <p
                     className="text-white font-normal text-[4.09vw] mobile:text-[1.25vw] leading-[4.77vw] mobile:leading-[1.66vw] text-center w-full max-w-[81.82vw] mobile:max-w-none"
-                    style={{ fontFamily: "'SF Pro Text', sans-serif" }}
                 >
                     Groups connect with groups. Real conversations. Real chemistry.
                 </p>
