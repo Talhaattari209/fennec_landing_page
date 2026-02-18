@@ -1,29 +1,29 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Twitter, Youtube, ArrowUpRight } from "lucide-react";
-
-import { AppStoreButton, GooglePlayButton } from "@/components/ui/StoreButtons";
+import { useState } from "react";
+import { JoinWaitlistButton } from "@/components/ui/JoinWaitlistButton";
+import JoinWaitlistModal from "@/components/JoinWaitlistModal";
 
 export function Download() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <section id="download" className="relative w-full flex flex-col items-center bg-[#111111] overflow-hidden py-[80px] mobile:py-[5.5vw] px-[16px] mobile:px-[7.08vw] lg:px-[152px]">
-            {/* The Main Container: Base (Mobile) fixed layout, lg (Desktop) responsive 84.2vw (1616px on 1920px screen) */}
-            <div className="relative w-full max-w-[408px] h-[1454px] mobile:max-w-none mobile:w-[75.2vw] mobile:h-[75.2vw] lg:w-[84.2vw] lg:h-[84.2vw] flex flex-col items-center shrink-0">
+            {/* Main Container: mobile fixed, desktop 84.17vw (1616px on 1920) × 62.5vw (1200px) */}
+            <div className="relative w-full max-w-[408px] h-[1200px] mobile:max-w-none mobile:w-[84.17vw] mobile:h-[62.5vw] flex flex-col items-center shrink-0">
 
-                {/* Background Circle & Boundaries */}
+                {/* Background Circle — 1200×1200, left: 208px (10.83vw) */}
                 <div
-                    className="absolute w-[1454px] h-[1454px] mobile:w-full mobile:h-full left-[-528px] mobile:left-[calc(50%-6.93vw)] mobile:-translate-x-1/2 top-0 rounded-full z-0 overflow-hidden lg:left-0 lg:translate-x-0"
+                    className="absolute w-[1200px] h-[1200px] mobile:w-[62.5vw] mobile:h-[62.5vw] left-[-400px] mobile:left-[10.83vw] top-0 rounded-full z-0 overflow-hidden"
                     style={{
                         background: '#16003F',
                         backdropFilter: 'blur(12px)',
                         WebkitBackdropFilter: 'blur(12px)'
                     }}
                 >
-                    {/* Circle Border (Boundaries) with Gradient Mask */}
+                    {/* Circle Border with Gradient Mask */}
                     <div
-                        className="absolute inset-0 rounded-full border-[3px] mobile:border-[0.2vw] lg:border-[0.16vw] border-[rgba(255,255,255,0.88)] pointer-events-none"
+                        className="absolute inset-0 rounded-full border-[3px] mobile:border-[0.16vw] border-[rgba(255,255,255,0.88)] pointer-events-none"
                         style={{
                             maskImage: 'linear-gradient(to bottom, black, transparent 30%, transparent 70%, black)',
                             WebkitMaskImage: 'linear-gradient(to bottom, black, transparent 30%, transparent 70%, black)'
@@ -31,81 +31,50 @@ export function Download() {
                     />
                 </div>
 
-                {/* Content Area */}
-                <div className="relative w-full h-full mobile:absolute mobile:w-[62.4vw] mobile:h-[51.6vw] mobile:top-0 mobile:left-1/2 mobile:-translate-x-1/2 z-10 pointer-events-none">
+                {/* Content Area — 1342×1110, left: 137px (7.14vw) */}
+                <div className="relative w-full h-full mobile:absolute mobile:w-[69.9vw] mobile:h-[57.81vw] mobile:top-0 mobile:left-[7.14vw] z-10 pointer-events-none">
 
-                    {/* Phones Image Block */}
-                    <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[376px] h-[634px] mobile:w-[37.2vw] mobile:h-[51.6vw] lg:w-[41.7vw] lg:h-[57.8vw] flex justify-center items-center z-20">
+                    {/* Phones — 800×1054, centered */}
+                    <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[376px] h-[634px] mobile:w-[41.67vw] mobile:h-[54.9vw] flex justify-center items-center z-20">
                         <div className="relative w-full h-full">
                             <Image
                                 src="/assets/download_Section/Phones.png"
                                 alt="Fennec App Screens"
                                 fill
-                                className="object-contain lg:object-top"
+                                className="object-contain mobile:object-top"
                                 priority
                             />
                         </div>
                     </div>
 
-                    {/* CTA Card */}
+                    {/* CTA Card — 1340×320, padding 40px, gap 40px, radius 40px */}
+                    {/* Position: top: calc(50% - 320px/2 + 356.5px) = calc(50% + 196.5px) */}
                     <div
-                        className="absolute left-1/2 -translate-x-1/2 w-[376px] h-[365px] bg-[#5F00DB] rounded-[24px] flex flex-col items-center justify-center p-[24px] gap-[24px] z-40 shadow-[0px_-100px_100px_rgba(22,0,63,0.5)] pointer-events-auto top-[659px]
-                                   mobile:w-[62.3vw] mobile:h-[18.2vw] mobile:rounded-[1.87vw] mobile:p-[1.87vw] mobile:gap-[1.87vw] mobile:shadow-[0px_-4.65vw_4.65vw_rgba(22,0,63,0.5)] mobile:top-[calc(50%-9.1vw+16.6vw)]
-                                   lg:w-[69.8vw] lg:h-[20.5vw] lg:rounded-[2.1vw] lg:p-[2.1vw] lg:gap-[2.1vw] lg:shadow-[0px_-5.2vw_5.2vw_rgba(22,0,63,0.5)] lg:top-[37.48vw]"
+                        className="absolute left-1/2 -translate-x-1/2 w-[376px] h-auto bg-[#5F00DB] rounded-[24px] flex flex-col items-center justify-center p-[24px] gap-[24px] z-40 shadow-[0px_-100px_100px_rgba(22,0,63,0.5)] pointer-events-auto top-[659px]
+                                   mobile:w-[69.79vw] mobile:h-auto mobile:rounded-[2.08vw] mobile:p-[2.08vw] mobile:gap-[2.08vw] mobile:shadow-[0px_-5.21vw_5.21vw_rgba(22,0,63,0.5)] mobile:top-[calc(50%+10.23vw)]"
                     >
+                        {/* Heading: 64px/700, 110% line-height */}
                         <h2
-                            className="text-white font-bold text-[36px] mobile:text-[3vw] lg:text-[3.33vw] leading-[110%] tracking-[-0.04em] text-center"
+                            className="text-white font-bold text-[36px] mobile:text-[3.33vw] leading-[110%] tracking-[-0.04em] text-center"
                         >
                             Ready to Meet Your Next Circle?
                         </h2>
 
+                        {/* Description: 28px/400, 120% line-height */}
                         <p
-                            className="text-white font-normal text-[18px] mobile:text-[1.32vw] lg:text-[1.46vw] leading-[32px] mobile:leading-[120%] lg:leading-[1.77vw] tracking-[-0.04em] text-center w-[328px] h-[96px] mobile:w-auto mobile:h-auto mobile:max-w-[58.6vw] lg:max-w-[65.6vw]"
+                            className="text-white font-normal text-[18px] mobile:text-[1.46vw] leading-[32px] mobile:leading-[120%] tracking-[-0.04em] text-center w-[328px] mobile:w-auto mobile:max-w-[65.63vw]"
                         >
                             Jump into a world of groups that get <br className="mobile:hidden" /> you. Swipe, match, and meet your <br className="mobile:hidden" /> next favorite people.
                         </p>
 
-                        <div className="flex flex-row justify-center items-start gap-[16px] mobile:gap-[1.1vw] lg:gap-[1.25vw] w-full mobile:w-auto">
-                            <AppStoreButton className="lg:w-[9.38vw] lg:h-[3.13vw] lg:rounded-[0.47vw] lg:px-[0.63vw] lg:gap-[0.63vw]" />
-                            <GooglePlayButton className="lg:w-[9.38vw] lg:h-[3.13vw] lg:rounded-[0.47vw] lg:px-[0.63vw] lg:gap-[0.63vw]" />
-                        </div>
-
-                        <p
-                            className="text-white font-bold text-[16px] mobile:text-[1.11vw] lg:text-[1.25vw] leading-[120%] tracking-[-0.04em] text-center"
-                        >
-                            Download Fennec on iOS and Android.
-                        </p>
+                        {/* Join Waitlist Button — 179×56 on desktop, bg #16003F */}
+                        <JoinWaitlistButton variant="download" onClick={() => setIsModalOpen(true)} />
                     </div>
                 </div>
 
-                {/* Scan / QR Section */}
-                <div
-                    className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center justify-center p-[24px] gap-[40px] z-30 w-full top-[1100px]
-                               mobile:bottom-0 mobile:top-auto mobile:w-full mobile:h-auto mobile:gap-[1.87vw] mobile:p-[5vw]
-                               lg:w-[25vw] lg:h-auto lg:top-[63.78vw] lg:bottom-auto lg:p-0 lg:gap-[3.33vw]"
-                >
-                    <h3
-                        className="text-white font-bold text-[24px] mobile:text-[1.11vw] lg:text-[1.25vw] leading-[120%] tracking-[-0.04em] text-center whitespace-nowrap"
-                    >
-                        Scan the QR Code to get the app
-                    </h3>
-
-                    <div className="relative w-[208px] h-[208px] bg-[#5F00DB] border-[4px] border-white rounded-[24px] shadow-[0_0_50px_#5F00DB] flex items-center justify-center p-[24px] gap-[10px]
-                                   mobile:w-[47.27vw] mobile:h-[47.27vw] mobile:bg-[#5F00DB] mobile:border-[0.91vw] mobile:border-white mobile:shadow-[0_0_11.36vw_#5F00DB] mobile:rounded-[5.45vw] mobile:p-[5.45vw] mobile:gap-[2.27vw]
-                                   lg:w-[12.92vw] lg:h-[12.92vw] lg:bg-[#5F00DB] lg:border-[0.21vw] lg:rounded-[1.25vw] lg:shadow-[0_0_2.6vw_#5F00DB] lg:p-[1.25vw] lg:gap-[0.52vw]">
-                        <div className="relative w-[160px] h-[160px] mobile:w-full mobile:h-full lg:w-full lg:h-full">
-                            <Image
-                                src="/assets/download_Section/QRR.png"
-                                alt="QR Code"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                    </div>
-                </div>
+                {/* Waitlist Modal */}
+                <JoinWaitlistModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
         </section>
     );
 }
-
-

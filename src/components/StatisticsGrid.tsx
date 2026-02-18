@@ -34,14 +34,12 @@ export default function StatisticsGrid() {
               }}
             />
 
-            <motion.h2
-              initial={{ opacity: 0, scale: 0.85 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
+            <h2
+
               className="relative z-10 font-bold text-white tracking-[-0.04em] text-[21.6vw] leading-[23.8vw] mobile:text-[11.25vw] mobile:leading-[11.88vw]"
             >
               94%
-            </motion.h2>
+            </h2>
 
             <p
               className="relative z-10 font-bold text-white tracking-[-0.04em] text-[3.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"

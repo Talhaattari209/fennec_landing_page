@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { AppStoreButton, GooglePlayButton } from "@/components/ui/StoreButtons";
+import { JoinWaitlistButton } from "@/components/ui/JoinWaitlistButton";
+import JoinWaitlistModal from "@/components/JoinWaitlistModal";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
@@ -36,6 +37,7 @@ export default function Hero() {
     const [direction, setDirection] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
     const [activeIconIndex, setActiveIconIndex] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -221,11 +223,13 @@ export default function Hero() {
                     Groups connect with groups. Real conversations. Real chemistry.
                 </p>
 
-                {/* Links / Download Buttons */}
-                <div className="flex flex-row justify-center items-start gap-[3.63vw] mobile:gap-[1.1vw] w-full mt-[1vw] mobile:mt-0">
-                    <AppStoreButton />
-                    <GooglePlayButton />
+                {/* Join Waitlist Button */}
+                <div className="flex flex-row justify-center items-center w-full mt-[1vw] mobile:mt-0">
+                    <JoinWaitlistButton variant="hero" onClick={() => setIsModalOpen(true)} />
                 </div>
+
+                {/* Waitlist Modal */}
+                <JoinWaitlistModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
 
             {/* Carousel Layer */}
