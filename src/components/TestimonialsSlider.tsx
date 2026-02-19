@@ -188,17 +188,17 @@ export default function TestimonialsSlider() {
 
                 {/* Navigator / Controls */}
                 <div
-                    className="absolute right-0 bottom-0 mobile:!bottom-[7.5vw] flex flex-row items-center justify-end px-[3.63vw] mobile:px-0 gap-[5.45vw] mobile:gap-[1.1vw] w-full mobile:w-[5.5vw] h-[10.9vw] mobile:h-[2.2vw]"
+                    className="absolute right-0 bottom-0 mobile:!bottom-[7vw] flex flex-row items-center justify-end px-[3.63vw] mobile:px-0 gap-[5.45vw] mobile:gap-[1.1vw] w-full mobile:w-[5.5vw] h-[10.9vw] mobile:h-[2.2vw] z-20"
                 >
                     <button
                         onClick={prev}
-                        className="w-[10.9vw] h-[10.9vw] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
+                        className="w-[10.9vw] h-[10.9vw] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)] cursor-pointer"
                     >
                         <ChevronLeft className="w-[5.45vw] h-[5.45vw] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
                     </button>
                     <button
                         onClick={next}
-                        className="w-[10.9vw] h-[10.9vw] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)]"
+                        className="w-[10.9vw] h-[10.9vw] mobile:w-[2.2vw] mobile:h-[2.2vw] flex items-center justify-center bg-[#5F00DB] rounded-full mobile:rounded-[2.4vw] transition-all duration-300 hover:scale-110 active:scale-95 group shadow-[0px_0px_4px_rgba(95,0,219,0.25),0px_4px_12px_rgba(95,0,219,0.25)] mobile:shadow-[0px_0px_0.2vw_rgba(95,0,219,0.25),0px_0.2vw_0.5vw_rgba(95,0,219,0.25)] cursor-pointer"
                     >
                         <ChevronRight className="w-[5.45vw] h-[5.45vw] mobile:w-[1.1vw] mobile:h-[1.1vw] text-white" />
                     </button>
