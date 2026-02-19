@@ -81,7 +81,7 @@ const SAFETY_POINTS = [
 
 export default function SafetyGuidelinesPage() {
     return (
-        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full font-['SF_Pro_Text',sans-serif] pt-[22.73vw] mobile:pt-[8.33vw]">
+        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw]">
             {/* 
                Mobile Reference (440px):
                - Unprefixed classes
@@ -126,7 +126,7 @@ export default function SafetyGuidelinesPage() {
             <section className="flex flex-col gap-[10.91vw] mobile:gap-[3.33vw] w-[92.73vw] mobile:w-[84.17vw]">
                 {SAFETY_POINTS.map((point, index) => (
                     <div key={index} className="flex flex-col gap-[3.64vw] mobile:gap-[1.25vw] w-full">
-                        <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] leading-[1.2] mobile:leading-[1.1] text-white tracking-[-0.04em]">
+                        <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] leading-[1.2] mobile:leading-[1.1] text-white tracking-tighter">
                             {point.title}
                         </h2>
                         <div className="font-normal text-[3.64vw] mobile:text-[0.94vw] leading-[1.78] mobile:leading-[1.78] text-[#CCCCCC]">

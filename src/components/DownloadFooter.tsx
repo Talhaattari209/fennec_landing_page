@@ -14,7 +14,7 @@ export function Download() {
 
                 {/* Background Circle — 1200×1200, left: 208px (10.83vw) */}
                 <div
-                    className="absolute w-[1200px] h-[1200px] mobile:w-[62.5vw] mobile:h-[62.5vw] left-[-400px] mobile:left-[10.83vw] top-0 rounded-full z-0 overflow-hidden"
+                    className="absolute w-[1200px] h-[1200px] mobile:w-[62.5vw] mobile:h-[62.5vw] left-[-430px] mobile:left-[10.33vw] top-0 rounded-full z-0 overflow-hidden"
                     style={{
                         background: '#16003F',
                         backdropFilter: 'blur(12px)',
@@ -55,14 +55,14 @@ export function Download() {
                     >
                         {/* Heading: 64px/700, 110% line-height */}
                         <h2
-                            className="text-white font-bold text-[36px] mobile:text-[3.33vw] leading-[110%] tracking-[-0.04em] text-center"
+                            className="text-white font-bold text-[36px] mobile:text-[3.33vw] leading-[110%] tracking-tighter text-center"
                         >
                             Ready to Meet Your Next Circle?
                         </h2>
 
                         {/* Description: 28px/400, 120% line-height */}
                         <p
-                            className="text-white font-normal text-[18px] mobile:text-[1.46vw] leading-[32px] mobile:leading-[120%] tracking-[-0.04em] text-center w-[328px] mobile:w-auto mobile:max-w-[65.63vw]"
+                            className="text-white font-normal text-[18px] mobile:text-[1.46vw] leading-[32px] mobile:leading-[120%] tracking-tighter text-center w-[328px] mobile:w-auto mobile:max-w-[65.63vw]"
                         >
                             Jump into a world of groups that get <br className="mobile:hidden" /> you. Swipe, match, and meet your <br className="mobile:hidden" /> next favorite people.
                         </p>

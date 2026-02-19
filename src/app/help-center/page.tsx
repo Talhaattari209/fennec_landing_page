@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
 import { Search, ChevronDown, ChevronUp } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 /*
   Design Specs (Reference 1920px width):
@@ -96,7 +97,7 @@ export default function HelpCenterPage() {
     };
 
     return (
-        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw] font-['SF_Pro_Text',sans-serif] overflow-x-hidden">
+        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw] overflow-x-hidden">
 
             {/* Hero Section */}
             {/* Desktop: 1616x560 (84.17vw x 29.17vw) */}
@@ -123,7 +124,7 @@ export default function HelpCenterPage() {
                        Desktop: 72px/1920 = 3.75vw
                        Mobile: 28px/440 = 6.36vw 
                     */}
-                    <h1 className="font-bold text-[6.36vw] mobile:text-[3.75vw] text-white leading-[1.2] mb-[3.64vw] mobile:mb-[1.25vw] tracking-[-0.04em] text-center">
+                    <h1 className="font-bold text-[6.36vw] mobile:text-[3.75vw] text-white leading-[1.2] mb-[3.64vw] mobile:mb-[1.25vw] tracking-tighter text-center">
                         Help Center
                     </h1>
 
@@ -131,7 +132,7 @@ export default function HelpCenterPage() {
                        Desktop: 24px/1920 = 1.25vw
                        Mobile: 16px/440 = 3.64vw
                     */}
-                    <h4 className="font-bold text-[3.64vw] mobile:text-[1.25vw] text-white leading-[1.2] mb-[3.64vw] mobile:mb-[0.83vw] tracking-[-0.04em] text-center max-w-[81.82vw] mobile:max-w-none">
+                    <h4 className="font-bold text-[3.64vw] mobile:text-[1.25vw] text-white leading-[1.2] mb-[3.64vw] mobile:mb-[0.83vw] tracking-tighter text-center max-w-[81.82vw] mobile:max-w-none">
                         We’re here to help you get the most out of Fennec.
                     </h4>
 
@@ -173,7 +174,7 @@ export default function HelpCenterPage() {
                        Desktop: 36px (1.88vw)
                        Mobile: 24px (5.45vw)
                     */}
-                    <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] text-white leading-[1.1] mb-[3.64vw] mobile:mb-[3.33vw] tracking-[-0.04em]">
+                    <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] text-white leading-[1.1] mb-[3.64vw] mobile:mb-[3.33vw] tracking-tighter">
                         Frequently Asked Questions
                     </h2>
 
@@ -214,14 +215,24 @@ export default function HelpCenterPage() {
                                     <div className="flex flex-row justify-between items-start w-full gap-[0.52vw]">
                                         <div className="flex flex-col gap-[3.64vw] mobile:gap-[0.83vw] flex-1">
                                             {/* Question: Mobile 16px (3.64vw), Desktop 18px (0.94vw) */}
-                                            <h5 className="font-medium text-[3.64vw] mobile:text-[0.94vw] text-white leading-[1.2] tracking-[-0.02em]">
+                                            <h5 className="font-medium text-[3.64vw] mobile:text-[0.94vw] text-white leading-[1.2] tracking-tight">
                                                 {faq.q}
                                             </h5>
-                                            {isOpen && (
-                                                <p className="font-normal text-[3.64vw] mobile:text-[0.83vw] text-[#CCCCCC] leading-[1.5]">
-                                                    {faq.a}
-                                                </p>
-                                            )}
+                                            <AnimatePresence initial={false}>
+                                                {isOpen && (
+                                                    <motion.div
+                                                        initial={{ opacity: 0, height: 0 }}
+                                                        animate={{ opacity: 1, height: 'auto' }}
+                                                        exit={{ opacity: 0, height: 0 }}
+                                                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                        className="overflow-hidden"
+                                                    >
+                                                        <p className="font-normal text-[3.64vw] mobile:text-[0.83vw] text-[#CCCCCC] leading-[1.5]">
+                                                            {faq.a}
+                                                        </p>
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
                                         </div>
                                         {/* Icon: Mobile 24px (5.45vw), Desktop 24px (1.25vw) */}
                                         {isOpen ? (
@@ -241,7 +252,7 @@ export default function HelpCenterPage() {
                 {/* Mobile: 100% */}
                 <div className="flex flex-col w-full mobile:w-[27.5vw]">
                     {/* Heading */}
-                    <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] text-white leading-[1.1] mb-[5.45vw] mobile:mb-[3.33vw] tracking-[-0.04em]">
+                    <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] text-white leading-[1.1] mb-[5.45vw] mobile:mb-[3.33vw] tracking-tighter">
                         Contact Support
                     </h2>
 
@@ -251,7 +262,7 @@ export default function HelpCenterPage() {
                     <div className="w-full bg-[#5F00DB]/25 rounded-[3.64vw] mobile:rounded-[0.83vw] p-[3.64vw] mobile:p-[0.83vw] flex flex-col gap-[7.27vw] mobile:gap-[1.67vw]">
                         <div className="flex flex-col gap-[3.64vw] mobile:gap-[0.83vw]">
                             {/* Card Title: Mobile 24px (5.45vw), Desktop 24px (1.25vw) */}
-                            <h3 className="font-medium text-[5.45vw] mobile:text-[1.25vw] text-white leading-[1.2] tracking-[-0.02em]">
+                            <h3 className="font-medium text-[5.45vw] mobile:text-[1.25vw] text-white leading-[1.2] tracking-tight">
                                 We’re here to help — anytime you need us.
                             </h3>
                             {/* Card Desc: Mobile 16px (3.64vw), Desktop 16px (0.83vw) */}

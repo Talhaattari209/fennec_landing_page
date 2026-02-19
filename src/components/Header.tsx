@@ -3,10 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import { JoinWaitlistButton } from "@/components/ui/JoinWaitlistButton";
+import JoinWaitlistModal from "@/components/JoinWaitlistModal";
 
 const NAV_LINKS = [
     { label: "How It Works", href: "/#how-it-works", mobileWidth: "51.4vw" },
@@ -17,6 +19,7 @@ const NAV_LINKS = [
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,12 +38,9 @@ export default function Header() {
         }
     }, [isMobileMenuOpen]);
 
-    const scrollToDownload = () => {
+    const handleJoinWaitlist = () => {
         setIsMobileMenuOpen(false);
-        const element = document.getElementById("download");
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+        setIsModalOpen(true);
     };
 
     return (
@@ -82,7 +82,7 @@ export default function Header() {
                                     className="group relative flex flex-col items-center justify-center h-[2.22vw] px-[0.83vw] transition-colors"
 
                                 >
-                                    <span className="text-[0.94vw] leading-[1.66vw] text-white font-['SF_Pro_Text',sans-serif] flex items-center font-normal">
+                                    <span className="text-[0.94vw] leading-[1.66vw] text-white font-sans flex items-center font-normal">
                                         {link.label}
                                     </span>
                                     {/* Hover Indicator (Rectangle 3) */}
@@ -95,19 +95,12 @@ export default function Header() {
                     {/* Desktop Download Button / Mobile Menu Toggle */}
                     <div className="flex items-center order-2">
                         {/* Desktop Button */}
-                        <Button
-                            className={cn(
-                                "hidden mobile:flex w-[10.21vw] h-[2.92vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[2.71vw] px-[1.25vw] py-[0.83vw] items-center justify-center gap-[0.625vw] transition-all",
-                                "shadow-[0px_0.2vw_0.625vw_rgba(95,0,219,0.25)]"
-                                // shadow-[0px_3px_8px] -> 3/1440 = 0.2vw
-                            )}
-                            onClick={scrollToDownload}
-                        >
-                            <span className="font-['SF_Pro_Text',sans-serif] font-normal text-[0.94vw] leading-[1.25vw]">
-                                Download App
-                            </span>
-                            <Download className="w-[1.25vw] h-[1.25vw]" />
-                        </Button>
+                        <JoinWaitlistButton
+                            variant="hero"
+                            onClick={handleJoinWaitlist}
+                            className="hidden mobile:flex w-[20.21vw] h-[2.92vw] mobile:w-[10.21vw] mobile:h-[2.92vw]"
+                            text="Join Waitlist"
+                        />
 
                         {/* Mobile Menu Icon Button */}
                         <button
@@ -179,7 +172,7 @@ export default function Header() {
                                             style={{ width: link.mobileWidth }}
                                             onClick={() => setIsMobileMenuOpen(false)}
                                         >
-                                            <span className="text-[6.4vw] leading-[11.4vw] text-white font-['SF_Pro_Text',sans-serif] whitespace-nowrap">
+                                            <span className="text-[6.4vw] leading-[11.4vw] text-white font-sans whitespace-nowrap">
                                                 {link.label}
                                             </span>
                                             {/* Rectangle 3 line 94+ */}
@@ -195,23 +188,22 @@ export default function Header() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3 }}
                             >
-                                <Button
-                                    className={cn(
-                                        "w-[60vw] h-[14vw] bg-[#5F00DB] hover:bg-[#4D00B3] text-white rounded-[9.3vw] px-[7.2vw] flex items-center justify-center gap-[3vw] transition-all",
-                                        "shadow-[0px_0.8vw_2.1vw_rgba(95,0,219,0.25)]"
-                                    )}
-                                    onClick={scrollToDownload}
-                                >
-                                    <span className="font-['SF_Pro_Text',sans-serif] font-normal text-[5vw] leading-[7.5vw] whitespace-nowrap">
-                                        Download App
-                                    </span>
-                                    <Download style={{ width: '7vw', height: '6.5vw' }} />
-                                </Button>
+                                <JoinWaitlistButton
+                                    variant="hero"
+                                    onClick={handleJoinWaitlist}
+                                    className="w-[60vw] h-[14vw]"
+                                    text="Join Waitlist"
+                                />
                             </motion.div>
                         </div>
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            <JoinWaitlistModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+            />
         </>
     );
 }

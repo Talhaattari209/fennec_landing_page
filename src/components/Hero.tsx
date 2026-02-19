@@ -209,7 +209,7 @@ export default function Hero() {
                 {/* Heading */}
                 <div className="flex flex-col items-center gap-[2.72vw] mobile:gap-[1.25vw] w-full text-center max-w-[81.82vw] mobile:max-w-none">
                     <h1
-                        className="text-white font-bold text-[13.63vw] mobile:text-[5.21vw] leading-[110%] tracking-[-0.01em]"
+                        className="text-white font-bold text-[13.63vw] mobile:text-[5.21vw] leading-[120%] tracking-normal"
                     >
                         Meet New People,<br />
                         Together.
@@ -225,7 +225,11 @@ export default function Hero() {
 
                 {/* Join Waitlist Button */}
                 <div className="flex flex-row justify-center items-center w-full mt-[1vw] mobile:mt-0">
-                    <JoinWaitlistButton variant="hero" onClick={() => setIsModalOpen(true)} />
+                    <JoinWaitlistButton
+                        variant="hero"
+                        onClick={() => setIsModalOpen(true)}
+                        className="w-[43.86vw] h-[13.73vw] mobile:w-[9.32vw] mobile:h-[2.92vw]"
+                    />
                 </div>
 
                 {/* Waitlist Modal */}

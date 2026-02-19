@@ -53,7 +53,7 @@ export default function Footer() {
                     <div className="flex flex-row items-start justify-center w-full max-w-[94.88vw] gap-[3.72vw]">
                         {/* Quick Links */}
                         <div className="flex flex-col items-center gap-[3.72vw] flex-1 min-w-0 justify-center">
-                            <h4 className="text-white text-[5.58vw] font-bold tracking-[-0.04em] leading-[120%]">
+                            <h4 className="text-white text-[5.58vw] font-bold tracking-tighter leading-[120%]">
                                 Quick Links
                             </h4>
                             <div className="flex flex-col items-start gap-[3.72vw]">
@@ -71,7 +71,7 @@ export default function Footer() {
 
                         {/* Community */}
                         <div className="flex flex-col items-center gap-[3.72vw] flex-1 min-w-0">
-                            <h4 className="text-white text-[5.58vw] font-bold tracking-[-0.04em] leading-[120%]">
+                            <h4 className="text-white text-[5.58vw] font-bold tracking-tighter leading-[120%]">
                                 Community
                             </h4>
                             <div className="flex flex-col items-start gap-[3.72vw]">
@@ -148,7 +148,7 @@ export default function Footer() {
                     <div className="flex flex-row items-start gap-[1.87vw] w-full max-w-[35.7vw] ml-auto">
                         {/* Quick Links */}
                         <div className="flex flex-col items-start gap-[0.76vw] flex-1">
-                            <h3 className="text-white text-[1.32vw] mobile:h-[1.6vw] leading-[120%] font-bold tracking-[-0.04em] flex items-center">
+                            <h3 className="text-white text-[1.32vw] mobile:h-[1.6vw] leading-[120%] font-bold tracking-tighter flex items-center">
                                 Quick Links
                             </h3>
                             <div className="flex flex-col items-start gap-[0.76vw]">
@@ -166,7 +166,7 @@ export default function Footer() {
 
                         {/* Community */}
                         <div className="flex flex-col items-start gap-[0.76vw] flex-1">
-                            <h3 className="text-white text-[1.32vw] mobile:h-[1.6vw] leading-[120%] font-bold tracking-[-0.04em] flex items-center">
+                            <h3 className="text-white text-[1.32vw] mobile:h-[1.6vw] leading-[120%] font-bold tracking-tighter flex items-center">
                                 Community
                             </h3>
                             <div className="flex flex-col items-start gap-[0.76vw]">

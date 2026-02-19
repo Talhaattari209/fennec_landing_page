@@ -36,13 +36,13 @@ export default function StatisticsGrid() {
 
             <h2
 
-              className="relative z-10 font-bold text-white tracking-[-0.04em] text-[21.6vw] leading-[23.8vw] mobile:text-[11.25vw] mobile:leading-[11.88vw]"
+              className="relative z-10 font-bold text-white tracking-tighter text-[21.6vw] leading-[23.8vw] mobile:text-[10.25vw] mobile:leading-[11.88vw]"
             >
               94%
             </h2>
 
             <p
-              className="relative z-10 font-bold text-white tracking-[-0.04em] text-[3.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
+              className="relative z-10 font-bold text-white tracking-tighter text-[3.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
             >
               People Feel More Comfortable Meeting New People via Group Matching
             </p>
@@ -57,12 +57,12 @@ export default function StatisticsGrid() {
               className="flex flex-col justify-center items-center text-center border border-white/5 h-[45.45vw] mobile:h-[20.42vw] p-[3.63vw] mobile:p-[2.08vw] gap-[3.63vw] mobile:gap-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[#5F00DB]"
             >
               <h2
-                className="font-bold text-white tracking-[-0.04em] text-[10.8vw] leading-[11.9vw] mobile:text-[5.63vw] mobile:leading-[6.2vw]"
+                className="font-bold text-white tracking-tighter text-[10.8vw] leading-[11.9vw] mobile:text-[5.63vw] mobile:leading-[6.2vw]"
               >
                 78%
               </h2>
               <p
-                className="font-bold text-white tracking-[-0.04em] text-[3.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
+                className="font-bold text-white tracking-tighter text-[3.6vw] leading-[4vw] max-w-[72vw] mobile:text-[1.88vw] mobile:leading-[2.08vw] mobile:max-w-[37.5vw]"
               >
                 of Users Report Better <br />First Interactions in Groups
               </p>
@@ -77,12 +77,12 @@ export default function StatisticsGrid() {
                 className="flex flex-col justify-center items-center text-center border border-white/5 flex-1 p-[3.63vw] mobile:p-[2.08vw] gap-[3.63vw] mobile:gap-[2.08vw] rounded-[3.63vw] mobile:rounded-[2.08vw] bg-[rgba(95,0,219,0.75)]"
               >
                 <h3
-                  className="font-bold text-white tracking-[-0.04em] text-[7.2vw] leading-[7.9vw] mobile:text-[3.75vw] mobile:leading-[4.11vw]"
+                  className="font-bold text-white tracking-tighter text-[7.2vw] leading-[7.9vw] mobile:text-[3.75vw] mobile:leading-[4.11vw]"
                 >
                   1.2M+
                 </h3>
                 <p
-                  className="font-bold text-white tracking-[-0.04em] text-[3.6vw] leading-[4vw] mobile:text-[1.88vw] mobile:leading-[2.08vw]"
+                  className="font-bold text-white tracking-tighter text-[3.6vw] leading-[4vw] mobile:text-[1.88vw] mobile:leading-[2.08vw]"
                 >
                   Conversation Started
                 </p>
@@ -94,12 +94,12 @@ export default function StatisticsGrid() {
 
               >
                 <h3
-                  className="font-bold text-white tracking-[-0.04em] text-[7.2vw] leading-[7.9vw] mobile:text-[3.75vw] mobile:leading-[4.11vw]"
+                  className="font-bold text-white tracking-tighter text-[7.2vw] leading-[7.9vw] mobile:text-[3.75vw] mobile:leading-[4.11vw]"
                 >
                   350K+
                 </h3>
                 <p
-                  className="font-bold text-white tracking-[-0.04em] text-[3.6vw] leading-[4vw] mobile:text-[1.88vw] mobile:leading-[2.08vw]"
+                  className="font-bold text-white tracking-tighter text-[3.6vw] leading-[4vw] mobile:text-[1.88vw] mobile:leading-[2.08vw]"
                 >
                   Groups Connected
                 </p>

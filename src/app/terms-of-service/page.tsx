@@ -85,7 +85,7 @@ const TERMS_SECTIONS: SectionContent[] = [
 
 export default function TermsOfServicePage() {
     return (
-        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw] font-['SF_Pro_Text',sans-serif]">
+        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw]">
             {/* 
                 Spacing Reference:
                 Mobile (Base 440px):
@@ -146,7 +146,7 @@ export default function TermsOfServicePage() {
             <section className="flex flex-col gap-[10.91vw] mobile:gap-[3.33vw] w-[92.73vw] mobile:w-[84.17vw]">
                 {TERMS_SECTIONS.map((section, index) => (
                     <div key={index} className="flex flex-col gap-[3.64vw] mobile:gap-[1.25vw] w-full">
-                        <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] leading-[1.1] text-white tracking-[-0.04em]">
+                        <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] leading-[1.1] text-white tracking-tighter">
                             {section.title}
                         </h2>
 

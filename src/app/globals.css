@@ -7,6 +7,13 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sf-pro), ui-sans-serif, system-ui, sans-serif;
+  --font-weight-normal: var(--font-weight-normal);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+  --letter-spacing-tighter: var(--tracking-tighter);
+  --letter-spacing-tight: var(--tracking-tight);
+  --letter-spacing-normal: var(--tracking-normal);
+
   --font-mono: var(--font-geist-mono);
   --font-michroma: var(--font-michroma);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -47,6 +54,18 @@
   --radius-4xl: calc(var(--radius) + 16px);
   --breakpoint-mobile: 768px;
   --animate-spin-slow: spin 3s linear infinite;
+}
+
+:root {
+  /* Font Weights */
+  --font-weight-normal: 300;
+  --font-weight-semibold: 490;
+  --font-weight-bold: 620;
+
+  /* Letter Spacing */
+  --tracking-tighter: 0.01em;
+  --tracking-tight: 0.01em;
+  --tracking-normal: 0.01em;
 }
 
 :root {
@@ -123,6 +142,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans font-normal tracking-normal antialiased;
   }
 }

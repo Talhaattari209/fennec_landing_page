@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const WAITLIST_API_URL = "https://api.fennecapp.io/waitlist";
-const WAITLIST_API_KEY = process.env.WAITLIST_API_KEY!;
+const WAITLIST_API_KEY = "yg8Jg2x&Qes7";
 
 export async function POST(req: NextRequest) {
     try {

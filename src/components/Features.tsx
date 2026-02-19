@@ -54,10 +54,25 @@ const FEATURES = [
 
 export default function Features() {
     const [activeId, setActiveId] = useState(1);
+    const [isIpad, setIsIpad] = useState(false);
     const activeFeature = FEATURES.find(f => f.id === activeId) || FEATURES[0];
 
+    useEffect(() => {
+        const handleResize = () => {
+            const w = window.innerWidth;
+            setIsIpad(w >= 768 && w < 1200);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
-        <section id="features" className="w-full bg-[#111111] pb-[40px] mobile:py-[5.5vw] flex flex-col items-center lg:py-[6.25vw] lg:px-[7.91vw] mt-[-140px] lg:mt-0">
+        <section
+            id="features"
+            className="w-full bg-[#111111] pb-[40px] pt-[0.5vw] mobile:py-[5.5vw] flex flex-col items-center lg:py-[6.25vw] lg:px-[7.91vw] mt-[-360px] lg:mt-0"
+            style={isIpad ? { marginTop: '-72vh' } : undefined}
+        >
             {/* Desktop Features Container - 1616px wide / 1920px (Hidden on Mobile) */}
             <div className="hidden lg:flex w-full max-w-[84.16vw] h-[41.66vw] relative rounded-[2.08vw] overflow-hidden">
                 {/* Background Gradient & Pattern */}
@@ -91,7 +106,7 @@ export default function Features() {
                                     )}
                                 >
                                     <h3 className={cn(
-                                        "text-[1.66vw] font-bold leading-[120%] tracking-[-0.04em] transition-colors duration-300",
+                                        "text-[1.66vw] font-bold leading-[120%] tracking-tighter transition-colors duration-300",
                                         "text-white"
                                     )}>
                                         {feature.title}
@@ -217,7 +232,7 @@ export default function Features() {
                                         : "bg-[#16003F] min-h-[12.72vw] overflow-hidden justify-center"
                                 )}
                             >
-                                <h3 className="text-[4.54vw] font-bold leading-[120%] text-white tracking-[-0.04em]">
+                                <h3 className="text-[4.54vw] font-bold leading-[120%] text-white tracking-tighter">
                                     {feature.title}
                                 </h3>
 

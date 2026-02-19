@@ -171,7 +171,7 @@ function FormContent({
                         text-white font-bold w-full
                         text-[7.84vw] leading-[9.31vw]
                         mobile:text-[2.08vw] mobile:leading-[2.5vw]
-                        tracking-[-0.02em]
+                        tracking-tight
                     "
 
                 >
@@ -184,7 +184,7 @@ function FormContent({
                         text-white font-medium w-full
                         text-[4.9vw] leading-[5.88vw]
                         mobile:text-[1.25vw] mobile:leading-[1.51vw]
-                        tracking-[-0.02em]
+                        tracking-tight
                     "
 
                 >
@@ -360,7 +360,7 @@ function SuccessContent({ onDone }: { onDone: () => void }) {
                     text-white font-medium w-full text-center
                     text-[5.88vw] leading-[7.11vw]
                     mobile:text-[1.67vw] mobile:leading-[1.98vw]
-                    tracking-[-0.02em]
+                    tracking-tight
                 "
 
             >

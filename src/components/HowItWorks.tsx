@@ -100,17 +100,20 @@ const CARDS_MOBILE = [
         rotate: 3,
         textHeight: "39.31vw",
         textOffset: "0vw",
-        scrollRange: [0.7, 1.0] // Final card finishes exactly at the bottom of the scroll
+        scrollRange: [0.7, 0.85] // Final card finishes exactly at the bottom of the scroll
     }
 ];
 
 export default function HowItWorks() {
     const sectionRef = useRef<HTMLDivElement>(null);
     const [isMobile, setIsMobile] = useState(false);
+    const [isIpad, setIsIpad] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
+            const w = window.innerWidth;
+            setIsMobile(w < 768);
+            setIsIpad(w >= 768 && w < 1200);
         };
         handleResize();
         window.addEventListener("resize", handleResize);
@@ -131,16 +134,16 @@ export default function HowItWorks() {
             id="how-it-works"
             ref={sectionRef}
             // Height adjusted to slow down scroll speed
-            className={`relative w-full bg-[#111111] ${isMobile ? 'h-[300vh]' : 'h-[700vh]'}`}
+            className={`relative w-full bg-[#111111] ${isMobile ? 'h-[300vh]' : isIpad ? 'h-[210vh]' : 'h-[700vh]'}`}
         >
             <div className="sticky top-0 h-screen w-full flex flex-col items-center overflow-hidden px-[3.63vw] lg:px-[7.91vw] pt-8">
 
                 <div className={`relative w-full h-full flex ${isMobile ? 'flex-col justify-start pt-[15vw] gap-[2.66vw]' : 'items-center justify-center'}`}>
 
                     <motion.div
-                        className={`${isMobile ? 'relative w-full text-center z-0' : 'absolute w-full text-center z-0 top-[3.9vw]'}`}
+                        className={`${isMobile ? 'relative w-full text-center z-0' : `absolute w-full text-center z-0 ${isIpad ? 'top-[2vh]' : 'top-[3.9vw]'}`}`}
                     >
-                        <h2 className={`${isMobile ? 'text-[14vw]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 tracking-[-0.04em] select-none whitespace-nowrap`}>
+                        <h2 className={`${isMobile ? 'text-[14vw]' : 'text-[7.29vw]'} font-bold leading-[110%] text-white opacity-10 tracking-tighter select-none whitespace-nowrap`}>
                             {isMobile ? (
                                 <>Effortless <br />Group <br /> Matching <br /> Starts Here</>
                             ) : (
@@ -151,7 +154,7 @@ export default function HowItWorks() {
 
                     <motion.div
                         style={{ y: finalStackLift }}
-                        className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[80vw] mt-0 z-10' : 'h-[24.83vw] mt-[28.12vw] z-10'}`}
+                        className={`relative w-full flex items-center justify-center ${isMobile ? 'h-[80vw] mt-0 z-10' : isIpad ? 'h-[26vh] mt-[-44vh] z-10' : 'h-[24.83vw] mt-[28.12vw] z-10'}`}
                     >
                         {cards.map((card, index) => (
                             <StickyCard
@@ -265,7 +268,7 @@ function StickyCard({ card, index, scrollYProgress, isMobile }: { card: any; ind
                             paddingLeft: isMobile ? (card.textOffset !== "0vw" ? "2.72vw" : "0vw") : (card.textOffset !== "0vw" ? card.textOffset : "0vw")
                         }}
                     >
-                        <h3 className={`${isMobile ? 'text-[5.45vw]' : 'text-[1.66vw]'} font-bold leading-[120%] tracking-[-0.04em] text-white`}>
+                        <h3 className={`${isMobile ? 'text-[5.45vw]' : 'text-[1.66vw]'} font-bold leading-[120%] tracking-tighter text-white`}>
                             {card.title}
                         </h3>
                         <p className={`${isMobile ? 'text-[3.63vw]' : 'text-[0.93vw]'} font-normal leading-relaxed text-[#ffffff]`}>

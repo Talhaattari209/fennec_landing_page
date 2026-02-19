@@ -97,7 +97,7 @@ const PRIVACY_SECTIONS: PrivacySection[] = [
 
 export default function PrivacyPolicyPage() {
     return (
-        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw] font-['SF_Pro_Text',sans-serif]">
+        <div className="flex flex-col items-center bg-[#111111] min-h-screen w-full pt-[22.73vw] mobile:pt-[8.33vw]">
             {/* 
                 Spacing Reference:
                 Mobile (Base 440px):
@@ -157,7 +157,7 @@ export default function PrivacyPolicyPage() {
             <section className="flex flex-col gap-[10.91vw] mobile:gap-[3.33vw] w-[92.73vw] mobile:w-[84.17vw]">
                 {PRIVACY_SECTIONS.map((section, index) => (
                     <div key={index} className="flex flex-col gap-[3.64vw] mobile:gap-[1.25vw] w-full">
-                        <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] leading-[1.1] text-white tracking-[-0.04em]">
+                        <h2 className="font-bold text-[5.45vw] mobile:text-[1.88vw] leading-[1.1] text-white tracking-tighter">
                             {section.title}
                         </h2>
 
@@ -195,7 +195,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="flex flex-col gap-[3.64vw] mobile:gap-[1.25vw]">
                                     {section.subSections.map((sub, subIdx) => (
                                         <div key={subIdx} className="flex flex-col gap-[1.82vw] mobile:gap-[0.83vw]">
-                                            <h4 className="font-bold text-[3.64vw] mobile:text-[1.25vw] leading-[1.2] text-white tracking-[-0.04em]">
+                                            <h4 className="font-bold text-[3.64vw] mobile:text-[1.25vw] leading-[1.2] text-white tracking-tighter">
                                                 {sub.title}
                                             </h4>
                                             <ul className="flex flex-col gap-[1.82vw] mobile:gap-[0.83vw]">

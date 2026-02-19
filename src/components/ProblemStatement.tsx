@@ -7,7 +7,7 @@ export default function ProblemStatement() {
 
                 {/* Heading Section */}
                 <div className="w-full relative flex flex-col items-start">
-                    <h2 className="text-white text-[10.9vw] mobile:text-[3vw] font-bold leading-[110%] tracking-[-0.04em] text-left">
+                    <h2 className="text-white text-[10.9vw] mobile:text-[3vw] font-bold leading-[110%] tracking-tighter text-left">
                         Traditional dating <br className="mobile:hidden" />
                         apps are <br className="mobile:hidden" />
                         <span className="inline-block bg-[#5F00DB] px-[1.2vw] py-[0.06vw] mobile:px-[0.5vw] mobile:py-[0.015vw] rounded-[2.72vw] mobile:rounded-[0.76vw] my-[0.3vw] mobile:my-[0.1vw]">too individual.</span> <br />
@@ -17,7 +17,7 @@ export default function ProblemStatement() {
                 </div>
 
                 {/* Description */}
-                <p className="text-[#CCCCCC] text-[4.54vw] mobile:text-[1.11vw] font-normal leading-[120%] mobile:leading-[140%] tracking-[-0.02em] text-left max-w-full mobile:max-w-[90.24vw]">
+                <p className="text-[#CCCCCC] text-[4.54vw] mobile:text-[1.11vw] font-normal leading-[120%] mobile:leading-[140%] tracking-tight text-left max-w-full mobile:max-w-[90.24vw]">
                     There&apos;s no space for small groups who want to
                     meet new people—whether for friendships,
                     hangouts, trips, or shared hobbies.
@@ -35,7 +35,7 @@ export default function ProblemStatement() {
                     <div className="absolute inset-0 bg-[#16003F]/50 p-[5.45vw] mobile:p-[3.75vw] flex flex-col mobile:flex-row items-start mobile:items-end justify-end mobile:justify-between gap-[9.09vw] mobile:gap-[1.87vw]">
 
                         {/* Logo / Pattern - Top Left on Mobile, Bottom Right on Desktop */}
-                        <div className="w-[18.18vw] h-[18.18vw] mobile:w-[7.36vw] mobile:h-[7.36vw] relative flex-shrink-0 mobile:order-2">
+                        <div className="w-[18.18vw] h-[18.18vw] mobile:w-[9vw] mobile:h-[9vw] relative flex-shrink-0 mobile:order-2">
                             <Image
                                 src="/assets/Feature Subsection-1/Vector_logo.png"
                                 alt="Fennec Pattern"
@@ -45,7 +45,7 @@ export default function ProblemStatement() {
                         </div>
 
                         <h4
-                            className="text-white text-[6.36vw] mobile:text-[4vw] font-normal leading-[120%] mobile:leading-[110%] tracking-[-0.02em] flex-1 w-full max-w-full mobile:max-w-none h-auto mobile:h-auto flex flex-col justify-end text-left mobile:order-1"
+                            className="text-white text-[6.36vw] mobile:text-[4vw] font-normal leading-[120%] mobile:leading-[110%] tracking-tight flex-1 w-full max-w-full mobile:max-w-none h-auto mobile:h-auto flex flex-col justify-end text-left mobile:order-1"
                         >
                             Fennec makes expanding
                             your circle natural, effortless,
