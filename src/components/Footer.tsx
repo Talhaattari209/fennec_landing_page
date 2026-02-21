@@ -102,7 +102,7 @@ export default function Footer() {
                             ))}
                         </div>
                         <p className="text-white text-[4.18vw] leading-[7.44vw] font-normal text-center w-full">
-                            © 2025 Fennec. All rights reserved.
+                            © {new Date().getFullYear()} Fennec. All rights reserved.
                         </p>
                     </div>
                 </div>
@@ -139,7 +139,7 @@ export default function Footer() {
 
                             {/* Copyright */}
                             <p className="text-white text-[0.83vw] leading-[1.45vw] font-normal text-right w-[23.8vw] h-[1.45vw] flex items-center justify-end">
-                                © 2025 Fennec. All rights reserved.
+                                © {new Date().getFullYear()} Fennec. All rights reserved.
                             </p>
                         </div>
                     </div>

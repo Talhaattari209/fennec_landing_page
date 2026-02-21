@@ -20,6 +20,9 @@ const michroma = Michroma({ weight: "400", subsets: ["latin"], variable: "--font
 export const metadata: Metadata = {
   title: "Fenec - Digital Management",
   description: "Experience the future of digital management with Fenec.",
+  icons: {
+    icon: "/Fennec_logo.png",
+  },
 };
 
 export default function RootLayout({
